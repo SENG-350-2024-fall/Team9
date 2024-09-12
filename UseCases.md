@@ -2,7 +2,7 @@
 |---------------------------------------------|----------------------------------------------------------------------------------------------------------|
 | **Use Case Identifier and Reference Number**| Unique identifier and reference number for the use case.                                                 |
 | **Modification History**                   | Log of changes made to the use case, including date and description of modifications.                    |
-| **Description**                            | The goal to be achieved by the use case and sources for the requirement.                                  |
+| **Description**                            | Triage effectively according to the needs of the patients, assigning priority appropriately.                                |
 | **Actors**                                  | List of actors involved in the use case.                                                                  |
 | **Assumptions**                             | Conditions that must be true for the use case to terminate successfully.                                  |
 | **Steps**                                   | Interactions between actors and the system necessary to achieve the goal.                                  |
