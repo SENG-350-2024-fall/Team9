@@ -13,8 +13,8 @@
 | **Field**                                   | **Description**                                                                                          |
 |---------------------------------------------|----------------------------------------------------------------------------------------------------------|
 | **Use Case Identifier and Reference Number**| 2. Understand_Response_Time_Given_Waitlist <br>                                                          |
-| **Modification History**                    | **history** created 9/12/24 Amir Abdullahi.                                                               |
-| **Description**                             | The goal to be achieved by the use case and sources for the requirement.                                  |
+| **Modification History**                    | **history** created 9/12/24 Amir Abdullahi.                                                              |
+| **Description**                             | Patient can understand the current waitlist and have a general idea of when they will get a response.    |
 | **Actors**                                  | List of actors involved in the use case.                                                                  |
 | **Assumptions**                             | Conditions that must be true for the use case to terminate successfully.                                  |
 | **Steps**                                   | Interactions between actors and the system necessary to achieve the goal.                                  |
