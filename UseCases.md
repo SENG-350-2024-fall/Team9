@@ -14,7 +14,7 @@
 |---------------------------------------------|----------------------------------------------------------------------------------------------------------|
 | **Use Case Identifier and Reference Number**| 2. Understand_Response_Time_Given_Waitlist <br>                                                          |
 | **Modification History**                    | **history** created 9/12/24 Amir Abdullahi.                                                              |
-| **Description**                             | Patient can understand the current waitlist and have a general idea of when they will get a response.    |
+| **Description**                             | Patient can gain view current waitlist levels and receive estimate of when they will get a response.     |
 | **Actors**                                  | - **Patient**: Person seeking medical attention.<br> - **System (Mister Ed)**: Medical Info System facilitating registration and queue management.<br> - **Emergency Department**: The hospital equipment, physicians and facilities providing emergency care |
 | **Assumptions**                             | Conditions that must be true for the use case to terminate successfully.                                  |
 | **Steps**                                   | Interactions between actors and the system necessary to achieve the goal.                                 |
