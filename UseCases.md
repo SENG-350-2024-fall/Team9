@@ -18,7 +18,7 @@
 | **Actors**                                  | - **Patient**: Person seeking medical attention.<br> - **System (Mister Ed)**: Medical Info System facilitating registration and queue management.<br> - **Emergency Department**: The hospital equipment, physicians and facilities providing emergency care |
 | **Assumptions**                             | - Mister ED has reliable access to waitlist capacity info of relevant EDs.<br> - Mister ED can provide accurate time estimates. |
 | **Steps**                                   | Interactions between actors and the system necessary to achieve the goal.                                                       |
-| **Variations (Optional)**                   | Any variations in the steps of the use case.                                                                                    |
+| **Variations (Optional)**                   | NA.                                                                                    |
 | **Non-Functional (Optional)**               | List of non-functional requirements that the use case must meet.                                                                |
 | **Issues**                                  | List of issues that remain to be resolved.  
 
