@@ -54,7 +54,7 @@
 | **Description**                             | Nurses can ask Mr. ED to direct patient to a GP or emergency services based on the call                                         |
 | **Actors**                                  | - Nurse (Primary)<br> - System (Mister Ed)<br> - Patient<br> - Hospital                                                         |
 | **Assumptions**                             | The nurse was not able to resolve their condition in the call and the patient must see a GP or emergency services.              |
-| **Steps**                                   | 1. Call ends.<br> 2. Nurse selects "Direct Patient"<br>. 3. Nurse selects GP or emergency services based on the patient's need. |
+| **Steps**                                   | 1. Call ends.<br> 2. Nurse selects "Direct Patient"<br> 3. Nurse selects GP or emergency services based on the patient's need. |
 | **Variations (Optional)**                   | NA.                                                                                                                             |
 | **Non-Functional (Optional)**               |                                                                                                                                 |
 | **Issues**                                  |                                                                                                                                 | 
