@@ -16,7 +16,7 @@
 | **Modification History**                    | **history** created 9/19/24 Amir Abdullahi.                                                                                     |
 | **Description**                             | Nurses can use Mr. ED to view summary of patient condition awaiting call                                                        |
 | **Actors**                                  | - Nurse (Primary) <br> - System (Mister Ed) <br> - Patient                                                                      |
-| **Assumptions**                             | The patient provided a description of thier condition to Mr. ED prior to getting on the hotline.                                |
+| **Assumptions**                             | The patient provided a description of their condition to Mr. ED prior to getting on the hotline.                                |
 | **Steps**                                   |                                                                                                                                 |
 | **Variations (Optional)**                   | NA.                                                                                                                             |
 | **Non-Functional (Optional)**               |                                                                                                                                 |
