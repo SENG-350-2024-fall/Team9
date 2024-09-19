@@ -35,7 +35,6 @@
 | **Non-Functional (Optional)**               |                                                                                                                                 |
 | **Issues**                                  |                                                                                                                                 | 
 
-
 | **Field**                                   | **Description**                                                                                                                 |
 |---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
 | **Use Case Identifier and Reference Number**| 4. Send_Patient_Call_Transcript <br>                                                                                            |
