@@ -42,7 +42,7 @@
 | **Description**                             | Nurses can ask Mr. ED to send transcript of the patient’s call to the desired hospital                                          |
 | **Actors**                                  | - Nurse (Primary)<br> - System (Mister Ed)<br> - Patient<br> - Hospital                                                         |
 | **Assumptions**                             | A transcript of the patient's call actually exists and sending the transcript does not violate the patient's privacy.           |
-| **Steps**                                   | 1. Nurse ends call.<br> 2. Nurse selects "Send Transcript to Hospital" and sends the transcript to the desired hospital.        |
+| **Steps**                                   | 1. Call ends.<br> 2. Nurse selects "Send Transcript to Hospital" and sends the transcript to the desired hospital.              |
 | **Variations (Optional)**                   | #2. Nurse will not select "Send Transcript to Hospital" if there is no transcript or if the patient does not consent.           |
 | **Non-Functional (Optional)**               |                                                                                                                                 |
 | **Issues**                                  |                                                                                                                                 |
@@ -53,8 +53,8 @@
 | **Modification History**                    | **history** created 9/19/24 Amir Abdullahi.                                                                                     |
 | **Description**                             | Nurses can ask Mr. ED to direct patient to a GP or emergency services based on the call                                         |
 | **Actors**                                  | - Nurse (Primary)<br> - System (Mister Ed)<br> - Patient<br> - Hospital                                                         |
-| **Assumptions**                             | The patient is satisfied even if the call did not resolve their condition, and they must see a GP or emergency services.        |
-| **Steps**                                   |                                                                                                                                 |
+| **Assumptions**                             | The nurse was not able to resolve their condition in the call and the patient must see a GP or emergency services.              |
+| **Steps**                                   | 1. Call ends.<br> 2. Nurse selects "Direct Patient"<br>. 3. Nurse selects GP or emergency services based on the patient's need. |
 | **Variations (Optional)**                   | NA.                                                                                                                             |
 | **Non-Functional (Optional)**               |                                                                                                                                 |
 | **Issues**                                  |                                                                                                                                 | 
