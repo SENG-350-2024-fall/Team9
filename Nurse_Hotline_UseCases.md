@@ -29,7 +29,7 @@
 | **Modification History**                    | **history** created 9/19/24 Amir Abdullahi.                                                                                     |
 | **Description**                             | Nurses can use Mr. ED’s auto-log feature to generate a transcript of the patients call                                          |
 | **Actors**                                  | - Nurse (Primary) <br> - System (Mister Ed) <br> - Patient                                                                      |
-| **Assumptions**                             | -                                                                                                                               |
+| **Assumptions**                             | The auto-log feature can accurately transcribe most patient voices accross varying clarities, speeds and accents of voices.     |
 | **Steps**                                   |                                                                                                                                 |
 | **Variations (Optional)**                   | NA.                                                                                                                             |
 | **Non-Functional (Optional)**               |                                                                                                                                 |
