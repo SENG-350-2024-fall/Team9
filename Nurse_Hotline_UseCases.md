@@ -7,7 +7,7 @@
 | **Assumptions**                             | The patient remains on the hotline until the Nurse responds to them.                                                            |
 | **Steps**                                   | 1. Nurse selects "Hotline Waitlist" in Mr. ED app.<br> 2. Nurse selects a patient.<br> 3. Nurse responds to the patient.        |
 | **Variations (Optional)**                   | NA.                                                                                                                             |
-| **Non-Functional (Optional)**               |                                                                                                                                 |
+| **Non-Functional (Optional)**               | Nurses must be able to view patients waiting in a UI that is easily navigable and has a simple to read layout.                  |
 | **Issues**                                  |                                                                                                                                 | 
 
 | **Field**                                   | **Description**                                                                                                                 |
