@@ -15,7 +15,7 @@
 | **Use Case Identifier and Reference Number**| 2. View_Summary_Patient_Call <br>                                                                                               |
 | **Modification History**                    | **history** created 9/19/24 Amir Abdullahi.                                                                                     |
 | **Description**                             | Nurses can use Mr. ED to view summary of patient condition awaiting call                                                        |
-| **Actors**                                  | -                                                                                                                               |
+| **Actors**                                  | - Nurse (Primary) <br> - System (Mister Ed) <br> - Patient                                                                      |
 | **Assumptions**                             | -                                                                                                                               |
 | **Steps**                                   |                                                                                                                                 |
 | **Variations (Optional)**                   | NA.                                                                                                                             |
@@ -28,7 +28,7 @@
 | **Use Case Identifier and Reference Number**| 3. Auto_Log_Patient_Call <br>                                                                                                   |
 | **Modification History**                    | **history** created 9/19/24 Amir Abdullahi.                                                                                     |
 | **Description**                             | Nurses can use Mr. ED’s auto-log feature to generate a transcript of the patients call                                          |
-| **Actors**                                  | -                                                                                                                               |
+| **Actors**                                  | - Nurse (Primary) <br> - System (Mister Ed) <br> - Patient                                                                      |
 | **Assumptions**                             | -                                                                                                                               |
 | **Steps**                                   |                                                                                                                                 |
 | **Variations (Optional)**                   | NA.                                                                                                                             |
@@ -41,7 +41,7 @@
 | **Use Case Identifier and Reference Number**| 4. Send_Patient_Call_Transcript <br>                                                                                            |
 | **Modification History**                    | **history** created 9/19/24 Amir Abdullahi.                                                                                     |
 | **Description**                             | Nurses can ask Mr. ED to send transcript of the patient’s call to the hospital                                                  |
-| **Actors**                                  | -                                                                                                                               |
+| **Actors**                                  | - Nurse (Primary) <br> - System (Mister Ed) <br> - Patient                                                                      |
 | **Assumptions**                             | -                                                                                                                               |
 | **Steps**                                   |                                                                                                                                 |
 | **Variations (Optional)**                   | NA.                                                                                                                             |
@@ -53,7 +53,7 @@
 | **Use Case Identifier and Reference Number**| 5. Direct_Patient_After_Call <br>                                                                                               |
 | **Modification History**                    | **history** created 9/19/24 Amir Abdullahi.                                                                                     |
 | **Description**                             | Nurses can ask Mr. ED to direct patient to GP or emergency services based on the call                                           |
-| **Actors**                                  | -                                                                                                                               |
+| **Actors**                                  | - Nurse (Primary) <br> - System (Mister Ed) <br> - Patient                                                                      |
 | **Assumptions**                             | -                                                                                                                               |
 | **Steps**                                   |                                                                                                                                 |
 | **Variations (Optional)**                   | NA.                                                                                                                             |
