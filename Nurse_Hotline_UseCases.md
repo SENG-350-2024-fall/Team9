@@ -52,7 +52,7 @@
 | **Use Case Identifier and Reference Number**| 5. Direct_Patient_After_Call <br>                                                                                               |
 | **Modification History**                    | **history** created 9/19/24 Amir Abdullahi.                                                                                     |
 | **Description**                             | Nurses can ask Mr. ED to direct patient to a GP or emergency services based on the call                                         |
-| **Actors**                                  | - Nurse (Primary) <br> - System (Mister Ed) <br> - Patient                                                                      |
+| **Actors**                                  | - Nurse (Primary) <br> - System (Mister Ed) <br> - Patient <br> - Hospital                                                      |
 | **Assumptions**                             | The patient is satisfied even if the call did not resolve their condition, and they must see a GP or emergency services.        |
 | **Steps**                                   |                                                                                                                                 |
 | **Variations (Optional)**                   | NA.                                                                                                                             |
