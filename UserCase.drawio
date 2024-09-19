@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36" version="24.7.13">
+  <diagram name="Page-1" id="zQgdx6gdwZZkz5qt_Ua5">
+    <mxGraphModel dx="794" dy="458" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="e2t2Xawz1pI8bLX3hQTD-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="e2t2Xawz1pI8bLX3hQTD-3" target="e2t2Xawz1pI8bLX3hQTD-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2t2Xawz1pI8bLX3hQTD-3" value="Patient" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="150" y="200" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e2t2Xawz1pI8bLX3hQTD-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="e2t2Xawz1pI8bLX3hQTD-8" target="e2t2Xawz1pI8bLX3hQTD-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2t2Xawz1pI8bLX3hQTD-8" value="Sort all requests based on time&amp;nbsp;&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="345" y="190" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e2t2Xawz1pI8bLX3hQTD-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="e2t2Xawz1pI8bLX3hQTD-11" target="e2t2Xawz1pI8bLX3hQTD-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2t2Xawz1pI8bLX3hQTD-11" value="Mister Ed" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="260" y="200" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e2t2Xawz1pI8bLX3hQTD-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="e2t2Xawz1pI8bLX3hQTD-16" target="e2t2Xawz1pI8bLX3hQTD-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2t2Xawz1pI8bLX3hQTD-16" value="Sort requests based on basic algorithm for severity of health issue" style="ellipse;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="505" y="190" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e2t2Xawz1pI8bLX3hQTD-23" value="Hospital" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="530" y="340" width="30" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
