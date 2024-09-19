@@ -38,7 +38,7 @@
 
 | **Field**                                   | **Description**                                                                                                                 |
 |---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| **Use Case Identifier and Reference Number**| 4. <br>                                                                                                                         |
+| **Use Case Identifier and Reference Number**| 4. Nurses can ask Mr. ED to send transcript of the patient’s call to the hospital <br>                                          |
 | **Modification History**                    | **history** created 9/19/24 Amir Abdullahi.                                                                                     |
 | **Description**                             |                                                                                                                                 |
 | **Actors**                                  | -                                                                                                                               |
@@ -50,7 +50,7 @@
 
 | **Field**                                   | **Description**                                                                                                                 |
 |---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| **Use Case Identifier and Reference Number**| 5.                    <br>                                                                                                      |
+| **Use Case Identifier and Reference Number**| 5. Nurses can ask Mr. ED to direct patient to GP or emergency services based on the call <br>                                   |
 | **Modification History**                    | **history** created 9/19/24 Amir Abdullahi.                                                                                     |
 | **Description**                             |                                                                                                                                 |
 | **Actors**                                  | -                                                                                                                               |
