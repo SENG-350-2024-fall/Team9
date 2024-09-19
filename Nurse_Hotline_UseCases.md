@@ -8,7 +8,7 @@
 | **Steps**                                   | 1. Nurse selects "Hotline Waitlist" in Mr. ED app.<br> 2. Nurse selects a patient.<br> 3. Nurse responds to the patient.        |
 | **Variations (Optional)**                   | NA.                                                                                                                             |
 | **Non-Functional (Optional)**               | Nurses must be able to view patients waiting in a UI that is easily navigable and has a simple to read layout.                  |
-| **Issues**                                  |                                                                                                                                 | 
+| **Issues**                                  | How will Mr. ED regulate the length of calls to ensure that all the patients are servered effectively?                          | 
 
 | **Field**                                   | **Description**                                                                                                                 |
 |---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
