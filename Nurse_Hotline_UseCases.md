@@ -4,7 +4,7 @@
 | **Modification History**                    | **history** created 9/19/24 Amir Abdullahi.                                                                                     |
 | **Description**                             | Nurses can use Mr. ED to view and respond to patients awaiting a call                                                           |
 | **Actors**                                  | - Nurse (Primary) <br> - System (Mister Ed) <br> - Patient                                                                      |
-| **Assumptions**                             | -                                                                                                                               |
+| **Assumptions**                             | The patient remains on the hotline until the Nurse responds to them.                                                            |
 | **Steps**                                   |                                                                                                                                 |
 | **Variations (Optional)**                   | NA.                                                                                                                             |
 | **Non-Functional (Optional)**               |                                                                                                                                 |
@@ -16,7 +16,7 @@
 | **Modification History**                    | **history** created 9/19/24 Amir Abdullahi.                                                                                     |
 | **Description**                             | Nurses can use Mr. ED to view summary of patient condition awaiting call                                                        |
 | **Actors**                                  | - Nurse (Primary) <br> - System (Mister Ed) <br> - Patient                                                                      |
-| **Assumptions**                             | -                                                                                                                               |
+| **Assumptions**                             | The patient provided a brief description of thier condition to Mr. ED.                                                          |
 | **Steps**                                   |                                                                                                                                 |
 | **Variations (Optional)**                   | NA.                                                                                                                             |
 | **Non-Functional (Optional)**               |                                                                                                                                 |
