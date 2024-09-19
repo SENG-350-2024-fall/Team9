@@ -45,7 +45,7 @@
 | **Steps**                                   | 1. Call ends.<br> 2. Nurse selects "Send Transcript to Hospital" and sends the transcript to the desired hospital.              |
 | **Variations (Optional)**                   | #2. Nurse will not select "Send Transcript to Hospital" if there is no transcript or if the patient does not consent.           |
 | **Non-Functional (Optional)**               | Sending the transcript of the patient's call must be secure.                                                                    |
-| **Issues**                                  | If the transcript has too much irrelevant info the nurse will have to revise the transcript before sending it to the hospital.  |
+| **Issues**                                  | Will the nurse have to further revise the transcript if it has too much irrelevant info before sending it to the hospital?      |
 
 | **Field**                                   | **Description**                                                                                                                 |
 |---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
