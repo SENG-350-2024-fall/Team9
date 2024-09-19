@@ -20,7 +20,7 @@
 | **Steps**                                   | 1. Nurse selects "Hotline Waitlist" in Mr. ED app.<br> 2. Nurse selects a patient.<br> 3. Nurse selects the patient's sumamry.  |
 | **Variations (Optional)**                   | NA.                                                                                                                             |
 | **Non-Functional (Optional)**               | Summary must be provided to nurse in a concise format that allows the nurse to quickly understand the patient's condition.      |
-| **Issues**                                  |                                                                                                                                 | 
+| **Issues**                                  | Will the summary of the patient's condition provide enough information for the nurse responding to the call?                    | 
 
 
 | **Field**                                   | **Description**                                                                                                                 |
@@ -51,10 +51,10 @@
 |---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
 | **Use Case Identifier and Reference Number**| 5. Direct_Patient_After_Call<br>                                                                                                |
 | **Modification History**                    | **history** created 9/19/24 Amir Abdullahi.                                                                                     |
-| **Description**                             | Nurses can ask Mr. ED to direct patient to a GP or emergency services based on the call.                                        |
+| **Description**                             | Nurses can ask Mr. ED to direct patient to a GP or emergency services based on the results of the call.                         |
 | **Actors**                                  | - Nurse (Primary)<br> - System (Mister Ed)<br> - Patient<br> - Hospital                                                         |
 | **Assumptions**                             | The nurse was not able to resolve their condition in the call and the patient must see a GP or emergency services.              |
 | **Steps**                                   | 1. Call ends.<br> 2. Nurse selects "Direct Patient"<br> 3. Nurse selects GP or emergency services based on the patient's need.  |
 | **Variations (Optional)**                   | NA.                                                                                                                             |
 | **Non-Functional (Optional)**               | NA.                                                                                                                             |
-| **Issues**                                  |                                                                                                                                 | 
+| **Issues**                                  | Will Mr. ED continue                                                                                                                                 | 
