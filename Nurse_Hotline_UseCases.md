@@ -5,7 +5,7 @@
 | **Description**                             | Nurses can use Mr. ED to view and respond to patients awaiting a call                                                           |
 | **Actors**                                  | - Nurse (Primary) <br> - System (Mister Ed) <br> - Patient                                                                      |
 | **Assumptions**                             | The patient remains on the hotline until the Nurse responds to them.                                                            |
-| **Steps**                                   |                                                                                                                                 |
+| **Steps**                                   | 1. Nurse selects "Hotline Waitlist" in Mr. ED app. <br> 2. Nurse selects a patient. <br> 3. Nurse responds to the patient.      |
 | **Variations (Optional)**                   | NA.                                                                                                                             |
 | **Non-Functional (Optional)**               |                                                                                                                                 |
 | **Issues**                                  |                                                                                                                                 | 
@@ -17,7 +17,7 @@
 | **Description**                             | Nurses can use Mr. ED to view summary of patient condition awaiting call                                                        |
 | **Actors**                                  | - Nurse (Primary) <br> - System (Mister Ed) <br> - Patient                                                                      |
 | **Assumptions**                             | The patient provided a description of their condition to Mr. ED prior to getting on the hotline.                                |
-| **Steps**                                   |                                                                                                                                 |
+| **Steps**                                   | 1. Nurse selects "Hotline Waitlist" in Mr. ED app. <br> 2. Nurse selects a patient. <br> 3. Nurse selects the patient's sumamry.|
 | **Variations (Optional)**                   | NA.                                                                                                                             |
 | **Non-Functional (Optional)**               |                                                                                                                                 |
 | **Issues**                                  |                                                                                                                                 | 
