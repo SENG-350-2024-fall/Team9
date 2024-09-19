@@ -30,8 +30,8 @@
 | **Description**                             | Nurses can use Mr. ED’s auto-log feature to generate a transcript of the patients call                                          |
 | **Actors**                                  | - Nurse (Primary) <br> - System (Mister Ed) <br> - Patient                                                                      |
 | **Assumptions**                             | The auto-log feature can accurately transcribe most patient voices accross varying clarities, speeds and accents of voices.     |
-| **Steps**                                   |                                                                                                                                 |
-| **Variations (Optional)**                   | NA.                                                                                                                             |
+| **Steps**                                   | 1. Nurse responds to the patient. <br> 2. Nurse toggles "Auto-Log" to "On". <br> 3. Nurse continues the call with the patient.  |
+| **Variations (Optional)**                   | #2. Nurse may toggle "Auto-Log" to "Off" if the patient does not want thier call transcribed.                                   |
 | **Non-Functional (Optional)**               |                                                                                                                                 |
 | **Issues**                                  |                                                                                                                                 | 
 
