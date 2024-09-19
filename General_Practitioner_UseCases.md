@@ -1,7 +1,6 @@
 | **Field**                                   | **Description**                                                                                                                 |
 |---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| **Use Case Identifier and Reference Number**| 1. Approves patient appointments being set up from Mister Ed
-<br>                                                   |
+| **Use Case Identifier and Reference Number**| 1. Approves patient appointments being set up from Mister Ed <br>            
 | **Modification History**                    | **history** created 9/19/24 Justin Paetkau.                                                                                     |
 | **Description**                             |                                                                                                                                 |
 | **Actors**                                  | -                                                                                                                               |
