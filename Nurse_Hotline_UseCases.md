@@ -44,7 +44,7 @@
 | **Assumptions**                             | A transcript of the patient's call actually exists and sending the transcript does not violate the patient's privacy.           |
 | **Steps**                                   | 1. Call ends.<br> 2. Nurse selects "Send Transcript to Hospital" and sends the transcript to the desired hospital.              |
 | **Variations (Optional)**                   | #2. Nurse will not select "Send Transcript to Hospital" if there is no transcript or if the patient does not consent.           |
-| **Non-Functional (Optional)**               |                                                                                                                                 |
+| **Non-Functional (Optional)**               | Sending the transcript of the patient's call must be secure.                                                                    |
 | **Issues**                                  |                                                                                                                                 |
 
 | **Field**                                   | **Description**                                                                                                                 |
