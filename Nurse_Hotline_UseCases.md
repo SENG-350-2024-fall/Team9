@@ -41,7 +41,7 @@
 | **Modification History**                    | **history** created 9/19/24 Amir Abdullahi.                                                                                     |
 | **Description**                             | Nurses can ask Mr. ED to send transcript of the patient’s call to the hospital                                                  |
 | **Actors**                                  | - Nurse (Primary) <br> - System (Mister Ed) <br> - Patient                                                                      |
-| **Assumptions**                             | -                                                                                                                               |
+| **Assumptions**                             | Sending the transcript does not violate privacy regulations and the patient gives consent to send thier transcript.             |
 | **Steps**                                   |                                                                                                                                 |
 | **Variations (Optional)**                   | NA.                                                                                                                             |
 | **Non-Functional (Optional)**               |                                                                                                                                 |
