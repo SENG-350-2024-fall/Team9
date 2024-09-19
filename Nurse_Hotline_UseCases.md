@@ -42,7 +42,7 @@
 | **Description**                             | Nurses can ask Mr. ED to send transcript of the patient’s call to the desired hospital                                          |
 | **Actors**                                  | - Nurse (Primary)<br> - System (Mister Ed)<br> - Patient<br> - Hospital                                                         |
 | **Assumptions**                             | Sending the transcript does not violate privacy regulations and the patient gives Mr. ED consent to send thier transcript.      |
-| **Steps**                                   | 1. Nurse ends call.<br> 2. Nurse selects "Send Transcript to Hospital"<br> 3. Nurse sends the transcript to desired hospital.   |
+| **Steps**                                   | 1. Nurse ends call.<br> 2. Nurse selects "Send Transcript to Hospital".<br> 3. Nurse sends the transcript to desired hospital.  |
 | **Variations (Optional)**                   | NA.                                                                                                                             |
 | **Non-Functional (Optional)**               |                                                                                                                                 |
 | **Issues**                                  |                                                                                                                                 |
