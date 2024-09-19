@@ -3,7 +3,7 @@
 | **Use Case Identifier and Reference Number**| 1. View_Respond_Patient_Call <br>                                                                                               |
 | **Modification History**                    | **history** created 9/19/24 Amir Abdullahi.                                                                                     |
 | **Description**                             | Nurses can use Mr. ED to view and respond to patients awaiting a call                                                           |
-| **Actors**                                  | -                                                                                                                               |
+| **Actors**                                  | - Nurse (Primary) <br> - System (Mister Ed) <br> - Patient                                                                      |
 | **Assumptions**                             | -                                                                                                                               |
 | **Steps**                                   |                                                                                                                                 |
 | **Variations (Optional)**                   | NA.                                                                                                                             |
