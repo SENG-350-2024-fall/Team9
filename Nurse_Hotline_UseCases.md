@@ -19,7 +19,7 @@
 | **Assumptions**                             | The patient provided a description of their condition to Mr. ED prior to getting on the hotline.                                |
 | **Steps**                                   | 1. Nurse selects "Hotline Waitlist" in Mr. ED app.<br> 2. Nurse selects a patient.<br> 3. Nurse selects the patient's sumamry.  |
 | **Variations (Optional)**                   | NA.                                                                                                                             |
-| **Non-Functional (Optional)**               |                                                                                                                                 |
+| **Non-Functional (Optional)**               | Summary must be provided to nurse in a concise format that allows the nurse to quickly understand the patient's condition.      |
 | **Issues**                                  |                                                                                                                                 | 
 
 
