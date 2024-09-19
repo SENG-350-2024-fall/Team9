@@ -33,7 +33,7 @@
 | **Steps**                                   | 1. Nurse responds to the patient.<br> 2. Nurse toggles "Auto-Log" to "On".<br> 3. Nurse continues the call with the patient.    |
 | **Variations (Optional)**                   | #2. Nurse may toggle "Auto-Log" to "Off" if the patient does not want thier call transcribed.                                   |
 | **Non-Functional (Optional)**               | The transcriber's speech to text latency must be minimal and in the worst case the latency must be no more than 5 seconds.      |
-| **Issues**                                  |                                                                                                                                 | 
+| **Issues**                                  | What will happen in cases where the auto-log feature can not effectively transcribe the conversation?                           | 
 
 | **Field**                                   | **Description**                                                                                                                 |
 |---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
