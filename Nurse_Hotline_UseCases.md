@@ -52,7 +52,7 @@
 | **Use Case Identifier and Reference Number**| 5. Direct_Patient_After_Call<br>                                                                                                 |
 | **Modification History**                    | **history** created 9/19/24 Amir Abdullahi.                                                                                      |
 | **Description**                             | Nurses can ask Mr. ED to direct patient to a General Practitioner(GP) or ED if the call did not resolve the patient's condition. |
-| **Actors**                                  | - Nurse (Primary)<br> - System (Mister Ed)<br> - Patient<br> - Hospital                                                          |
+| **Actors**                                  | - Nurse (Primary)<br> - System (Mister Ed)<br> - Patient                                                          |
 | **Assumptions**                             | The patient will follow the directions of the nurse to go to either a GP or ED after the call.                                   |
 | **Steps**                                   | 1. Call ends.<br> 2. Nurse selects "Direct Patient"<br> 3. Nurse selects GP or ED based on the patient's need.                   |
 | **Variations (Optional)**                   | NA.                                                                                                                              |
