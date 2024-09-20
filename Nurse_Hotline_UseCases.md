@@ -37,7 +37,7 @@
 
 | **Field**                                   | **Description**                                                                                                                  |
 |---------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| **Use Case Identifier and Reference Number**| 4. Send_Patient_Call_Transcript<br>                                                                                              |
+| **Use Case Identifier and Reference Number**| 4. Send_Patient's_Call_Transcript<br>                                                                                              |
 | **Modification History**                    | **history** created 9/19/24 Amir Abdullahi.                                                                                      |
 | **Description**                             | Nurses can ask Mr. ED to send transcript of the patient’s call to the desired hospital.                                          |
 | **Actors**                                  | - Nurse (Primary)<br> - System (Mister Ed)<br> - Patient<br> - Hospital                                                          |
