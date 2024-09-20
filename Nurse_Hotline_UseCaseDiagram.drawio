@@ -4,6 +4,9 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="lskfsVLSXJnKaLs_SEhu-23" value="Mr. ED" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="250" y="60" width="400" height="260" as="geometry" />
+        </mxCell>
         <mxCell id="lskfsVLSXJnKaLs_SEhu-1" value="Nurse" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
           <mxGeometry x="50" y="160" width="30" height="60" as="geometry" />
         </mxCell>
@@ -51,9 +54,6 @@
             <mxPoint x="390" y="130" as="sourcePoint" />
             <mxPoint x="478" y="119.58000000000001" as="targetPoint" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="lskfsVLSXJnKaLs_SEhu-20" value="" style="whiteSpace=wrap;html=1;aspect=fixed;textOpacity=0;labelBackgroundColor=none;labelBorderColor=default;" vertex="1" parent="1">
-          <mxGeometry x="520" y="220" width="80" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
