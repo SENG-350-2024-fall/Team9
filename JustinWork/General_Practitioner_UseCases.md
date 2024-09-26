@@ -50,7 +50,7 @@
 
 | **Field**                                   | **Description**                                                                                                                 |
 |---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| **Use Case Identifier and Reference Number**| 5. Can write out prescription and Mister Ed relays information to pharmacy <br>                                   |
+| **Use Case Identifier and Reference Number**| 5. Can write out prescription and Mister Ed relays information to both pharmacy and patient<br>                                   |
 | **Modification History**                    | **history** created 9/19/24 Justin Paetkau.                                                                                     |
 | **Description**                             | The general practitioner can write prescriptions directly within the Mister Ed System, which then relays the information to the designated pharmacy as well as the patient with all the neccesary data.                                                                                                       |
 | **Actors**                                  | - General Practitioner (Primary)<br>- System (Mister Ed)<br>- Patient<br>- Pharmacy                                                                                                                              |
