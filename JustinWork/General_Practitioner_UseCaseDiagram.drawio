@@ -16,7 +16,7 @@
         <mxCell id="c5CrnKEYV5SDfYjA_wCa-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="afm0MhG2RPLh9kl4LAHP-2" target="afm0MhG2RPLh9kl4LAHP-5">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="afm0MhG2RPLh9kl4LAHP-2" value="ED Manager" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+        <mxCell id="afm0MhG2RPLh9kl4LAHP-2" value="System (Mister Ed)" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
           <mxGeometry x="550" y="560" width="30" height="60" as="geometry" />
         </mxCell>
         <mxCell id="afm0MhG2RPLh9kl4LAHP-5" value="Patient" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
