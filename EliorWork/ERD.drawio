@@ -1,60 +1,41 @@
-<mxfile host="app.diagrams.net">
-  <diagram id="ERD_MisterEd" name="Page-1">
-    <mxGraphModel dx="827" dy="687" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.17">
+  <diagram name="Page-1" id="12345-67890">
+    <mxGraphModel dx="1194" dy="581" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
 
-        <!-- Entity: Patient -->
-        <mxCell id="2" value="Patient\nAttributes: ID (PK), Name, Age, Gender, Contact Info" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FF0000;strokeColor=#FF0000;" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="80" y="50" width="160" height="100" as="geometry" />
+        <!-- Patient Entity -->
+        <mxCell id="2e49270ec7c68f3f-1" value="Patient" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#e0e0e0;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;align=center;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=14" parent="1" vertex="1">
+          <mxGeometry x="20" y="60" width="160" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="2e49270ec7c68f3f-2" value="PatientID (PK), Name, Age, Contact Info, Virtual Registration Time" style="shape=partialRectangle;top=0;left=0;right=0;bottom=0;html=1;align=left;verticalAlign=middle;fillColor=none;spacingLeft=60;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;dropTarget=0;" parent="2e49270ec7c68f3f-1" vertex="1">
+          <mxGeometry y="26" width="160" height="30" as="geometry" />
         </mxCell>
 
-        <!-- Entity: Emergency Department (ED) -->
-        <mxCell id="3" value="ED (Emergency Department)\nAttributes: ID (PK), Location, Capacity, Current Load" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FF0000;strokeColor=#FF0000;" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="300" y="50" width="160" height="100" as="geometry" />
+        <!-- Emergency Department Entity -->
+        <mxCell id="2e49270ec7c68f3f-3" value="ED" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#e0e0e0;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;align=center;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=14" parent="1" vertex="1">
+          <mxGeometry x="20" y="240" width="160" height="144" as="geometry" />
+        </mxCell>
+        <mxCell id="2e49270ec7c68f3f-4" value="EDID (PK), Name, Location, Capacity, Current Load" style="shape=partialRectangle;top=0;left=0;right=0;bottom=0;html=1;align=left;verticalAlign=middle;fillColor=none;spacingLeft=34;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;dropTarget=0;" parent="2e49270ec7c68f3f-3" vertex="1">
+          <mxGeometry y="26" width="160" height="30" as="geometry" />
         </mxCell>
 
-        <!-- Entity: Appointment -->
-        <mxCell id="4" value="Appointment\nAttributes: ID (PK), Date, Time, Status, PatientID (FK), EDID (FK)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FF0000;strokeColor=#FF0000;" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="80" y="200" width="160" height="100" as="geometry" />
+        <!-- Triage Entity -->
+        <mxCell id="2e49270ec7c68f3f-5" value="Triage" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#e0e0e0;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;align=center;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=14" parent="1" vertex="1">
+          <mxGeometry x="200" y="60" width="160" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="2e49270ec7c68f3f-6" value="TriageID (PK), TriageTime, TriageResult, PatientID (FK), EDID (FK)" style="shape=partialRectangle;top=0;left=0;right=0;bottom=0;html=1;align=left;verticalAlign=middle;fillColor=none;spacingLeft=60;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=west;dropTarget=0;" parent="2e49270ec7c68f3f-5" vertex="1">
+          <mxGeometry y="26" width="160" height="30" as="geometry" />
         </mxCell>
 
-        <!-- Entity: Triage -->
-        <mxCell id="5" value="Triage\nAttributes: ID (PK), Severity, PatientID (FK), StaffID (FK)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FF0000;strokeColor=#FF0000;" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="300" y="200" width="160" height="100" as="geometry" />
+        <!-- Appointment Entity -->
+        <mxCell id="2e49270ec7c68f3f-7" value="Appointment" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#e0e0e0;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;align=center;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=14" parent="1" vertex="1">
+          <mxGeometry x="400" y="240" width="160" height="144" as="geometry" />
         </mxCell>
-
-        <!-- Entity: Staff -->
-        <mxCell id="6" value="Staff\nAttributes: ID (PK), Name, Role, Contact Info, EDID (FK)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FF0000;strokeColor=#FF0000;" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="500" y="50" width="160" height="100" as="geometry" />
+        <mxCell id="2e49270ec7c68f3f-8" value="AppointmentID (PK), ScheduledTime, AppointmentStatus, EDID (FK), PatientID (FK)" style="shape=partialRectangle;top=0;left=0;right=0;bottom=0;html=1;align=left;verticalAlign=middle;fillColor=none;spacingLeft=34;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=west;dropTarget=0;" parent="2e49270ec7c68f3f-7" vertex="1">
+          <mxGeometry y="26" width="160" height="30" as="geometry" />
         </mxCell>
-
-        <!-- Relationship: Patient to Appointment -->
-        <mxCell id="7" edge="1" parent="1" source="2" target="4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=0;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#FF0000;" >
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-
-        <!-- Relationship: Patient to Triage -->
-        <mxCell id="8" edge="1" parent="1" source="2" target="5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=0;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#FF0000;" >
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-
-        <!-- Relationship: ED to Appointment -->
-        <mxCell id="9" edge="1" parent="1" source="3" target="4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=0;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#FF0000;" >
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-
-        <!-- Relationship: ED to Staff -->
-        <mxCell id="10" edge="1" parent="1" source="3" target="6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=0;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#FF0000;" >
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-
-        <!-- Relationship: Triage to Staff -->
-        <mxCell id="11" edge="1" parent="1" source="5" target="6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=0;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#FF0000;" >
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-
       </root>
     </mxGraphModel>
   </diagram>
