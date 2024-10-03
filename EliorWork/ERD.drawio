@@ -4,29 +4,29 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        
+
         <!-- Entity: Patient -->
-        <mxCell id="2" value="Patient\nAttributes: ID, Name, Age, Gender, Contact Info" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FF0000;strokeColor=#FF0000;" vertex="1" connectable="0" parent="1">
+        <mxCell id="2" value="Patient\nAttributes: ID (PK), Name, Age, Gender, Contact Info" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FF0000;strokeColor=#FF0000;" vertex="1" connectable="0" parent="1">
           <mxGeometry x="80" y="50" width="160" height="100" as="geometry" />
         </mxCell>
 
-        <!-- Entity: ED (Emergency Department) -->
-        <mxCell id="3" value="ED (Emergency Department)\nAttributes: ID, Location, Capacity, Current Load" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FF0000;strokeColor=#FF0000;" vertex="1" connectable="0" parent="1">
+        <!-- Entity: Emergency Department (ED) -->
+        <mxCell id="3" value="ED (Emergency Department)\nAttributes: ID (PK), Location, Capacity, Current Load" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FF0000;strokeColor=#FF0000;" vertex="1" connectable="0" parent="1">
           <mxGeometry x="300" y="50" width="160" height="100" as="geometry" />
         </mxCell>
 
         <!-- Entity: Appointment -->
-        <mxCell id="4" value="Appointment\nAttributes: ID, Date, Time, Status, PatientID (FK), EDID (FK)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FF0000;strokeColor=#FF0000;" vertex="1" connectable="0" parent="1">
+        <mxCell id="4" value="Appointment\nAttributes: ID (PK), Date, Time, Status, PatientID (FK), EDID (FK)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FF0000;strokeColor=#FF0000;" vertex="1" connectable="0" parent="1">
           <mxGeometry x="80" y="200" width="160" height="100" as="geometry" />
         </mxCell>
 
         <!-- Entity: Triage -->
-        <mxCell id="5" value="Triage\nAttributes: ID, Severity, PatientID (FK), StaffID (FK)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FF0000;strokeColor=#FF0000;" vertex="1" connectable="0" parent="1">
+        <mxCell id="5" value="Triage\nAttributes: ID (PK), Severity, PatientID (FK), StaffID (FK)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FF0000;strokeColor=#FF0000;" vertex="1" connectable="0" parent="1">
           <mxGeometry x="300" y="200" width="160" height="100" as="geometry" />
         </mxCell>
 
         <!-- Entity: Staff -->
-        <mxCell id="6" value="Staff\nAttributes: ID, Name, Role, Contact, EDID (FK)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FF0000;strokeColor=#FF0000;" vertex="1" connectable="0" parent="1">
+        <mxCell id="6" value="Staff\nAttributes: ID (PK), Name, Role, Contact Info, EDID (FK)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FF0000;strokeColor=#FF0000;" vertex="1" connectable="0" parent="1">
           <mxGeometry x="500" y="50" width="160" height="100" as="geometry" />
         </mxCell>
 
@@ -47,6 +47,11 @@
 
         <!-- Relationship: ED to Staff -->
         <mxCell id="10" edge="1" parent="1" source="3" target="6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=0;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#FF0000;" >
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Relationship: Triage to Staff -->
+        <mxCell id="11" edge="1" parent="1" source="5" target="6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=0;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#FF0000;" >
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
 
