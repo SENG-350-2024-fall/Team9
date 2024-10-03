@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mxfile host="app.diagrams.net">
-  <diagram name="Page-1" id="Vql6BMCGLnIcHfMtaRGR">
+  <diagram name="Page-1" id="5LjHkKrffM2EDcI0RGRG">
     <mxGraphModel dx="1340" dy="807" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        
         <!-- Patient Entity -->
         <mxCell id="2" value="Patient" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" connectable="0" parent="1">
           <mxGeometry x="80" y="50" width="140" height="60" as="geometry" />
@@ -41,7 +42,7 @@
         </mxCell>
         
         <!-- Relationships -->
-
+        
         <!-- Patient to Account Relationship -->
         <mxCell id="9" edge="1" parent="1" source="2" target="3">
           <mxGeometry relative="1" as="geometry" />
@@ -87,11 +88,11 @@
         </mxCell>
         
         <!-- Triage Record to Waitlist Relationship -->
-        <mxCell id="13" edge="1" parent="1" source="7" target="5">
+        <mxCell id="13" edge="1" parent="1" source="6" target="7">
           <mxGeometry relative="1" as="geometry" />
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;jettySize=auto;html=1;" edge="1" parent="1" source="7" target="5">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;jettySize=auto;html=1;" edge="1" parent="1" source="6" target="7">
             <mxGeometry relative="1" as="geometry" />
-            <mxCell value="1:1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jettySize=auto;html=1;" edge="1" parent="1" source="7" target="5">
+            <mxCell value="1:1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jettySize=auto;html=1;" edge="1" parent="1" source="6" target="7">
               <mxGeometry relative="1" as="geometry" />
             </mxCell>
           </mxCell>
