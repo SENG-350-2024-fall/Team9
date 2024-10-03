@@ -7,37 +7,37 @@
         <mxCell id="1" parent="0" />
 
         <!-- Entity: Patient -->
-        <mxCell id="2" value="Patient" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" connectable="0" parent="1">
+        <mxCell id="2" value="Patient" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FF0000;strokeColor=#FF0000;" vertex="1" connectable="0" parent="1">
           <mxGeometry x="80" y="50" width="120" height="60" as="geometry" />
         </mxCell>
 
         <!-- Entity: Account -->
-        <mxCell id="3" value="Account" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" connectable="0" parent="1">
+        <mxCell id="3" value="Account" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FF0000;strokeColor=#FF0000;" vertex="1" connectable="0" parent="1">
           <mxGeometry x="300" y="50" width="120" height="60" as="geometry" />
         </mxCell>
 
         <!-- Entity: Medical Record -->
-        <mxCell id="4" value="Medical Record" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" connectable="0" parent="1">
+        <mxCell id="4" value="Medical Record" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FF0000;strokeColor=#FF0000;" vertex="1" connectable="0" parent="1">
           <mxGeometry x="80" y="150" width="120" height="60" as="geometry" />
         </mxCell>
 
         <!-- Entity: Hospital -->
-        <mxCell id="5" value="Hospital" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" connectable="0" parent="1">
+        <mxCell id="5" value="Hospital" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FF0000;strokeColor=#FF0000;" vertex="1" connectable="0" parent="1">
           <mxGeometry x="300" y="150" width="120" height="60" as="geometry" />
         </mxCell>
 
         <!-- Relationship: Patient to Account -->
-        <mxCell id="6" edge="1" parent="1" source="2" target="3">
+        <mxCell id="6" edge="1" parent="1" source="2" target="3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=0;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#FF0000;" >
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
 
         <!-- Relationship: Patient to Medical Record -->
-        <mxCell id="7" edge="1" parent="1" source="2" target="4">
+        <mxCell id="7" edge="1" parent="1" source="2" target="4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=0;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#FF0000;" >
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
 
         <!-- Relationship: Account to Hospital -->
-        <mxCell id="8" edge="1" parent="1" source="3" target="5">
+        <mxCell id="8" edge="1" parent="1" source="3" target="5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=0;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#FF0000;" >
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
