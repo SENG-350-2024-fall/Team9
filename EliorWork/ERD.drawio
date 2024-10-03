@@ -48,9 +48,6 @@
           <mxGeometry relative="1" as="geometry" />
           <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;jettySize=auto;html=1;" edge="1" parent="1" source="2" target="3">
             <mxGeometry relative="1" as="geometry" />
-            <mxCell value="1:1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jettySize=auto;html=1;" edge="1" parent="1" source="2" target="3">
-              <mxGeometry relative="1" as="geometry" />
-            </mxCell>
           </mxCell>
         </mxCell>
         
@@ -59,9 +56,6 @@
           <mxGeometry relative="1" as="geometry" />
           <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;jettySize=auto;html=1;" edge="1" parent="1" source="2" target="4">
             <mxGeometry relative="1" as="geometry" />
-            <mxCell value="1:1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jettySize=auto;html=1;" edge="1" parent="1" source="2" target="4">
-              <mxGeometry relative="1" as="geometry" />
-            </mxCell>
           </mxCell>
         </mxCell>
         
@@ -70,9 +64,6 @@
           <mxGeometry relative="1" as="geometry" />
           <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;jettySize=auto;html=1;" edge="1" parent="1" source="3" target="5">
             <mxGeometry relative="1" as="geometry" />
-            <mxCell value="1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jettySize=auto;html=1;" edge="1" parent="1" source="3" target="5">
-              <mxGeometry relative="1" as="geometry" />
-            </mxCell>
           </mxCell>
         </mxCell>
         
@@ -81,9 +72,6 @@
           <mxGeometry relative="1" as="geometry" />
           <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;jettySize=auto;html=1;" edge="1" parent="1" source="6" target="8">
             <mxGeometry relative="1" as="geometry" />
-            <mxCell value="1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jettySize=auto;html=1;" edge="1" parent="1" source="6" target="8">
-              <mxGeometry relative="1" as="geometry" />
-            </mxCell>
           </mxCell>
         </mxCell>
         
@@ -92,9 +80,6 @@
           <mxGeometry relative="1" as="geometry" />
           <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;jettySize=auto;html=1;" edge="1" parent="1" source="6" target="7">
             <mxGeometry relative="1" as="geometry" />
-            <mxCell value="1:1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jettySize=auto;html=1;" edge="1" parent="1" source="6" target="7">
-              <mxGeometry relative="1" as="geometry" />
-            </mxCell>
           </mxCell>
         </mxCell>
         
