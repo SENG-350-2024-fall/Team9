@@ -31,7 +31,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="99FT_-au7CRat3UAY1YA-1" value="ED Manager" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="62" y="204" width="30" height="60" as="geometry" />
+          <mxGeometry x="86" y="122" width="30" height="60" as="geometry" />
         </mxCell>
         <mxCell id="99FT_-au7CRat3UAY1YA-4" style="edgeStyle=elbowEdgeStyle;curved=0;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=vertical;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="aM9ryv3xv72pqoxQDRHE-2" target="aM9ryv3xv72pqoxQDRHE-6">
           <mxGeometry relative="1" as="geometry">
@@ -79,7 +79,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="99FT_-au7CRat3UAY1YA-15" value=":WaitRoomManagerGUI" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
-          <mxGeometry x="248" y="229" width="130" height="131" as="geometry" />
+          <mxGeometry x="620" y="60" width="130" height="131" as="geometry" />
         </mxCell>
         <mxCell id="99FT_-au7CRat3UAY1YA-21" style="edgeStyle=elbowEdgeStyle;curved=0;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=vertical;fontSize=12;startSize=8;endSize=8;" edge="1" parent="99FT_-au7CRat3UAY1YA-15" source="99FT_-au7CRat3UAY1YA-16" target="99FT_-au7CRat3UAY1YA-15">
           <mxGeometry relative="1" as="geometry" />
