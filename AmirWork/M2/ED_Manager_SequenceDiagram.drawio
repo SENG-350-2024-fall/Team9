@@ -68,7 +68,7 @@
         <mxCell id="99FT_-au7CRat3UAY1YA-13" value="toggledAutoScheduler" style="edgeStyle=elbowEdgeStyle;curved=0;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=vertical;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="99FT_-au7CRat3UAY1YA-10" target="aM9ryv3xv72pqoxQDRHE-2">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="390" y="204" />
+              <mxPoint x="395" y="213" />
             </Array>
           </mxGeometry>
         </mxCell>
