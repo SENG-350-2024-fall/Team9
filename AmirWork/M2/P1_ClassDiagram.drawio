@@ -76,12 +76,12 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="E6NOx3_vWvqfJ0P1HMbt-2" value=":HospitalWaitTimesGUI" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
-          <mxGeometry x="462" y="50" width="133" height="106" as="geometry" />
+          <mxGeometry x="469" y="50" width="133" height="106" as="geometry" />
         </mxCell>
         <mxCell id="E6NOx3_vWvqfJ0P1HMbt-3" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="E6NOx3_vWvqfJ0P1HMbt-2">
           <mxGeometry x="61.5" y="71" width="10" height="25" as="geometry" />
         </mxCell>
-        <mxCell id="E6NOx3_vWvqfJ0P1HMbt-4" value="patientSelectHospital" style="edgeStyle=elbowEdgeStyle;curved=0;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=horizontal;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="FpNr1gH__5IdUl0Pg7lG-13" target="E6NOx3_vWvqfJ0P1HMbt-3">
+        <mxCell id="E6NOx3_vWvqfJ0P1HMbt-4" value="patientSelectsHospital" style="edgeStyle=elbowEdgeStyle;curved=0;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=horizontal;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="FpNr1gH__5IdUl0Pg7lG-13" target="E6NOx3_vWvqfJ0P1HMbt-3">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
