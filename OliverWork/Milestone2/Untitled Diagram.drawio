@@ -1,9 +1,70 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36" version="24.7.17">
   <diagram name="Page-1" id="vVjtMNGr27E8e1KqsNhG">
-    <mxGraphModel>
+    <mxGraphModel dx="794" dy="420" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="hgNfzg_kcoW2ZR8ERpB9-3" value="Patient Information" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" source="hgNfzg_kcoW2ZR8ERpB9-16" target="hgNfzg_kcoW2ZR8ERpB9-4">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="140" y="110" as="sourcePoint" />
+            <mxPoint x="281.4592836148054" y="149.29424544855704" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgNfzg_kcoW2ZR8ERpB9-4" value="&lt;u&gt;1.1&lt;/u&gt;&lt;div&gt;Assign Patient to Nurse&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="280" y="120" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="hgNfzg_kcoW2ZR8ERpB9-5" value="Nurse" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="540" y="190" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hgNfzg_kcoW2ZR8ERpB9-6" value="Accept Patient Calls" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" source="hgNfzg_kcoW2ZR8ERpB9-5" target="hgNfzg_kcoW2ZR8ERpB9-4">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="410" y="130" as="sourcePoint" />
+            <mxPoint x="359.2802578792241" y="167.55389574600463" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgNfzg_kcoW2ZR8ERpB9-7" value="&lt;u&gt;1.2&lt;/u&gt;&lt;div&gt;Receive Symptoms&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="280" y="330" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="hgNfzg_kcoW2ZR8ERpB9-9" value="&lt;u&gt;1.2&lt;/u&gt;&lt;div&gt;Create Call&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="280" y="250" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="hgNfzg_kcoW2ZR8ERpB9-10" value="Patient" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="50" y="370" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hgNfzg_kcoW2ZR8ERpB9-11" value="Symptoms" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" source="hgNfzg_kcoW2ZR8ERpB9-10" target="hgNfzg_kcoW2ZR8ERpB9-7">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="160" y="400" as="sourcePoint" />
+            <mxPoint x="240" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgNfzg_kcoW2ZR8ERpB9-12" value="Patient Symptoms" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" source="hgNfzg_kcoW2ZR8ERpB9-7" target="hgNfzg_kcoW2ZR8ERpB9-5">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="390" y="340" as="sourcePoint" />
+            <mxPoint x="470" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgNfzg_kcoW2ZR8ERpB9-13" value="Add to Call" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" source="hgNfzg_kcoW2ZR8ERpB9-9" target="hgNfzg_kcoW2ZR8ERpB9-5">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="130" y="270" as="sourcePoint" />
+            <mxPoint x="210" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgNfzg_kcoW2ZR8ERpB9-14" value="Add to Call" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" source="hgNfzg_kcoW2ZR8ERpB9-9" target="hgNfzg_kcoW2ZR8ERpB9-10">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="160" y="280" as="sourcePoint" />
+            <mxPoint x="240" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgNfzg_kcoW2ZR8ERpB9-15" value="Patient and Nurse&lt;div&gt;Information&lt;/div&gt;" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" source="hgNfzg_kcoW2ZR8ERpB9-4" target="hgNfzg_kcoW2ZR8ERpB9-9">
+          <mxGeometry x="0.6" width="80" relative="1" as="geometry">
+            <mxPoint x="180" y="190" as="sourcePoint" />
+            <mxPoint x="260" y="190" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgNfzg_kcoW2ZR8ERpB9-16" value="Patient&lt;div&gt;Accounts&lt;/div&gt;" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="60" y="90" width="80" height="40" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
