@@ -36,7 +36,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="FpNr1gH__5IdUl0Pg7lG-3" value=":AccountConfirmtionAle" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
-          <mxGeometry x="483" y="162" width="133" height="142" as="geometry" />
+          <mxGeometry x="485" y="162" width="133" height="142" as="geometry" />
         </mxCell>
         <mxCell id="FpNr1gH__5IdUl0Pg7lG-4" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="FpNr1gH__5IdUl0Pg7lG-3">
           <mxGeometry x="61.5" y="75" width="10" height="42" as="geometry" />
