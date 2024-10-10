@@ -25,7 +25,7 @@
           <mxGeometry x="74" y="132" width="30" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Gdo_oM0bwtRsMLy9Od3A-3" value=":AppointmentOverrideMenu" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
-          <mxGeometry x="428" y="178" width="148" height="142" as="geometry" />
+          <mxGeometry x="481" y="180" width="148" height="142" as="geometry" />
         </mxCell>
         <mxCell id="Gdo_oM0bwtRsMLy9Od3A-4" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="Gdo_oM0bwtRsMLy9Od3A-3">
           <mxGeometry x="69" y="47" width="10" height="87" as="geometry" />
