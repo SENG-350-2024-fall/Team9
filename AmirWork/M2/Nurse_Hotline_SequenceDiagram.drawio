@@ -98,10 +98,10 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="t098YgyUy23xCTBI9pAR-2" value=":PatientDirectivesMenu" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
-          <mxGeometry x="556" y="31" width="132" height="300" as="geometry" />
+          <mxGeometry x="549" y="31" width="132" height="300" as="geometry" />
         </mxCell>
         <mxCell id="t098YgyUy23xCTBI9pAR-3" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="t098YgyUy23xCTBI9pAR-2" vertex="1">
-          <mxGeometry x="61" y="85" width="10" height="25" as="geometry" />
+          <mxGeometry x="61" y="79" width="10" height="25" as="geometry" />
         </mxCell>
         <mxCell id="UKhoprgoljXiepMuKFjU-19" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="t098YgyUy23xCTBI9pAR-2" vertex="1">
           <mxGeometry x="61" y="233" width="10" height="25" as="geometry" />
@@ -119,7 +119,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="UKhoprgoljXiepMuKFjU-5" value=":LogTranscriptSender" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
-          <mxGeometry x="696" y="31" width="122" height="300" as="geometry" />
+          <mxGeometry x="692" y="31" width="122" height="300" as="geometry" />
         </mxCell>
         <mxCell id="UKhoprgoljXiepMuKFjU-22" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="UKhoprgoljXiepMuKFjU-5" vertex="1">
           <mxGeometry x="56" y="255" width="10" height="25" as="geometry" />
