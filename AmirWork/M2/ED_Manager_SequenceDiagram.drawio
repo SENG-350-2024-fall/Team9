@@ -148,7 +148,7 @@
           <mxGeometry x="572" y="267" width="111" height="117" as="geometry" />
         </mxCell>
         <mxCell id="99FT_-au7CRat3UAY1YA-42" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="99FT_-au7CRat3UAY1YA-41" vertex="1">
-          <mxGeometry x="64.5" y="63" width="10" height="40" as="geometry" />
+          <mxGeometry x="50.5" y="60" width="10" height="40" as="geometry" />
         </mxCell>
         <mxCell id="99FT_-au7CRat3UAY1YA-44" value="EDMSelectsRescheduleAppointments" style="edgeStyle=elbowEdgeStyle;curved=0;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=vertical;fontSize=12;startSize=8;endSize=8;" parent="1" source="99FT_-au7CRat3UAY1YA-37" target="99FT_-au7CRat3UAY1YA-42" edge="1">
           <mxGeometry relative="1" as="geometry">
