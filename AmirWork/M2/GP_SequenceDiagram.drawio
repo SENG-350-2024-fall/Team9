@@ -95,7 +95,7 @@
           <mxGeometry x="670" y="39" width="113" height="300" as="geometry" />
         </mxCell>
         <mxCell id="nFOya2OpG1rb1wZ8DCrK-6" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="nFOya2OpG1rb1wZ8DCrK-5" vertex="1">
-          <mxGeometry x="51.5" y="57" width="10" height="170" as="geometry" />
+          <mxGeometry x="51.5" y="57" width="10" height="92" as="geometry" />
         </mxCell>
         <mxCell id="nFOya2OpG1rb1wZ8DCrK-7" value="" style="edgeStyle=elbowEdgeStyle;curved=0;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=vertical;fontSize=12;startSize=8;endSize=8;" parent="1" source="Gdo_oM0bwtRsMLy9Od3A-14" target="nFOya2OpG1rb1wZ8DCrK-6" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -107,6 +107,13 @@
         <mxCell id="nFOya2OpG1rb1wZ8DCrK-8" value="GPfillsPrescription" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" parent="nFOya2OpG1rb1wZ8DCrK-7" vertex="1" connectable="0">
           <mxGeometry x="-0.1518" y="-1" relative="1" as="geometry">
             <mxPoint x="4" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qLsoPe__b-ESW1TOB0B3-1" style="edgeStyle=elbowEdgeStyle;curved=0;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=vertical;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="nFOya2OpG1rb1wZ8DCrK-6" target="aM9ryv3xv72pqoxQDRHE-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="483" y="168" />
+            </Array>
           </mxGeometry>
         </mxCell>
       </root>
