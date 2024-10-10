@@ -78,20 +78,20 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="r2IzdM8W7e8GS-kkfY3J-25" value="patient logs out" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="r2IzdM8W7e8GS-kkfY3J-22" target="r2IzdM8W7e8GS-kkfY3J-24">
+        <mxCell id="r2IzdM8W7e8GS-kkfY3J-25" value="patient logs out" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="r2IzdM8W7e8GS-kkfY3J-22" target="r2IzdM8W7e8GS-kkfY3J-24">
           <mxGeometry x="0.1577" y="4" relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="843" y="261" />
-              <mxPoint x="926" y="229" />
+              <mxPoint x="578" y="327" />
+              <mxPoint x="528" y="417" />
             </Array>
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="r2IzdM8W7e8GS-kkfY3J-22" value="Hospital Wait times GUI" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;align=center;shape=ellipse;perimeter=ellipsePerimeter;" vertex="1" parent="1">
-          <mxGeometry x="618" y="163" width="100" height="84" as="geometry" />
+          <mxGeometry x="522" y="137" width="100" height="84" as="geometry" />
         </mxCell>
         <mxCell id="r2IzdM8W7e8GS-kkfY3J-24" value="Logout GUI" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;align=center;shape=ellipse;perimeter=ellipsePerimeter;" vertex="1" parent="1">
-          <mxGeometry x="985" y="132" width="79" height="69" as="geometry" />
+          <mxGeometry x="512" y="463" width="79" height="69" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
