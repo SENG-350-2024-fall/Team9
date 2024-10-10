@@ -45,8 +45,8 @@
             <mxPoint x="-12" y="1" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="FpNr1gH__5IdUl0Pg7lG-3" value=":AccountVerifier" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
-          <mxGeometry x="484" y="182" width="133" height="106" as="geometry" />
+        <mxCell id="FpNr1gH__5IdUl0Pg7lG-3" value=":AccountCreator" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="563" y="179" width="133" height="106" as="geometry" />
         </mxCell>
         <mxCell id="FpNr1gH__5IdUl0Pg7lG-4" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="FpNr1gH__5IdUl0Pg7lG-3" vertex="1">
           <mxGeometry x="61.5" y="54" width="10" height="42" as="geometry" />
@@ -54,12 +54,12 @@
         <mxCell id="FpNr1gH__5IdUl0Pg7lG-5" value="" style="edgeStyle=elbowEdgeStyle;curved=0;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=vertical;fontSize=12;startSize=8;endSize=8;" parent="1" source="aM9ryv3xv72pqoxQDRHE-6" target="FpNr1gH__5IdUl0Pg7lG-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="FpNr1gH__5IdUl0Pg7lG-10" value="patientsAddsInfo" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" parent="FpNr1gH__5IdUl0Pg7lG-5" vertex="1" connectable="0">
+        <mxCell id="FpNr1gH__5IdUl0Pg7lG-10" value="patientsAddsInfoClicksCreateAccount" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" parent="FpNr1gH__5IdUl0Pg7lG-5" vertex="1" connectable="0">
           <mxGeometry x="0.2034" relative="1" as="geometry">
-            <mxPoint x="-19" y="-1" as="offset" />
+            <mxPoint x="-27" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="FpNr1gH__5IdUl0Pg7lG-11" value="patientAccountVerifiedPatientReturnsToLogin" style="edgeStyle=elbowEdgeStyle;curved=0;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=vertical;fontSize=12;startSize=8;endSize=8;" parent="1" source="FpNr1gH__5IdUl0Pg7lG-4" target="aM9ryv3xv72pqoxQDRHE-2" edge="1">
+        <mxCell id="FpNr1gH__5IdUl0Pg7lG-11" value="patientAccountCreatedPatientReturnsToLogin" style="edgeStyle=elbowEdgeStyle;curved=0;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=vertical;fontSize=12;startSize=8;endSize=8;" parent="1" source="FpNr1gH__5IdUl0Pg7lG-4" target="aM9ryv3xv72pqoxQDRHE-2" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="249" y="255" as="targetPoint" />
             <Array as="points">
