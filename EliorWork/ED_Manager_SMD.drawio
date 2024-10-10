@@ -1,68 +1,62 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0" version="24.7.17">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.17">
   <diagram name="Page-1" id="58cdce13-f638-feb5-8d6f-7d28b1aa9fa0">
-    <mxGraphModel dx="1674" dy="759" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+    <mxGraphModel dx="915" dy="841" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="382b91b5511bd0f7-5" value="Patient is up next" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fillColor=#ffffc0;strokeColor=#ff0000;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;align=center;" parent="1" vertex="1">
-          <mxGeometry x="50" y="380" width="120" height="60" as="geometry" />
+          <mxGeometry x="40" y="460" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="382b91b5511bd0f7-6" value="View wait time statistics" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fillColor=#ffffc0;strokeColor=#ff0000;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;align=center;" parent="1" vertex="1">
+        <mxCell id="382b91b5511bd0f7-6" value="Mr Ed&#39;s system waitlist is too short" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fillColor=#ffffc0;strokeColor=#ff0000;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;align=center;" parent="1" vertex="1">
           <mxGeometry x="240" y="120" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="3cde6dad864a17aa-4" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=1;entryY=0.5;labelBackgroundColor=none;endArrow=open;endSize=8;strokeColor=#ff0000;fontFamily=Verdana;fontSize=12;align=left;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="382b91b5511bd0f7-9" target="382b91b5511bd0f7-6" edge="1">
+        <mxCell id="3cde6dad864a17aa-4" style="edgeStyle=orthogonalEdgeStyle;html=1;labelBackgroundColor=none;endArrow=open;endSize=8;strokeColor=#ff0000;fontFamily=Verdana;fontSize=12;align=left;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="382b91b5511bd0f7-9" target="udmGXA6qzwontc74sRsV-2" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="700" y="190" />
-              <mxPoint x="680" y="190" />
-              <mxPoint x="680" y="150" />
+              <mxPoint x="510" y="120" />
+              <mxPoint x="510" y="450" />
             </Array>
-            <mxPoint x="710" y="140" as="sourcePoint" />
+            <mxPoint x="560" y="120" as="sourcePoint" />
+            <mxPoint x="540" y="310" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="2h5yQsievU2eEVOHybEE-2" value="Text" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="3cde6dad864a17aa-4" vertex="1" connectable="0">
-          <mxGeometry x="0.1215" y="2" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="382b91b5511bd0f7-9" value="Activity" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fillColor=#ffffc0;strokeColor=#ff0000;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;align=center;" parent="1" vertex="1">
-          <mxGeometry x="640" y="210" width="120" height="60" as="geometry" />
+        <mxCell id="382b91b5511bd0f7-9" value="Mr Ed&#39;s system waitlist is too long" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fillColor=#ffffc0;strokeColor=#ff0000;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;align=center;" parent="1" vertex="1">
+          <mxGeometry x="580" y="110" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="382b91b5511bd0f7-10" value="Patient is rescheduled by EDM" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fillColor=#ffffc0;strokeColor=#ff0000;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;align=center;" parent="1" vertex="1">
-          <mxGeometry x="440" y="550" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="3cde6dad864a17aa-5" style="edgeStyle=elbowEdgeStyle;html=1;labelBackgroundColor=none;endArrow=open;endSize=8;strokeColor=#ff0000;fontFamily=Verdana;fontSize=12;align=left;" parent="1" target="382b91b5511bd0f7-9" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="850" y="495" as="sourcePoint" />
-          </mxGeometry>
+          <mxGeometry x="460" y="710" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="2a3bc250acf0617d-9" style="edgeStyle=orthogonalEdgeStyle;html=1;labelBackgroundColor=none;endArrow=open;endSize=8;strokeColor=#ff0000;fontFamily=Verdana;fontSize=12;align=left;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="382b91b5511bd0f7-5" target="382b91b5511bd0f7-10" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="160" y="470" as="sourcePoint" />
-            <mxPoint x="330" y="570" as="targetPoint" />
+            <mxPoint x="380" y="540" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="120" y="440" />
-              <mxPoint x="120" y="570" />
-              <mxPoint x="140" y="570" />
-              <mxPoint x="140" y="571" />
-              <mxPoint x="150" y="571" />
-              <mxPoint x="150" y="570" />
-              <mxPoint x="440" y="570" />
+              <mxPoint x="100" y="570" />
+              <mxPoint x="400" y="570" />
+              <mxPoint x="400" y="740" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="91vDNUuXsdBQXuZfY_MG-4" value="patient is late" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="2a3bc250acf0617d-9">
+        <mxCell id="91vDNUuXsdBQXuZfY_MG-4" value="patient is late" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="2a3bc250acf0617d-9" vertex="1" connectable="0">
           <mxGeometry x="-0.1994" y="-4" relative="1" as="geometry">
             <mxPoint x="83" y="-4" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="2a3bc250acf0617d-10" style="edgeStyle=orthogonalEdgeStyle;html=1;labelBackgroundColor=none;endArrow=open;endSize=8;strokeColor=#ff0000;fontFamily=Verdana;fontSize=12;align=left;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="382b91b5511bd0f7-6" target="382b91b5511bd0f7-9" edge="1">
+        <mxCell id="2a3bc250acf0617d-10" style="edgeStyle=orthogonalEdgeStyle;html=1;labelBackgroundColor=none;endArrow=open;endSize=8;strokeColor=#ff0000;fontFamily=Verdana;fontSize=12;align=left;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="382b91b5511bd0f7-6" target="udmGXA6qzwontc74sRsV-2" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="330" y="240" />
+              <mxPoint x="330" y="425" />
             </Array>
-            <mxPoint x="440" y="230" as="targetPoint" />
+            <mxPoint x="410" y="400" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="udmGXA6qzwontc74sRsV-1" value="Emergency Department Manager toggles auto scheduler" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="2a3bc250acf0617d-10">
+          <mxGeometry x="-0.0273" y="2" relative="1" as="geometry">
+            <mxPoint y="-55" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="udmGXA6qzwontc74sRsV-2" value="Mr Ed&#39;s system waitlist is oragnized" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fillColor=#ffffc0;strokeColor=#ff0000;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;align=center;" vertex="1" parent="1">
+          <mxGeometry x="350" y="450" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
