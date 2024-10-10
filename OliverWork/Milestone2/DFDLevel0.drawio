@@ -192,6 +192,15 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="8cT-QOZYqseCEWzWWKv6-4" value="Accept Patient Calls" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" source="CbKAAR9xL1HYXpp5iDJo-7" target="CbKAAR9xL1HYXpp5iDJo-1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="530" y="60" as="sourcePoint" />
+            <mxPoint x="610" y="60" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="600" y="90" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
