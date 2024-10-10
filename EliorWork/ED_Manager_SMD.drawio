@@ -1,97 +1,97 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.17">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.17">
   <diagram name="Page-1" id="58cdce13-f638-feb5-8d6f-7d28b1aa9fa0">
-    <mxGraphModel dx="915" dy="1691" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+    <mxGraphModel dx="1224" dy="483" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="udmGXA6qzwontc74sRsV-8" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="382b91b5511bd0f7-6" target="udmGXA6qzwontc74sRsV-7">
+        <mxCell id="udmGXA6qzwontc74sRsV-8" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="382b91b5511bd0f7-6" target="udmGXA6qzwontc74sRsV-7" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="360" y="30" />
+              <mxPoint x="360" y="100" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="udmGXA6qzwontc74sRsV-13" value="EDM view Saff Scheduling Stats" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="udmGXA6qzwontc74sRsV-8">
+        <mxCell id="udmGXA6qzwontc74sRsV-13" value="EDM view Saff Scheduling Stats" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" parent="udmGXA6qzwontc74sRsV-8" vertex="1" connectable="0">
           <mxGeometry x="0.1307" y="-15" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="382b91b5511bd0f7-6" value="ED Manager is in StatisticsGUI" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fillColor=#ffffc0;strokeColor=#ff0000;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;align=center;" parent="1" vertex="1">
-          <mxGeometry x="240" y="130" width="120" height="60" as="geometry" />
+        <mxCell id="382b91b5511bd0f7-6" value="ED Manager is in StatisticsGUI" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;align=center;" parent="1" vertex="1">
+          <mxGeometry x="240" y="200" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="udmGXA6qzwontc74sRsV-16" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="382b91b5511bd0f7-9" target="382b91b5511bd0f7-6">
+        <mxCell id="udmGXA6qzwontc74sRsV-16" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" parent="1" source="382b91b5511bd0f7-9" target="382b91b5511bd0f7-6" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="590" y="150" />
+              <mxPoint x="590" y="220" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="udmGXA6qzwontc74sRsV-17" value="waitlist Reprioritzed by MrEd" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="udmGXA6qzwontc74sRsV-16">
+        <mxCell id="udmGXA6qzwontc74sRsV-17" value="waitlist Reprioritzed by MrEd" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" parent="udmGXA6qzwontc74sRsV-16" vertex="1" connectable="0">
           <mxGeometry x="0.1378" y="21" relative="1" as="geometry">
             <mxPoint x="1" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="382b91b5511bd0f7-9" value="WaitRoomManagerGUI" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fillColor=#ffffc0;strokeColor=#ff0000;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;align=center;" parent="1" vertex="1">
-          <mxGeometry x="770" y="240" width="130" height="70" as="geometry" />
+        <mxCell id="382b91b5511bd0f7-9" value="WaitRoomManagerGUI" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;align=center;" parent="1" vertex="1">
+          <mxGeometry x="770" y="310" width="130" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="udmGXA6qzwontc74sRsV-2" value="WaitroomCapacitySlider" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fillColor=#ffffc0;strokeColor=#ff0000;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;align=center;" vertex="1" parent="1">
-          <mxGeometry x="240" y="470" width="120" height="60" as="geometry" />
+        <mxCell id="udmGXA6qzwontc74sRsV-2" value="WaitroomCapacitySlider" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;align=center;" parent="1" vertex="1">
+          <mxGeometry x="240" y="540" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="udmGXA6qzwontc74sRsV-7" value="AutoSchedulerToggle" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fillColor=#ffffc0;strokeColor=#ff0000;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;align=center;" vertex="1" parent="1">
-          <mxGeometry x="600" y="-10" width="130" height="70" as="geometry" />
+        <mxCell id="udmGXA6qzwontc74sRsV-7" value="AutoSchedulerToggle" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;align=center;" parent="1" vertex="1">
+          <mxGeometry x="600" y="60" width="130" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="udmGXA6qzwontc74sRsV-11" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="udmGXA6qzwontc74sRsV-7" target="382b91b5511bd0f7-6">
+        <mxCell id="udmGXA6qzwontc74sRsV-11" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="udmGXA6qzwontc74sRsV-7" target="382b91b5511bd0f7-6" edge="1">
           <mxGeometry width="140" relative="1" as="geometry">
-            <mxPoint x="460" y="370" as="sourcePoint" />
-            <mxPoint x="600" y="370" as="targetPoint" />
+            <mxPoint x="460" y="440" as="sourcePoint" />
+            <mxPoint x="600" y="440" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="510" y="130" />
+              <mxPoint x="510" y="200" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="udmGXA6qzwontc74sRsV-12" value="EDM toggled Auto-Scheduler" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="udmGXA6qzwontc74sRsV-11">
+        <mxCell id="udmGXA6qzwontc74sRsV-12" value="EDM toggled Auto-Scheduler" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" parent="udmGXA6qzwontc74sRsV-11" vertex="1" connectable="0">
           <mxGeometry x="0.0447" y="-38" relative="1" as="geometry">
             <mxPoint x="29" y="8" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="udmGXA6qzwontc74sRsV-14" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="382b91b5511bd0f7-6" target="382b91b5511bd0f7-9">
+        <mxCell id="udmGXA6qzwontc74sRsV-14" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="382b91b5511bd0f7-6" target="382b91b5511bd0f7-9" edge="1">
           <mxGeometry width="140" relative="1" as="geometry">
-            <mxPoint x="460" y="320" as="sourcePoint" />
-            <mxPoint x="600" y="320" as="targetPoint" />
+            <mxPoint x="460" y="390" as="sourcePoint" />
+            <mxPoint x="600" y="390" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="550" y="350" />
+              <mxPoint x="550" y="420" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="udmGXA6qzwontc74sRsV-18" value="waitlist is poorly prioritized" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="udmGXA6qzwontc74sRsV-14">
+        <mxCell id="udmGXA6qzwontc74sRsV-18" value="waitlist is poorly prioritized" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" parent="udmGXA6qzwontc74sRsV-14" vertex="1" connectable="0">
           <mxGeometry x="-0.2351" y="42" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="udmGXA6qzwontc74sRsV-19" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="382b91b5511bd0f7-6" target="udmGXA6qzwontc74sRsV-2">
+        <mxCell id="udmGXA6qzwontc74sRsV-19" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" parent="1" source="382b91b5511bd0f7-6" target="udmGXA6qzwontc74sRsV-2" edge="1">
           <mxGeometry width="140" relative="1" as="geometry">
-            <mxPoint x="460" y="320" as="sourcePoint" />
-            <mxPoint x="600" y="320" as="targetPoint" />
+            <mxPoint x="460" y="390" as="sourcePoint" />
+            <mxPoint x="600" y="390" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="180" y="340" />
+              <mxPoint x="180" y="410" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="udmGXA6qzwontc74sRsV-20" value="waittime is too short or too long" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="udmGXA6qzwontc74sRsV-19">
+        <mxCell id="udmGXA6qzwontc74sRsV-20" value="waittime is too short or too long" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" parent="udmGXA6qzwontc74sRsV-19" vertex="1" connectable="0">
           <mxGeometry x="-0.0367" y="12" relative="1" as="geometry">
             <mxPoint y="1" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="udmGXA6qzwontc74sRsV-21" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="udmGXA6qzwontc74sRsV-2" target="382b91b5511bd0f7-6">
+        <mxCell id="udmGXA6qzwontc74sRsV-21" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="udmGXA6qzwontc74sRsV-2" target="382b91b5511bd0f7-6" edge="1">
           <mxGeometry width="140" relative="1" as="geometry">
-            <mxPoint x="460" y="360" as="sourcePoint" />
-            <mxPoint x="600" y="360" as="targetPoint" />
+            <mxPoint x="460" y="430" as="sourcePoint" />
+            <mxPoint x="600" y="430" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="410" y="320" />
+              <mxPoint x="410" y="390" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="udmGXA6qzwontc74sRsV-22" value="capacity adjusted by EDM" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="udmGXA6qzwontc74sRsV-21">
+        <mxCell id="udmGXA6qzwontc74sRsV-22" value="capacity adjusted by EDM" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" parent="udmGXA6qzwontc74sRsV-21" vertex="1" connectable="0">
           <mxGeometry x="0.1215" y="28" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
