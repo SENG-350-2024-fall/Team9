@@ -107,7 +107,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="6AsKHR8IywjmqEPWiZ_l-1" value="Reccomended&lt;div&gt;Steps&lt;/div&gt;" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" source="YmnD2H-DsPDv7kOZWSRZ-1" target="YmnD2H-DsPDv7kOZWSRZ-2">
+        <mxCell id="6AsKHR8IywjmqEPWiZ_l-1" value="Reccomended&lt;div&gt;Steps&lt;/div&gt;" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" source="YmnD2H-DsPDv7kOZWSRZ-1" target="YmnD2H-DsPDv7kOZWSRZ-2" edge="1">
           <mxGeometry x="0.0573" y="10" width="80" relative="1" as="geometry">
             <mxPoint x="190" y="390" as="sourcePoint" />
             <mxPoint x="270" y="390" as="targetPoint" />
@@ -117,7 +117,7 @@
             <mxPoint x="5" y="1" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="6AsKHR8IywjmqEPWiZ_l-2" value="Medical&lt;div&gt;Attention&lt;/div&gt;" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" source="YmnD2H-DsPDv7kOZWSRZ-1" target="YmnD2H-DsPDv7kOZWSRZ-2">
+        <mxCell id="6AsKHR8IywjmqEPWiZ_l-2" value="Medical&lt;div&gt;Attention&lt;/div&gt;" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" source="YmnD2H-DsPDv7kOZWSRZ-1" target="YmnD2H-DsPDv7kOZWSRZ-2" edge="1">
           <mxGeometry x="0.0645" y="10" width="80" relative="1" as="geometry">
             <mxPoint x="190" y="380" as="sourcePoint" />
             <mxPoint x="270" y="380" as="targetPoint" />
@@ -127,12 +127,21 @@
             <mxPoint x="6" y="2" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="6AsKHR8IywjmqEPWiZ_l-3" value="Aprove&lt;div&gt;Appointments&lt;/div&gt;" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" source="YmnD2H-DsPDv7kOZWSRZ-5" target="YmnD2H-DsPDv7kOZWSRZ-1">
+        <mxCell id="6AsKHR8IywjmqEPWiZ_l-3" value="Aprove&lt;div&gt;Appointments&lt;/div&gt;" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" source="YmnD2H-DsPDv7kOZWSRZ-5" target="YmnD2H-DsPDv7kOZWSRZ-1" edge="1">
           <mxGeometry width="80" relative="1" as="geometry">
             <mxPoint x="460" y="410" as="sourcePoint" />
             <mxPoint x="540" y="410" as="targetPoint" />
             <Array as="points">
               <mxPoint x="490" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J_QBnB00ZqlzljHU9biv-1" value="Accept Pateint Calls" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" source="YmnD2H-DsPDv7kOZWSRZ-3" target="YmnD2H-DsPDv7kOZWSRZ-1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="530" y="170" as="sourcePoint" />
+            <mxPoint x="610" y="170" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="560" y="210" />
             </Array>
           </mxGeometry>
         </mxCell>
