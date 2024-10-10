@@ -59,7 +59,7 @@
           <mxGeometry x="625" y="40" width="100" height="300" as="geometry" />
         </mxCell>
         <mxCell id="Gdo_oM0bwtRsMLy9Od3A-14" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="Gdo_oM0bwtRsMLy9Od3A-13" vertex="1">
-          <mxGeometry x="45" y="57" width="10" height="118" as="geometry" />
+          <mxGeometry x="45" y="57" width="10" height="73" as="geometry" />
         </mxCell>
         <mxCell id="nFOya2OpG1rb1wZ8DCrK-1" value="" style="edgeStyle=elbowEdgeStyle;curved=0;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=vertical;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="aM9ryv3xv72pqoxQDRHE-6" target="Gdo_oM0bwtRsMLy9Od3A-14">
           <mxGeometry relative="1" as="geometry">
@@ -71,6 +71,17 @@
         <mxCell id="nFOya2OpG1rb1wZ8DCrK-2" value="GPseesDiagnosesPatient" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="nFOya2OpG1rb1wZ8DCrK-1">
           <mxGeometry x="0.3897" y="1" relative="1" as="geometry">
             <mxPoint x="-35" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nFOya2OpG1rb1wZ8DCrK-3" style="edgeStyle=elbowEdgeStyle;curved=0;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=vertical;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="671" y="161.8" as="sourcePoint" />
+            <mxPoint x="321" y="161.8" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nFOya2OpG1rb1wZ8DCrK-4" value="patientDoesNotNeedPrescriptionsGPendsAppointment" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="nFOya2OpG1rb1wZ8DCrK-3">
+          <mxGeometry x="-0.1395" relative="1" as="geometry">
+            <mxPoint x="-16" as="offset" />
           </mxGeometry>
         </mxCell>
       </root>
