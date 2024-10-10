@@ -1,58 +1,58 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.17">
   <diagram name="Page-1" id="12345-67890">
-    <mxGraphModel dx="1283" dy="581" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+    <mxGraphModel dx="1194" dy="581" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="TVGD07vnX8AzpcqW4ruT-1" value="Nurses" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="TVGD07vnX8AzpcqW4ruT-1" value="Nurses" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="200" y="180" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="TVGD07vnX8AzpcqW4ruT-2" value="Emergency Department&lt;div&gt;Manager&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="TVGD07vnX8AzpcqW4ruT-2" value="Emergency Department&lt;div&gt;Manager&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="30" y="30" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="TVGD07vnX8AzpcqW4ruT-3" value="Hotline nurse" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="TVGD07vnX8AzpcqW4ruT-3" value="Hotline nurse" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="10" y="200" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="TVGD07vnX8AzpcqW4ruT-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="TVGD07vnX8AzpcqW4ruT-4" target="TVGD07vnX8AzpcqW4ruT-9">
+        <mxCell id="TVGD07vnX8AzpcqW4ruT-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="TVGD07vnX8AzpcqW4ruT-4" target="TVGD07vnX8AzpcqW4ruT-9" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="430" y="260" as="targetPoint" />
+            <mxPoint x="710" y="190" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="TVGD07vnX8AzpcqW4ruT-4" value="Patient" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="370" y="330" width="120" height="60" as="geometry" />
+        <mxCell id="TVGD07vnX8AzpcqW4ruT-4" value="Patient" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="650" y="260" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="TVGD07vnX8AzpcqW4ruT-5" value="Doctor" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="TVGD07vnX8AzpcqW4ruT-5" value="Doctor" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="90" y="300" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="TVGD07vnX8AzpcqW4ruT-9" value="Name" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="370" y="170" width="120" height="80" as="geometry" />
+        <mxCell id="TVGD07vnX8AzpcqW4ruT-9" value="Name" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="650" y="100" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="TVGD07vnX8AzpcqW4ruT-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" target="TVGD07vnX8AzpcqW4ruT-11" source="TVGD07vnX8AzpcqW4ruT-4">
+        <mxCell id="TVGD07vnX8AzpcqW4ruT-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="TVGD07vnX8AzpcqW4ruT-4" target="TVGD07vnX8AzpcqW4ruT-11" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="440" y="340" as="sourcePoint" />
-            <mxPoint x="440" y="270" as="targetPoint" />
+            <mxPoint x="720" y="270" as="sourcePoint" />
+            <mxPoint x="720" y="200" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="TVGD07vnX8AzpcqW4ruT-11" value="contact info" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="590" y="170" width="120" height="80" as="geometry" />
+        <mxCell id="TVGD07vnX8AzpcqW4ruT-11" value="contact info" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="870" y="100" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="TVGD07vnX8AzpcqW4ruT-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" target="TVGD07vnX8AzpcqW4ruT-13" source="TVGD07vnX8AzpcqW4ruT-4">
+        <mxCell id="TVGD07vnX8AzpcqW4ruT-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="TVGD07vnX8AzpcqW4ruT-4" target="TVGD07vnX8AzpcqW4ruT-13" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="320" y="480" as="sourcePoint" />
-            <mxPoint x="320" y="410" as="targetPoint" />
+            <mxPoint x="600" y="410" as="sourcePoint" />
+            <mxPoint x="600" y="340" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="TVGD07vnX8AzpcqW4ruT-13" value="injury" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="480" y="120" width="120" height="80" as="geometry" />
+        <mxCell id="TVGD07vnX8AzpcqW4ruT-13" value="injury" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="760" y="50" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="TVGD07vnX8AzpcqW4ruT-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" target="TVGD07vnX8AzpcqW4ruT-15" source="TVGD07vnX8AzpcqW4ruT-4">
+        <mxCell id="TVGD07vnX8AzpcqW4ruT-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="TVGD07vnX8AzpcqW4ruT-4" target="TVGD07vnX8AzpcqW4ruT-15" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="630" y="460" as="sourcePoint" />
-            <mxPoint x="630" y="390" as="targetPoint" />
+            <mxPoint x="910" y="390" as="sourcePoint" />
+            <mxPoint x="910" y="320" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="TVGD07vnX8AzpcqW4ruT-15" value="appointment time" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="570" y="300" width="120" height="80" as="geometry" />
+        <mxCell id="TVGD07vnX8AzpcqW4ruT-15" value="appointment time" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="850" y="230" width="120" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
