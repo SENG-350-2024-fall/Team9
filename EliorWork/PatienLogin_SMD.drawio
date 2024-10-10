@@ -31,40 +31,14 @@
         <mxCell id="r2IzdM8W7e8GS-kkfY3J-3" value="Login GUI" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fillColor=#ffffc0;strokeColor=#ff0000;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;align=center;" vertex="1" parent="1">
           <mxGeometry x="240" y="130" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="r2IzdM8W7e8GS-kkfY3J-4" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="r2IzdM8W7e8GS-kkfY3J-6" target="r2IzdM8W7e8GS-kkfY3J-3">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="590" y="150" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="r2IzdM8W7e8GS-kkfY3J-5" value="waitlist Reprioritzed by MrEd" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="r2IzdM8W7e8GS-kkfY3J-4">
-          <mxGeometry x="0.1378" y="21" relative="1" as="geometry">
-            <mxPoint x="1" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="r2IzdM8W7e8GS-kkfY3J-6" value="WaitRoomManagerGUI" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fillColor=#ffffc0;strokeColor=#ff0000;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;align=center;" vertex="1" parent="1">
-          <mxGeometry x="770" y="240" width="130" height="70" as="geometry" />
-        </mxCell>
         <mxCell id="r2IzdM8W7e8GS-kkfY3J-7" value="AccountCreator Page" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fillColor=#ffffc0;strokeColor=#ff0000;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;align=center;" vertex="1" parent="1">
           <mxGeometry x="225" y="527" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="r2IzdM8W7e8GS-kkfY3J-23" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="r2IzdM8W7e8GS-kkfY3J-8" target="r2IzdM8W7e8GS-kkfY3J-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="r2IzdM8W7e8GS-kkfY3J-8" value="HomePage" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fillColor=#ffffc0;strokeColor=#ff0000;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;align=center;" vertex="1" parent="1">
           <mxGeometry x="600" y="-10" width="130" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="r2IzdM8W7e8GS-kkfY3J-11" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="r2IzdM8W7e8GS-kkfY3J-3" target="r2IzdM8W7e8GS-kkfY3J-6">
-          <mxGeometry width="140" relative="1" as="geometry">
-            <mxPoint x="460" y="320" as="sourcePoint" />
-            <mxPoint x="600" y="320" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="550" y="350" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="r2IzdM8W7e8GS-kkfY3J-12" value="waitlist is poorly prioritized" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="r2IzdM8W7e8GS-kkfY3J-11">
-          <mxGeometry x="-0.2351" y="42" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
         </mxCell>
         <mxCell id="r2IzdM8W7e8GS-kkfY3J-15" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="r2IzdM8W7e8GS-kkfY3J-7" target="r2IzdM8W7e8GS-kkfY3J-3">
           <mxGeometry width="140" relative="1" as="geometry">
@@ -96,6 +70,15 @@
           <mxGeometry x="0.2855" y="12" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="r2IzdM8W7e8GS-kkfY3J-25" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="r2IzdM8W7e8GS-kkfY3J-22" target="r2IzdM8W7e8GS-kkfY3J-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r2IzdM8W7e8GS-kkfY3J-22" value="Hospital Wait times GUI" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fillColor=#ffffc0;strokeColor=#ff0000;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;align=center;" vertex="1" parent="1">
+          <mxGeometry x="850" y="-10" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="r2IzdM8W7e8GS-kkfY3J-24" value="Logout GUI" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fillColor=#ffffc0;strokeColor=#ff0000;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="-10" width="130" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
