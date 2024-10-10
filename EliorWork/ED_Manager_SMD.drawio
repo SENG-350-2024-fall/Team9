@@ -26,20 +26,20 @@
         <mxCell id="382b91b5511bd0f7-10" value="Patient is rescheduled by EDM" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fillColor=#ffffc0;strokeColor=#ff0000;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;align=center;" parent="1" vertex="1">
           <mxGeometry x="460" y="710" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="2a3bc250acf0617d-9" style="edgeStyle=orthogonalEdgeStyle;html=1;labelBackgroundColor=none;endArrow=open;endSize=8;strokeColor=#ff0000;fontFamily=Verdana;fontSize=12;align=left;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="382b91b5511bd0f7-5" target="382b91b5511bd0f7-10" edge="1">
+        <mxCell id="2a3bc250acf0617d-9" style="edgeStyle=orthogonalEdgeStyle;html=1;labelBackgroundColor=none;endArrow=open;endSize=8;strokeColor=#ff0000;fontFamily=Verdana;fontSize=12;align=left;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="160" y="470" as="sourcePoint" />
-            <mxPoint x="380" y="540" as="targetPoint" />
+            <mxPoint x="90" y="520" as="sourcePoint" />
+            <mxPoint x="450" y="740" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="100" y="570" />
-              <mxPoint x="400" y="570" />
-              <mxPoint x="400" y="740" />
+              <mxPoint x="90" y="570" />
+              <mxPoint x="150" y="570" />
+              <mxPoint x="150" y="740" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="91vDNUuXsdBQXuZfY_MG-4" value="patient is late" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="2a3bc250acf0617d-9" vertex="1" connectable="0">
           <mxGeometry x="-0.1994" y="-4" relative="1" as="geometry">
-            <mxPoint x="83" y="-4" as="offset" />
+            <mxPoint x="4" y="-22" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="2a3bc250acf0617d-10" style="edgeStyle=orthogonalEdgeStyle;html=1;labelBackgroundColor=none;endArrow=open;endSize=8;strokeColor=#ff0000;fontFamily=Verdana;fontSize=12;align=left;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="382b91b5511bd0f7-6" target="udmGXA6qzwontc74sRsV-2" edge="1">
