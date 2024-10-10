@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.17">
   <diagram name="Page-1" id="2YBvvXClWsGukQMizWep">
-    <mxGraphModel dx="681" dy="354" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="525" dy="273" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -45,7 +45,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="9SolEJEs3SNtzQnmmWLq-9" value=":TriageRegistrationGUI" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
-          <mxGeometry x="431.5" y="73" width="126" height="95" as="geometry" />
+          <mxGeometry x="431.5" y="76" width="126" height="95" as="geometry" />
         </mxCell>
         <mxCell id="9SolEJEs3SNtzQnmmWLq-10" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="9SolEJEs3SNtzQnmmWLq-9">
           <mxGeometry x="58" y="69" width="10" height="21" as="geometry" />
@@ -116,6 +116,20 @@
         <mxCell id="9SolEJEs3SNtzQnmmWLq-29" value="patientRegistersForTriage" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="9SolEJEs3SNtzQnmmWLq-27">
           <mxGeometry x="0.156" y="-1" relative="1" as="geometry">
             <mxPoint x="-16" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9SolEJEs3SNtzQnmmWLq-30" value=":TriageRegistrationGUI" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="572" y="76" width="126" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="9SolEJEs3SNtzQnmmWLq-31" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="9SolEJEs3SNtzQnmmWLq-30">
+          <mxGeometry x="58" y="69" width="10" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="9SolEJEs3SNtzQnmmWLq-32" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=vertical;curved=0;" edge="1" parent="1" source="9SolEJEs3SNtzQnmmWLq-10" target="9SolEJEs3SNtzQnmmWLq-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9SolEJEs3SNtzQnmmWLq-33" value="patientEntersSymptoms" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="9SolEJEs3SNtzQnmmWLq-32">
+          <mxGeometry x="0.0962" relative="1" as="geometry">
+            <mxPoint x="-10" y="-1" as="offset" />
           </mxGeometry>
         </mxCell>
       </root>
