@@ -116,7 +116,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="yLsSPrwYrWI-TgyghVi2-1" value="prescriptionSentToPharmacyAndPatientGPendsAppointment" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="qLsoPe__b-ESW1TOB0B3-1">
+        <mxCell id="yLsSPrwYrWI-TgyghVi2-1" value="prescriptionSentGPendsAppointment" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="qLsoPe__b-ESW1TOB0B3-1">
           <mxGeometry x="-0.1619" y="-1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
