@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.17">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.17">
   <diagram name="Page-1" id="58cdce13-f638-feb5-8d6f-7d28b1aa9fa0">
-    <mxGraphModel dx="966" dy="381" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+    <mxGraphModel dx="954" dy="581" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -34,7 +34,7 @@
           <mxGeometry x="740" y="240" width="160" height="140" as="geometry" />
         </mxCell>
         <mxCell id="udmGXA6qzwontc74sRsV-2" value="Using WaitRoom&lt;span style=&quot;background-color: initial;&quot;&gt;CapacitySlider&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;align=center;shape=ellipse;perimeter=ellipsePerimeter;" parent="1" vertex="1">
-          <mxGeometry x="220" y="510" width="170" height="140" as="geometry" />
+          <mxGeometry x="230" y="510" width="160" height="140" as="geometry" />
         </mxCell>
         <mxCell id="udmGXA6qzwontc74sRsV-7" value="Using AutoSchedulerToggle" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;align=center;shape=ellipse;perimeter=ellipsePerimeter;" parent="1" vertex="1">
           <mxGeometry x="600" y="30" width="130" height="120" as="geometry" />
@@ -62,7 +62,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="GER6duk_hUemQV0kUoSJ-24" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;waitlist is poorly prioritized&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="udmGXA6qzwontc74sRsV-14">
+        <mxCell id="GER6duk_hUemQV0kUoSJ-24" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;waitlist is poorly prioritized&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="udmGXA6qzwontc74sRsV-14" vertex="1" connectable="0">
           <mxGeometry x="0.2786" y="54" relative="1" as="geometry">
             <mxPoint x="27" y="-9" as="offset" />
           </mxGeometry>
@@ -95,7 +95,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GER6duk_hUemQV0kUoSJ-14" value="ED Manager(EDM) Using StatisticsGUI" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+        <mxCell id="GER6duk_hUemQV0kUoSJ-14" value="ED Manager(EDM) Using StatisticsGUI" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="210" y="170" width="110" height="110" as="geometry" />
         </mxCell>
       </root>
