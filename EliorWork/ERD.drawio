@@ -146,7 +146,7 @@
         <mxCell id="LKYqRy5Tb7PnWjAP05V9-1" value="Patient info" style="ellipse;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="360" y="660" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="LKYqRy5Tb7PnWjAP05V9-5" value="Prescription for medication" style="ellipse;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+        <mxCell id="LKYqRy5Tb7PnWjAP05V9-5" value="Prescription for medication" style="ellipse;whiteSpace=wrap;html=1;rounded=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="160" y="610" width="80" height="80" as="geometry" />
         </mxCell>
       </root>
