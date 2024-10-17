@@ -1,9 +1,105 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36" version="24.7.17">
   <diagram name="Page-1" id="ZVBFUvdSbSybmX29u4a-">
-    <mxGraphModel>
+    <mxGraphModel dx="882" dy="467" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="1ONBISQVSUOD5N6y804W-1" value="&lt;u&gt;3.1&lt;/u&gt;&lt;div&gt;Add Patient to Waitlist&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="345" y="110" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="1ONBISQVSUOD5N6y804W-2" value="&lt;u&gt;3.2&lt;/u&gt;&lt;div&gt;Change Waitlist&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="345" y="250" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="1ONBISQVSUOD5N6y804W-3" value="Patient Symptoms" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" source="1ONBISQVSUOD5N6y804W-20" target="1ONBISQVSUOD5N6y804W-1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="190" y="140" as="sourcePoint" />
+            <mxPoint x="270" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1ONBISQVSUOD5N6y804W-7" value="ER Manager" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="580" y="270" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="1ONBISQVSUOD5N6y804W-8" value="&lt;u&gt;3.3&lt;/u&gt;&lt;div&gt;Calculate ER Statistics&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="345" y="380" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="1ONBISQVSUOD5N6y804W-9" value="ER Statistics" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" source="1ONBISQVSUOD5N6y804W-8" target="1ONBISQVSUOD5N6y804W-7">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="470" y="400" as="sourcePoint" />
+            <mxPoint x="550" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1ONBISQVSUOD5N6y804W-10" value="Waitlist Database" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="110" y="270" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="1ONBISQVSUOD5N6y804W-11" value="Waitlist" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" source="1ONBISQVSUOD5N6y804W-10" target="1ONBISQVSUOD5N6y804W-8">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="140" y="360" as="sourcePoint" />
+            <mxPoint x="220" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1ONBISQVSUOD5N6y804W-12" value="Waitlist Edits" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" source="1ONBISQVSUOD5N6y804W-7" target="1ONBISQVSUOD5N6y804W-2">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="460" y="250" as="sourcePoint" />
+            <mxPoint x="540" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1ONBISQVSUOD5N6y804W-13" value="Waitlist Edits" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" source="1ONBISQVSUOD5N6y804W-2" target="1ONBISQVSUOD5N6y804W-10">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="220" y="250" as="sourcePoint" />
+            <mxPoint x="300" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1ONBISQVSUOD5N6y804W-14" value="Patient to be&lt;div&gt;Added&lt;/div&gt;" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" source="1ONBISQVSUOD5N6y804W-1" target="1ONBISQVSUOD5N6y804W-10">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="230" y="210" as="sourcePoint" />
+            <mxPoint x="310" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1ONBISQVSUOD5N6y804W-15" value="&lt;u&gt;3.4&lt;/u&gt;&lt;div&gt;Give Medical Attention&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="345" y="510" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="1ONBISQVSUOD5N6y804W-16" value="Next Patient&lt;div&gt;In Line&lt;/div&gt;" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" source="1ONBISQVSUOD5N6y804W-10" target="1ONBISQVSUOD5N6y804W-15">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="120" y="430" as="sourcePoint" />
+            <mxPoint x="200" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1ONBISQVSUOD5N6y804W-17" value="Patient" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="580" y="480" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="1ONBISQVSUOD5N6y804W-18" value="Waitimes" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" source="1ONBISQVSUOD5N6y804W-8" target="1ONBISQVSUOD5N6y804W-17">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="440" y="470" as="sourcePoint" />
+            <mxPoint x="520" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1ONBISQVSUOD5N6y804W-19" value="Medical Attention" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" source="1ONBISQVSUOD5N6y804W-15" target="1ONBISQVSUOD5N6y804W-17">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="450" y="540" as="sourcePoint" />
+            <mxPoint x="530" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1ONBISQVSUOD5N6y804W-20" value="Virtual Triage" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="110" y="130" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="1ONBISQVSUOD5N6y804W-21" value="&lt;u&gt;3.5&lt;/u&gt;&lt;div&gt;Give Hospital Locations&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="345" y="640" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="1ONBISQVSUOD5N6y804W-22" value="Hospital Database" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="110" y="660" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="1ONBISQVSUOD5N6y804W-23" value="Hospital Information" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" source="1ONBISQVSUOD5N6y804W-22" target="1ONBISQVSUOD5N6y804W-21">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="240" y="690" as="sourcePoint" />
+            <mxPoint x="320" y="690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1ONBISQVSUOD5N6y804W-24" value="Hospital&lt;div&gt;Locations&lt;/div&gt;" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" source="1ONBISQVSUOD5N6y804W-21" target="1ONBISQVSUOD5N6y804W-17">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="500" y="630" as="sourcePoint" />
+            <mxPoint x="580" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
