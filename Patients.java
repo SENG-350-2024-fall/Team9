@@ -42,7 +42,7 @@ class Patients {
         }
 
         public void setName(String name) {
-            this.name = name; // Update name
+            this.name = name;
         }
 
         public void setPhoneNumber(String phoneNumber) {
