@@ -1,4 +1,4 @@
-public class ED_Manager {
+public class ED_Managers {
     public String name;               // Public Name attribute
     private int employeeNumber;        // Private employee number
     private String emailAddress;       // Private email address
