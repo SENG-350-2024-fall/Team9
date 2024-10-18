@@ -4,12 +4,6 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="UKhoprgoljXiepMuKFjU-26" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;" parent="1" vertex="1">
-          <mxGeometry x="745" y="22" width="79" height="60.5" as="geometry" />
-        </mxCell>
-        <mxCell id="UKhoprgoljXiepMuKFjU-25" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;" parent="1" vertex="1">
-          <mxGeometry x="14" y="31" width="127" height="147" as="geometry" />
-        </mxCell>
         <mxCell id="RHNPkDgYrurRSabkHHdY-1" value=":CallSummary" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
           <mxGeometry x="271" y="199" width="81" height="146" as="geometry" />
         </mxCell>
