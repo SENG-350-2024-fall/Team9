@@ -49,31 +49,19 @@
         <mxCell id="E7HtelMShyUas9rmYbfo-20" value="3. Run triage algorithm()" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="420" y="320" width="170" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="E7HtelMShyUas9rmYbfo-22" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="E7HtelMShyUas9rmYbfo-13" target="E7HtelMShyUas9rmYbfo-30" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="570" y="200" as="sourcePoint" />
-            <mxPoint x="710" y="150" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="E7HtelMShyUas9rmYbfo-23" value="4.1. Patient request data()" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="E7HtelMShyUas9rmYbfo-22" connectable="0" vertex="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="E7HtelMShyUas9rmYbfo-26" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="E7HtelMShyUas9rmYbfo-13" edge="1">
+        <mxCell id="E7HtelMShyUas9rmYbfo-26" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="E7HtelMShyUas9rmYbfo-13" edge="1" target="E7HtelMShyUas9rmYbfo-32">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="600" y="300" as="sourcePoint" />
             <mxPoint x="780" y="240" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="E7HtelMShyUas9rmYbfo-27" value="4.2. Patient request data()" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="E7HtelMShyUas9rmYbfo-26" vertex="1" connectable="0">
+        <mxCell id="E7HtelMShyUas9rmYbfo-27" value="4.1. Patient request data()" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="E7HtelMShyUas9rmYbfo-26" vertex="1" connectable="0">
           <mxGeometry x="-0.2853" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="E7HtelMShyUas9rmYbfo-30" value="ER" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
-          <mxGeometry x="760" y="120" width="30" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="E7HtelMShyUas9rmYbfo-32" value="General Practitioner" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
-          <mxGeometry x="770" y="210" width="30" height="60" as="geometry" />
+        <mxCell id="E7HtelMShyUas9rmYbfo-32" value="Healthcare&amp;nbsp;&lt;div&gt;Professional&lt;/div&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="740" y="200" width="30" height="60" as="geometry" />
         </mxCell>
         <mxCell id="E7HtelMShyUas9rmYbfo-35" value="" style="endArrow=none;html=1;rounded=0;entryX=-0.033;entryY=0.608;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="E7HtelMShyUas9rmYbfo-13" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
