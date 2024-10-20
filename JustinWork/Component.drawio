@@ -124,6 +124,9 @@
         <mxCell id="kWpErq_-9IBb-TTLj04Y-42" value="" style="ellipse;whiteSpace=wrap;html=1;align=center;aspect=fixed;fillColor=none;strokeColor=none;resizable=0;perimeter=centerPerimeter;rotatable=0;allowArrows=0;points=[];outlineConnect=1;" vertex="1" parent="1">
           <mxGeometry x="480" y="263.76" width="10" height="10" as="geometry" />
         </mxCell>
+        <mxCell id="kWpErq_-9IBb-TTLj04Y-43" value="Retrieve" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="455" y="233.75" width="60" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
