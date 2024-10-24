@@ -35,6 +35,15 @@ class Patients {
         private LocalDate  birthDate;
         protected int personalHealthNumber;
 
+        public Patient() {
+            this.name = "";
+            this.phoneNumber = "";
+            this.emailAddress = "";
+            this.birthDate = LocalDate.of(1970, 1, 1);  // Default date (e.g., Jan 1, 1970)
+            this.personalHealthNumber = 0;  // Default number
+        }
+     
+
         public Patient(String name, String phoneNumber, String emailAddress, LocalDate  birthDate, int personalHealthNumber) {
             this.name = name;
             this.phoneNumber = phoneNumber;
