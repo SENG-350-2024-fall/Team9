@@ -8,6 +8,14 @@ class Patient {
     private LocalDate  birthDate;
     protected int personalHealthNumber;   
 
+    public Patient() {
+        this.name = "";
+        this.phoneNumber = ""; 
+        this.emailAddress = "";
+        this.birthDate = null; 
+        this.personalHealthNumber = 0;
+    }
+    
     public Patient(String name, String phoneNumber, String emailAddress, LocalDate  birthDate, int personalHealthNumber) {
         this.name = name;
         this.phoneNumber = phoneNumber;

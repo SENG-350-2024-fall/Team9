@@ -3,8 +3,6 @@ import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 import java.time.format.DateTimeFormatter;
 
-
-import MisterEd_System.Patient;
 public class Main {
     public static void main(String[] args) {
         Patient patient = new Patient();
