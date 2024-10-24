@@ -52,7 +52,7 @@ public class HospitalLocalizer {
 
     public static void main(String[] args) {
         System.out.println("Welcome to the Hospital Localizer");
-        System.out.println("View the Hospitals Located Nearest You");
+        System.out.println("View the Hospitals Located Nearby You");
         HospitalLocalizer hospitalLocalizer = new HospitalLocalizer();
         System.out.println(hospitalLocalizer.getUserLatitude());
         System.out.println(hospitalLocalizer.getUserLongitude());
