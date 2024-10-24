@@ -37,9 +37,9 @@ class Patients {
 
         public Patient() {
             this.name = "";
-            this.phoneNumber = "";
+            this.phoneNumber = ""; 
             this.emailAddress = "";
-            this.birthDate = LocalDate.of(1970, 1, 1);  // Default date (e.g., Jan 1, 1970)
+            this.birthDate = null;  // Default date (e.g., Jan 1, 1970)
             this.personalHealthNumber = 0;  // Default number
         }
      
