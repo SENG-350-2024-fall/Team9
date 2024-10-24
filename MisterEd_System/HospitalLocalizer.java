@@ -4,11 +4,11 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.CharBuffer;
 
-public class LocationFetcher {
-    private String latitude; 
-    private String longitude;
+public class HospitalLocalizer {
+    private String userLatitude; 
+    private String userLongitude;
 
-    public LocationFetcher () {
+    public HospitalLocalizer () {
         try {
             // Define the API URL for fetching location based on IP
             URL url = new URL("https://ipinfo.io/json");
@@ -29,35 +29,32 @@ public class LocationFetcher {
             }
             reader.close();
             
-            this.latitude = response.toString().split("[\",]")[3];
-            this.longitude = response.toString().split("[\",]")[4];
+            this.userLatitude = response.toString().split("[\",]")[3];
+            this.userLongitude = response.toString().split("[\",]")[4];
 
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
-    public double getLatitude () {
-        return Double.parseDouble(latitude);
+    public double getUserLatitude () {
+        return Double.parseDouble(userLatitude);
     }
 
-    public double getLongitude () {
-        return Double.parseDouble(longitude);
+    public double getUserLongitude () {
+        return Double.parseDouble(userLongitude);
     }
 
-    public String getNearbyHospitals () {
-        String[] hospitalArray = new String[5]; 
-        hospitalArray[0] = "Royal Jubilee Hospital";
-        hospitalArray[1] = "Victoria General Hospital";
-        hospitalArray[2] = "Saanich Peninsula Hospital";
-        hospitalArray[3] = "";
-        hospitalArray[4] = 50;
-
+    public String[] getNearbyHospitals () {
+        String[] nearbyHospitals = {"","",""};
+        return nearbyHospitals; 
     }
 
     public static void main(String[] args) {
-        LocationFetcher locationFetcher = new LocationFetcher();
-        System.out.println(locationFetcher.getLatitude());
-        System.out.println( locationFetcher.getLongitude());
+        System.out.println("Welcome to the Hospital Localizer");
+        System.out.println("View the Hospitals Located Nearest You");
+        HospitalLocalizer hospitalLocalizer = new HospitalLocalizer();
+        System.out.println(hospitalLocalizer.getUserLatitude());
+        System.out.println(hospitalLocalizer.getUserLongitude());
     }
 }
