@@ -26,6 +26,7 @@ class Patient {
     }
 
     public void getPromptInput () {
+        System.out.println("You are a Patient");
         Scanner prompter = new Scanner(System.in);
 
         System.out.println("Enter your name: ");
