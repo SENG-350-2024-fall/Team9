@@ -1,17 +1,15 @@
 package MisterEd_System;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
+import java.time.format.DateTimeFormatter;
+
+
+import MisterEd_System.Patients.Patient;
 public class Main {
     public static void main(String[] args) {
         
-        //declare
-        Patients patient1 = new Patients("John Doe", 30);
-
-        Scanner scanner = new Scanner(System.in);
         
-        System.out.print("Enter Patient Name: ");
-        String name = scanner.nextLine();
-
-
         /*
         Amir - Prompt for patient - adds patient info and creates a patient class
         - the patient info gets passed off to triage

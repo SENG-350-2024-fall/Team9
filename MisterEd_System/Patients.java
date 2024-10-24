@@ -1,7 +1,8 @@
+package MisterEd_System;
 import java.time.LocalDate;
 class Patients {
     public static void main(String[] args) {
-        Patient patient = new Patient("John Paetkau", "123-456-7890", "email@example.com", LocalDate.of(1990, 1, 1), 6924);
+        Patient patient = new Patient("John Susan", "123-456-7890", "email@example.com", LocalDate.of(1990, 1, 1), 6924);
 
         // Print initial
         System.out.println("Patient Information:");
