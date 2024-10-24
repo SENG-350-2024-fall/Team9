@@ -1,8 +1,9 @@
-package MisterEd_System;
 import java.time.LocalDate;
+import java.util.Scanner;
+
 class Patients {
     public static void main(String[] args) {
-        Patient patient = new Patient("John Susan", "123-456-7890", "email@example.com", LocalDate.of(1990, 1, 1), 6924);
+        Patient patient = new Patient("John Paetkau", "123-456-7890", "email@example.com", LocalDate.of(1990, 1, 1), 6924);
 
         // Print initial
         System.out.println("Patient Information:");
@@ -40,6 +41,37 @@ class Patients {
             this.emailAddress = emailAddress;
             this.birthDate = birthDate;
             this.personalHealthNumber = personalHealthNumber;
+        }
+
+        public void getPromptInput () {
+            Scanner prompter = new Scanner(System.in);
+
+            System.out.println("Enter your name: ");
+            String name = prompter.nextLine();  // Read a line of text from the user
+            setName(name);
+
+            System.out.println("Enter your phone number: ");
+            String phoneNumber = prompter.nextLine();  // Read a phone number input from the user
+            setPhoneNumber(phoneNumber);
+
+            System.out.println("Enter your email address: ");
+            String emailAddress = prompter.nextLine();  // Read a email address input from the user
+            setPhoneNumber(emailAddress);
+
+            System.out.println("Enter your birth day year in the format YYYY: ");
+            int birthYear = prompter.nextInt();
+            System.out.println("Enter your birth day month in the format MM: ");
+            int birthMonth = prompter.nextInt();
+            System.out.println("Enter your birth day day in the format DD: ");
+            int birthDay = prompter.nextInt();
+            LocalDate birthDate = LocalDate.of(birthYear, birthMonth, birthDay);
+            setBirthDate(birthDate);
+
+            System.out.println("Enter your personal health number in the format XXXX: ");
+            int personalHealthNumber = prompter.nextInt();
+            setPersonalHealthNumber(personalHealthNumber);
+            
+            prompter.close();
         }
 
         public void setName(String name) {
