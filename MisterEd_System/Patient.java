@@ -7,6 +7,7 @@ class Patient {
     private String emailAddress;
     private LocalDate  birthDate;
     protected int personalHealthNumber;   
+    private int severity;
 
     public Patient() {
         this.name = "";
@@ -16,7 +17,7 @@ class Patient {
         this.personalHealthNumber = 0;
     }
     
-    public Patient(String name, String phoneNumber, String emailAddress, LocalDate  birthDate, int personalHealthNumber) {
+    public Patient(String name, String phoneNumber, String emailAddress, LocalDate  birthDate, int personalHealthNumber, int severity) {
         this.name = name;
         this.phoneNumber = phoneNumber;
         this.emailAddress = emailAddress;
@@ -28,29 +29,33 @@ class Patient {
         Scanner prompter = new Scanner(System.in);
 
         System.out.println("Enter your name: ");
-        String name = prompter.nextLine();  // Read a line of text from the user
-        setName(name);
+        String nameInput = prompter.nextLine();  // Read a line of text from the user
+        setName(nameInput);
 
         System.out.println("Enter your phone number: ");
-        String phoneNumber = prompter.nextLine();  // Read a phone number input from the user
-        setPhoneNumber(phoneNumber);
+        String phoneNumberInput = prompter.nextLine();  // Read a phone number input from the user
+        setPhoneNumber(phoneNumberInput);
 
         System.out.println("Enter your email address: ");
-        String emailAddress = prompter.nextLine();  // Read a email address input from the user
-        setEmailAddress(emailAddress);
+        String emailAddressInput = prompter.nextLine();  // Read a email address input from the user
+        setEmailAddress(emailAddressInput);
 
         System.out.println("Enter your birth day year in the format YYYY: ");
-        int birthYear = prompter.nextInt();
+        int birthYearInput = prompter.nextInt();
         System.out.println("Enter your birth day month in the format MM: ");
-        int birthMonth = prompter.nextInt();
+        int birthMonthInput = prompter.nextInt();
         System.out.println("Enter your birth day day in the format DD: ");
-        int birthDay = prompter.nextInt();
-        LocalDate birthDate = LocalDate.of(birthYear, birthMonth, birthDay);
-        setBirthDate(birthDate);
+        int birthDayInput = prompter.nextInt();
+        LocalDate birthDateInput = LocalDate.of(birthYearInput, birthMonthInput, birthDayInput);
+        setBirthDate(birthDateInput);
 
         System.out.println("Enter your personal health number in the format XXXX: ");
-        int personalHealthNumber = prompter.nextInt();
-        setPersonalHealthNumber(personalHealthNumber);
+        int personalHealthNumberInput = prompter.nextInt();
+        setPersonalHealthNumber(personalHealthNumberInput);
+
+        System.out.println("Enter the severity of your conditon: ");
+        int severityInput = prompter.nextInt();
+        setSeverity(severityInput);
         
         prompter.close();
     }
@@ -67,7 +72,7 @@ class Patient {
         this.emailAddress = emailAddress;
     }
 
-    public void setBirthDate(LocalDate  birthDate) {
+    public void setBirthDate(LocalDate birthDate) {
         this.birthDate = birthDate;
     }
 
@@ -75,6 +80,16 @@ class Patient {
         this.personalHealthNumber = personalHealthNumber;
     }
 
+    public void setSeverity(int severity) {
+        this.severity = severity;
+    }
+
+    public String toString() {
+        return String.format(
+            "Patient Info> Name: %s, Phone Number: %s, Email: %s, Birth Date: %s, Personal Health Number: %d, Severity: %d",
+            getName(), getPhoneNumber(), getEmailAddress(), getBirthDate(), getPersonalHealthNumber(), getSeverity()
+        );
+    }
 
     public String getName() {
         return name;
@@ -96,16 +111,16 @@ class Patient {
         return personalHealthNumber;
     }
 
+    public int getSeverity() {
+        return severity;
+    }
+
     public static void main(String[] args) {
-        Patient patient = new Patient("John Paetkau", "123-456-7890", "email@example.com", LocalDate.of(1990, 1, 1), 6924);
+        Patient patient = new Patient("John Paetkau", "123-456-7890", "email@example.com", LocalDate.of(1990, 1, 1), 6924, 4);
 
         // Print initial
         System.out.println("Patient Information:");
-        System.out.println("Name: " + patient.name);
-        System.out.println("Phone Number: " + patient.getPhoneNumber());
-        System.out.println("Email Address: " + patient.getEmailAddress());
-        System.out.println("Birth Date: " + patient.getBirthDate());
-        System.out.println("Personal Health Number: " + patient.getPersonalHealthNumber());
+        System.out.println(patient.toString());
 
         // Update class
         patient.setPhoneNumber("098-765-4321");
@@ -115,10 +130,6 @@ class Patient {
 
         // Print updated class
         System.out.println("\nUpdated Patient Information:");
-        System.out.println("Name: " + patient.name);
-        System.out.println("Phone Number: " + patient.getPhoneNumber());
-        System.out.println("Email Address: " + patient.getEmailAddress());
-        System.out.println("Birth Date: " + patient.getBirthDate());
-        System.out.println("Personal Health Number: " + patient.getPersonalHealthNumber());
+        System.out.println(patient.toString());
     }
 }
