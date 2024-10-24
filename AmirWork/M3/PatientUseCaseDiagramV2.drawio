@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.8.1">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.8.2">
   <diagram name="Page-1" id="POjWEP2f18WCFqWoDT05">
-    <mxGraphModel dx="1311" dy="517" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="590" dy="315" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -8,7 +8,7 @@
           <mxGeometry x="79" y="322" width="30" height="60" as="geometry" />
         </mxCell>
         <mxCell id="nqFmswFfyf5B56kGS30E-14" value="Call Nurse Hotline" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="245" y="256" width="120" height="60" as="geometry" />
+          <mxGeometry x="326" y="300" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="nqFmswFfyf5B56kGS30E-15" value="" style="endArrow=none;html=1;rounded=0;" parent="1" source="nqFmswFfyf5B56kGS30E-1" target="nqFmswFfyf5B56kGS30E-14" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -26,7 +26,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="nqFmswFfyf5B56kGS30E-18" value="Register for Virtual Triage" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="237" y="336" width="120" height="60" as="geometry" />
+          <mxGeometry x="235" y="360" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="nqFmswFfyf5B56kGS30E-19" value="" style="endArrow=none;html=1;rounded=0;" parent="1" source="nqFmswFfyf5B56kGS30E-1" target="nqFmswFfyf5B56kGS30E-18" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -44,7 +44,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="nqFmswFfyf5B56kGS30E-22" value="View Waitlist" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="245" y="405" width="120" height="60" as="geometry" />
+          <mxGeometry x="239" y="449" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="nqFmswFfyf5B56kGS30E-23" value="" style="endArrow=none;html=1;rounded=0;" parent="1" source="nqFmswFfyf5B56kGS30E-1" target="nqFmswFfyf5B56kGS30E-22" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -65,7 +65,7 @@
           <mxGeometry x="149" y="162" width="530" height="467" as="geometry" />
         </mxCell>
         <mxCell id="nqFmswFfyf5B56kGS30E-27" value="View Virtual Triage Response" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="252" y="490" width="120" height="60" as="geometry" />
+          <mxGeometry x="239" y="537" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="nqFmswFfyf5B56kGS30E-28" value="" style="endArrow=none;html=1;rounded=0;" parent="1" source="nqFmswFfyf5B56kGS30E-1" target="nqFmswFfyf5B56kGS30E-27" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -108,6 +108,14 @@
             <mxPoint x="499" y="265" as="sourcePoint" />
             <mxPoint x="399" y="269" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="4ebT-KzieVDqmpHbGTex-2" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="4ebT-KzieVDqmpHbGTex-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="109" y="349" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4ebT-KzieVDqmpHbGTex-1" value="Enter Personal Info" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="336" y="228" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
