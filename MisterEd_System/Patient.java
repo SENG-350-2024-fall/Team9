@@ -54,7 +54,7 @@ class Patient {
         int personalHealthNumberInput = prompter.nextInt();
         setPersonalHealthNumber(personalHealthNumberInput);
 
-        System.out.println("Enter the severity of your conditon: ");
+        System.out.println("Enter the severity of your conditon between 0-10: ");
         int severityInput = prompter.nextInt();
         setSeverity(severityInput);
         
