@@ -1,1 +1,4 @@
 Personal Health Number : Call Summary0:I have a boo boo.
+0:clear
+2230:I have no hair.
+2230:I have no hair.

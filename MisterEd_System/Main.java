@@ -1,6 +1,5 @@
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.time.format.DateTimeFormatter;
 import java.io.Console;
 
 public class Main {
@@ -14,7 +13,7 @@ public class Main {
             // Creates a patient object
             Patient patient = new Patient();
             // Prompt for patient to add their info  
-
+            patient.getPromptInput();
             // the system directs the patient based on their info
             if (patient.getSeverity() < 3) { // initial direction returns HN 
                 System.out.println("You will need a hotline nurse, please proceed"); // The system notifies the patient

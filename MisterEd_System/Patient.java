@@ -18,6 +18,7 @@ class Patient {
         this.emailAddress = "";
         this.birthDate = null; 
         this.personalHealthNumber = 0;
+        this.severity = 0;
     }
     
     public Patient(String name, String phoneNumber, String emailAddress, LocalDate  birthDate, int personalHealthNumber, int severity) {
@@ -112,6 +113,7 @@ class Patient {
     public void callNurseHotline() {
         provideCallSummary();
         System.out.println("You are now on call with your Hotline Nurse, please try to speak clearly (:"); 
+        Thread.sleep(10000); 
         System.out.println("Your Hotline Nurse call has completed."); 
         Random random = new Random();
         if(random.nextBoolean()) {
