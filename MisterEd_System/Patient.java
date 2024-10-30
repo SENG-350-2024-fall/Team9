@@ -1,5 +1,8 @@
+import java.io.FileWriter;
+import java.io.IOException;
 import java.time.LocalDate;
-import java.util.Scanner;
+import java.io.Console;
+import java.util.Random;
 
 class Patient {
     public String name;
@@ -27,38 +30,28 @@ class Patient {
 
     public void getPromptInput () {
         System.out.println("You are a Patient");
-        Scanner prompter = new Scanner(System.in);
+        Console prompter = System.console();
 
-        System.out.println("Enter your name: ");
-        String nameInput = prompter.nextLine();  // Read a line of text from the user
+        String nameInput = prompter.readLine("Enter your name: ");  // Read a line of text from the user
         setName(nameInput);
 
-        System.out.println("Enter your phone number: ");
-        String phoneNumberInput = prompter.nextLine();  // Read a phone number input from the user
+        String phoneNumberInput = prompter.readLine("Enter your phone number: ");  // Read a phone number input from the user
         setPhoneNumber(phoneNumberInput);
 
-        System.out.println("Enter your email address: ");
-        String emailAddressInput = prompter.nextLine();  // Read a email address input from the user
+        String emailAddressInput = prompter.readLine("Enter your email address: ");  // Read a email address input from the user
         setEmailAddress(emailAddressInput);
 
-        System.out.println("Enter your birth day year in the format YYYY: ");
-        int birthYearInput = prompter.nextInt();
-        System.out.println("Enter your birth day month in the format MM: ");
-        int birthMonthInput = prompter.nextInt();
-        System.out.println("Enter your birth day day in the format DD: ");
-        int birthDayInput = prompter.nextInt();
+        int birthYearInput = Integer.parseInt(prompter.readLine("Enter your birth day year in the format YYYY: "));
+        int birthMonthInput = Integer.parseInt(prompter.readLine("Enter your birth day month in the format MM: "));
+        int birthDayInput = Integer.parseInt(prompter.readLine("Enter your birth day day in the format DD: "));
         LocalDate birthDateInput = LocalDate.of(birthYearInput, birthMonthInput, birthDayInput);
         setBirthDate(birthDateInput);
 
-        System.out.println("Enter your personal health number in the format XXXX: ");
-        int personalHealthNumberInput = prompter.nextInt();
+        int personalHealthNumberInput = Integer.parseInt(prompter.readLine("Enter your personal health number in the format XXXX: "));
         setPersonalHealthNumber(personalHealthNumberInput);
 
-        System.out.println("Enter the severity of your conditon between 0-10: ");
-        int severityInput = prompter.nextInt();
+        int severityInput = Integer.parseInt(prompter.readLine("Enter the severity of your conditon between 0-10: "));
         setSeverity(severityInput);
-        
-        prompter.close();
     }
 
     public void setName(String name) {
@@ -114,6 +107,35 @@ class Patient {
 
     public int getSeverity() {
         return severity;
+    }
+
+    public void callNurseHotline() {
+        provideCallSummary();
+        System.out.println("You are now on call with your Hotline Nurse, please try to speak clearly (:"); 
+        System.out.println("Your Hotline Nurse call has completed."); 
+        Random random = new Random();
+        if(random.nextBoolean()) {
+            System.out.println("You have been directed to GP");
+        } 
+
+        else {
+            System.out.println("You have been directed to ED");
+        }
+        
+        System.out.println("Please follow their direction and have a nice day!");
+    }
+
+    public void provideCallSummary() {
+        Console prompter = System.console();
+        String callSummary = prompter.readLine("Briefly summarize the reason for your Nurse Hotline call if desired: ");  // Read a call summary input from the user
+
+        try (FileWriter writer = new FileWriter("call_summaries.txt", true)) { // 'true' to append to the file
+            writer.write(personalHealthNumber + ":" + callSummary + System.lineSeparator()); // Write summary and add a new line
+            System.out.println("Call summary saved.");
+        } catch (IOException e) {
+            System.out.println("An error occurred while saving the call summary.");
+            e.printStackTrace();
+        }
     }
 
     public static void main(String[] args) {

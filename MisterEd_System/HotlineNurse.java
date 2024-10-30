@@ -48,6 +48,10 @@ class HotlineNurse {
         return employeeNumber;
     }
 
+    public void directPatient() {
+        
+    }
+
     public static void main(String[] args) {
         HotlineNurse hotlineNurse = new HotlineNurse("Amir Abdullahi", "123-456-7890", 7777);
 
