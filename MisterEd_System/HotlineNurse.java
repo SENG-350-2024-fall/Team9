@@ -97,17 +97,23 @@ class HotlineNurse {
                 System.out.println("There are no patients waiting to call the nurse");
             }
 
+            int i = 1;
+
             while(reader.hasNextLine()){
                 data = reader.nextLine();
-                System.out.println(data);
+                System.out.println("Patient " + i+ " " + data);
+
+                i ++;
             }
+            reader.close();
         } catch(FileNotFoundException e){
             System.out.println("File not found error");
             e.printStackTrace();
         }
+        
     }
 
-    public void getHotlineQueue(){
+    public String getHotlineQueue(int patient){
         try{
             File callQueue = new File("call_summaries.txt");
 
@@ -124,6 +130,11 @@ class HotlineNurse {
 
                 String phn = this.getPatientPHN(data);
                 String callSummary = this.getPatientCallSummary(data);
+
+                if(i == patient){
+                    reader.close();
+                    return data;
+                }
                 
                 System.out.println("Patient " + i + " " + phn + ": " + callSummary);
 
@@ -138,11 +149,15 @@ class HotlineNurse {
             e.printStackTrace();
             
         }
+
+        return ":(";
     }
 
-    public void acceptCall(int patient){
-        System.out.println("You are on call with a patient");
-        this.getHotlineQueue();
+    public void acceptCall(int patientNumber){
+        
+        String patient = this.getHotlineQueue(patientNumber);
+
+        System.out.println("You are on call with a patient " + patient);
         try{
             TimeUnit.SECONDS.sleep(5);
         } catch (InterruptedException e){

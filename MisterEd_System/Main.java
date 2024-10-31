@@ -83,8 +83,7 @@ public class Main {
                 
                 if(acceptCall.toLowerCase().contains("yes")) { //If the nurse wants to accept a call then they are able to
                     System.out.println("Pick the patient that you would like to call by entering their number");
-                    nurse.getHotlineQueue();
-
+                    nurse.printHotlineQueue();
                     String patientNumber = prompter.readLine("Pick number:");
 
                     nurse.acceptCall(Integer.parseInt(patientNumber));
