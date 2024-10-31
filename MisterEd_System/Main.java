@@ -82,13 +82,13 @@ public class Main {
                 acceptCall = prompter.readLine("Would you like to accept a call? Enter Yes or No:");
                 
                 if(acceptCall.toLowerCase().contains("yes")) { //If the nurse wants to accept a call then they are able to
-                    nurse.acceptCall();
+                    System.out.println("Pick the patient that you would like to call by entering their number");
+                    nurse.getHotlineQueue();
+
+                    String patientNumber = prompter.readLine("Pick number:");
+
+                    nurse.acceptCall(Integer.parseInt(patientNumber));
                     nurse.directPatient();
-                }else if (acceptCall.toLowerCase().contains("no")){
-                    String logout = prompter.readLine("Would you like to logout? Enter Yes or No:");
-                    if(logout.toLowerCase().contains("yes")){
-                        break;
-                    }
                 }
                 
             }
