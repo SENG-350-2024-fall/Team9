@@ -24,10 +24,8 @@ public class Main {
             // Creates a patient object
             Patient patient = new Patient();
 
-            String viewWaitTimes = prompter.readLine("Would you like to view local hospitals? Enter Yes or No: ");
-            if(viewWaitTimes.toLowerCase().contains("yes")) {
-                patient.viewNearbyHospitals();
-            }
+            patient.viewNearbyHospitals();
+
 
             // Prompt for patient to add their info  
             patient.getPromptInput();

@@ -3,6 +3,7 @@ import java.io.IOException;
 import java.time.LocalDate;
 import java.io.Console;
 import java.util.Random;
+import java.util.Comparator;
 import java.util.Objects;
 
 class Patient {
@@ -147,7 +148,10 @@ class Patient {
     }
 
     public void viewNearbyHospitals () {
-        HospitalLocalizer.main(null);
+        Console prompter = System.console();
+        if(prompter.readLine("Would you like to view local hospitals? Enter Yes or No: ").toLowerCase().contains("yes")) {
+            HospitalLocalizer.main(null); // using main as test
+        }
     }
 
     @Override
