@@ -3,6 +3,7 @@ import java.io.IOException;
 import java.time.LocalDate;
 import java.io.Console;
 import java.util.Random;
+import java.util.Objects;
 
 class Patient {
     public String name;
@@ -27,6 +28,7 @@ class Patient {
         this.emailAddress = emailAddress;
         this.birthDate = birthDate;
         this.personalHealthNumber = personalHealthNumber;
+        this.severity = severity;
     }
 
     public void getPromptInput () {
@@ -80,7 +82,6 @@ class Patient {
     }
 
     public String toString() {
-        System.out.println("Current Patient Information:");
         return String.format(
             "Patient Info> Name: %s, Phone Number: %s, Email: %s, Birth Date: %s, Personal Health Number: %d, Severity: %d\n",
             getName(), getPhoneNumber(), getEmailAddress(), getBirthDate(), getPersonalHealthNumber(), getSeverity()
@@ -115,8 +116,7 @@ class Patient {
         provideCallSummary();
         System.out.println("You are now on call with your Hotline Nurse, please try to speak clearly (:"); 
         try {
-            wait(10000); 
-            
+            synchronized (this) { wait(10000); }
         } catch (Exception e) {
            e.printStackTrace();
         }
@@ -150,13 +150,24 @@ class Patient {
         HospitalLocalizer.main(null);
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        // Check if the object is being compared with itself
+        if (this == obj) return true;
+        // Check if the object is of the same class
+        if (obj == null || getClass() != obj.getClass()) return false;
+
+        Patient patient = (Patient) obj;
+
+        // Compare personalHealthNumber for equality
+        return Objects.equals(personalHealthNumber, patient.personalHealthNumber);
+    }
+
     public static void main(String[] args) {
         Patient patient = new Patient("John Paetkau", "123-456-7890", "email@example.com", LocalDate.of(1990, 1, 1), 6924, 4);
 
-        patient.viewNearbyHospitals();
-
         // Print initial
-        System.out.println(patient.toString());
+        System.out.println("Patient Information:\n"+ patient.toString());
 
         // Update class
         patient.setPhoneNumber("098-765-4321");
@@ -165,6 +176,6 @@ class Patient {
         patient.setPersonalHealthNumber(6481);
 
         // Print updated class
-        System.out.println(patient.toString());
+        System.out.println("Updated Patient Information:\n"+ patient.toString());
     }
 }
