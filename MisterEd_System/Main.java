@@ -62,7 +62,11 @@ public class Main {
                 System.out.println("Your postion in the queue is: #" + position);
                 System.out.printf("You have %d patient(s) ahead of you.\n", position-1);
                 System.out.printf("Your estimated remaining wait time is: %d mins\n", (position-1)*15);
-            } 
+                if(prompter.readLine("Do you want to leave the queue? Enter Yes or No:").toLowerCase().contains("yes")) {
+                    triageQueueED.remove(patient); 
+                    System.out.println("You have been removed from the queue.");
+                }
+            }
 
         } else if (userClassNumber == 2){
             //Create a nurse object
@@ -84,7 +88,6 @@ public class Main {
                         break;
                     }
                 }
-                
             }
 
         } else if (userClassNumber == 3){

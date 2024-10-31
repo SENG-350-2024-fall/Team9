@@ -82,13 +82,13 @@ public class HospitalLocalizer {
         Double victoriaGeneralLon = -123.43558640940434;
 
         Double distanceToRoyalJubilee = getDistanceBetweenCoordinates(userLat, userLon, royalJubileeLat, royalJubileeLon);
-        System.out.printf("Distance to Royal Jubilee Hospital: %.2f km\n", distanceToRoyalJubilee);
+        System.out.printf("Distance to Royal Jubilee Hospital: %.2f km, %.0f mins driving time\n", distanceToRoyalJubilee, (distanceToRoyalJubilee*0.54));
         Double distanceToSaanichPeninsula = getDistanceBetweenCoordinates(userLat, userLon, saanichPeninsulaLat, saanichPeninsulaLon);
-        System.out.printf("Distance to Saanich Peninsula Hospital: %.2f km\n", distanceToSaanichPeninsula);
+        System.out.printf("Distance to Saanich Peninsula Hospital: %.2f km, %.0f mins driving time\n", distanceToSaanichPeninsula, (distanceToSaanichPeninsula*0.54));
         Double distanceToCowichanDistrict = getDistanceBetweenCoordinates(userLat, userLon, cowichanDistrictLat, cowichanDistrictLon);
-        System.out.printf("Distance to Cowichan District Hospital: %.2f km\n", distanceToCowichanDistrict);
+        System.out.printf("Distance to Cowichan District Hospital: %.2f km, %.0f mins driving time\n", distanceToCowichanDistrict, (distanceToCowichanDistrict*0.54));
         Double distanceToVictoriaGeneral = getDistanceBetweenCoordinates(userLat, userLon, victoriaGeneralLat, victoriaGeneralLon);
-        System.out.printf("Distance to Victoria General Hospital: %.2f km\n", distanceToVictoriaGeneral);
+        System.out.printf("Distance to Victoria General Hospital: %.2f km, %.0f mins driving time\n", distanceToVictoriaGeneral, (distanceToVictoriaGeneral*0.54));
 
         Console prompter = System.console(); 
         String viewWaitTimes = prompter.readLine("Would you like to view the wait times of these local hospitals? Enter Yes or No: ");
