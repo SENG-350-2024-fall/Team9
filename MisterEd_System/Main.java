@@ -2,6 +2,7 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.io.Console;
 import java.util.PriorityQueue;
+
 import java.util.Comparator;
 import java.util.ArrayList;
 import java.util.List;
@@ -71,6 +72,19 @@ public class Main {
 
 
 
+        } else if (userClassNumber == 3){
+            //Create a General Practitioner Object
+            GeneralPractitioner generalPractitioner = new GeneralPractitioner();
+
+            generalPractitioner.getPromptInput();
+            
+            String viewQueue = prompter.readLine("Would you like to view patients in queue? Enter Yes or No: ");
+            if(viewQueue.toLowerCase().contains("yes")) {
+                System.out.println("Current Queue:");
+                for (Patient p : triageQueue) {
+                    System.out.println(p);
+                }
+            }
         }
        
         /*
