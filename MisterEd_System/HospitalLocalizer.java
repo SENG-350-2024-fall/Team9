@@ -3,6 +3,8 @@ import java.io.BufferedReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.CharBuffer;
+import java.io.Console;
+import java.util.Random;
 
 public class HospitalLocalizer {
     private String userLatitude; 
@@ -69,10 +71,35 @@ public class HospitalLocalizer {
 
         Double userLat = hospitalLocalizer.getUserLatitude();
         Double userLon = hospitalLocalizer.getUserLongitude();
+
         Double royalJubileeLat = 48.43296642000432;
         Double royalJubileeLon = -123.32755803414138;
+        Double saanichPeninsulaLat = 48.59984938647225;
+        Double saanichPeninsulaLon = -123.41109781238133; 
+        Double cowichanDistrictLat = 48.79030179683916;
+        Double cowichanDistrictLon = -123.72429264529113;
+        Double victoriaGeneralLat = 48.47349136416142;
+        Double victoriaGeneralLon = -123.43558640940434;
 
         Double distanceToRoyalJubilee = getDistanceBetweenCoordinates(userLat, userLon, royalJubileeLat, royalJubileeLon);
-        System.out.printf("Distance to Royal Jubilee Hospital: %.2f km", distanceToRoyalJubilee);
+        System.out.printf("Distance to Royal Jubilee Hospital: %.2f km\n", distanceToRoyalJubilee);
+        Double distanceToSaanichPeninsula = getDistanceBetweenCoordinates(userLat, userLon, saanichPeninsulaLat, saanichPeninsulaLon);
+        System.out.printf("Distance to Saanich Peninsula Hospital: %.2f km\n", distanceToSaanichPeninsula);
+        Double distanceToCowichanDistrict = getDistanceBetweenCoordinates(userLat, userLon, cowichanDistrictLat, cowichanDistrictLon);
+        System.out.printf("Distance to Cowichan District Hospital: %.2f km\n", distanceToCowichanDistrict);
+        Double distanceToVictoriaGeneral = getDistanceBetweenCoordinates(userLat, userLon, victoriaGeneralLat, victoriaGeneralLon);
+        System.out.printf("Distance to Victoria General Hospital: %.2f km\n", distanceToVictoriaGeneral);
+
+        Console prompter = System.console(); 
+        String viewWaitTimes = prompter.readLine("Would you like to view the wait times of these local hospitals? Enter Yes or No: ");
+        if(viewWaitTimes.toLowerCase().contains("no")) {
+            return;
+        }
+
+        Random random = new Random();
+        System.out.println("Royal Jubilee Hospital: " + (120 + 300 * random.nextInt(99) / 100) + " mins");
+        System.out.println("Saanich Peninsula Hospital: " + (120 + 300 * random.nextInt(99) / 100) + " mins");
+        System.out.println("Cowichan District Hospital: " + (120 + 300 * random.nextInt(99) / 100) + " mins");
+        System.out.println("Victoria General Hospital: " + (120 + 300 * random.nextInt(99) / 100) + " mins");
     }
 }

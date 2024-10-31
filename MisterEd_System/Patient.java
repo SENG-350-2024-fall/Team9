@@ -80,8 +80,9 @@ class Patient {
     }
 
     public String toString() {
+        System.out.println("Current Patient Information:");
         return String.format(
-            "Patient Info> Name: %s, Phone Number: %s, Email: %s, Birth Date: %s, Personal Health Number: %d, Severity: %d",
+            "Patient Info> Name: %s, Phone Number: %s, Email: %s, Birth Date: %s, Personal Health Number: %d, Severity: %d\n",
             getName(), getPhoneNumber(), getEmailAddress(), getBirthDate(), getPersonalHealthNumber(), getSeverity()
         );
     }
@@ -113,15 +114,20 @@ class Patient {
     public void callNurseHotline() {
         provideCallSummary();
         System.out.println("You are now on call with your Hotline Nurse, please try to speak clearly (:"); 
-        Thread.sleep(10000); 
+        try {
+            wait(10000); 
+            
+        } catch (Exception e) {
+           e.printStackTrace();
+        }
         System.out.println("Your Hotline Nurse call has completed."); 
         Random random = new Random();
         if(random.nextBoolean()) {
-            System.out.println("You have been directed to GP");
+            System.out.println("The Hotline Nurse directs you to GP");
         } 
 
         else {
-            System.out.println("You have been directed to ED");
+            System.out.println("The Hotline Nurse directs you to ED");
         }
         
         System.out.println("Please follow their direction and have a nice day!");
@@ -140,11 +146,16 @@ class Patient {
         }
     }
 
+    public void viewNearbyHospitals () {
+        HospitalLocalizer.main(null);
+    }
+
     public static void main(String[] args) {
         Patient patient = new Patient("John Paetkau", "123-456-7890", "email@example.com", LocalDate.of(1990, 1, 1), 6924, 4);
 
+        patient.viewNearbyHospitals();
+
         // Print initial
-        System.out.println("Patient Information:");
         System.out.println(patient.toString());
 
         // Update class
@@ -154,7 +165,6 @@ class Patient {
         patient.setPersonalHealthNumber(6481);
 
         // Print updated class
-        System.out.println("\nUpdated Patient Information:");
         System.out.println(patient.toString());
     }
 }

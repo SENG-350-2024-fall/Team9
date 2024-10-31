@@ -1,4 +1,3 @@
-Personal Health Number : Call Summary0:I have a boo boo.
-0:clear
+Personal Health Number : Call Summary
 2230:I have no hair.
 2230:I have no hair.
