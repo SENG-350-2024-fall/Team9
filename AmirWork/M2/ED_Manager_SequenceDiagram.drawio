@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.17">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.7.17">
   <diagram name="Page-1" id="2YBvvXClWsGukQMizWep">
-    <mxGraphModel dx="918" dy="362" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="1194" dy="581" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -72,34 +72,8 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="99FT_-au7CRat3UAY1YA-9" value=":AutoSchedulerToggle" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
-          <mxGeometry x="502" y="59" width="120" height="319" as="geometry" />
-        </mxCell>
-        <mxCell id="99FT_-au7CRat3UAY1YA-10" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="99FT_-au7CRat3UAY1YA-9" vertex="1">
-          <mxGeometry x="55" y="109.5" width="10" height="56" as="geometry" />
-        </mxCell>
-        <mxCell id="99FT_-au7CRat3UAY1YA-12" value="" style="edgeStyle=elbowEdgeStyle;curved=0;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=vertical;fontSize=12;startSize=8;endSize=8;" parent="1" source="aM9ryv3xv72pqoxQDRHE-2" target="99FT_-au7CRat3UAY1YA-10" edge="1">
-          <mxGeometry x="-0.0723" y="-3" relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="394" y="187" />
-            </Array>
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="kypo4o6VFsZm4fz2mjWa-2" value="EDMviewsStaffSchedulingStats" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" parent="99FT_-au7CRat3UAY1YA-12" vertex="1" connectable="0">
-          <mxGeometry x="0.3513" y="1" relative="1" as="geometry">
-            <mxPoint x="-19" y="1" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="99FT_-au7CRat3UAY1YA-13" value="EDMtoggledAutoScheduler" style="edgeStyle=elbowEdgeStyle;curved=0;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=vertical;fontSize=12;startSize=8;endSize=8;" parent="1" source="99FT_-au7CRat3UAY1YA-10" target="aM9ryv3xv72pqoxQDRHE-2" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="395" y="213" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
         <mxCell id="99FT_-au7CRat3UAY1YA-15" value=":WaitRoomManagerGUI" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
-          <mxGeometry x="630" y="59" width="130" height="322" as="geometry" />
+          <mxGeometry x="560" y="59" width="130" height="322" as="geometry" />
         </mxCell>
         <mxCell id="99FT_-au7CRat3UAY1YA-21" style="edgeStyle=elbowEdgeStyle;curved=0;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=vertical;fontSize=12;startSize=8;endSize=8;" parent="99FT_-au7CRat3UAY1YA-15" source="99FT_-au7CRat3UAY1YA-16" target="99FT_-au7CRat3UAY1YA-15" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -118,6 +92,7 @@
             <Array as="points">
               <mxPoint x="459" y="234" />
             </Array>
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="99FT_-au7CRat3UAY1YA-34" style="edgeStyle=elbowEdgeStyle;curved=0;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=vertical;fontSize=12;startSize=8;endSize=8;" parent="1" source="99FT_-au7CRat3UAY1YA-16" target="aM9ryv3xv72pqoxQDRHE-2" edge="1">
@@ -139,7 +114,7 @@
           <mxGeometry x="67.5" y="51" width="10" height="36" as="geometry" />
         </mxCell>
         <mxCell id="99FT_-au7CRat3UAY1YA-41" value=":MrEDRescheduler" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
-          <mxGeometry x="572" y="267" width="111" height="117" as="geometry" />
+          <mxGeometry x="502" y="267" width="111" height="117" as="geometry" />
         </mxCell>
         <mxCell id="99FT_-au7CRat3UAY1YA-42" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="99FT_-au7CRat3UAY1YA-41" vertex="1">
           <mxGeometry x="50.5" y="60" width="10" height="46" as="geometry" />
