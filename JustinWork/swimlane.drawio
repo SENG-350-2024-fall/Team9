@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.8.0">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.3">
   <diagram name="Page-1" id="bOFyLktQ3b1tLQeO2AxJ">
-    <mxGraphModel dx="1836" dy="724" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1194" dy="581" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -13,7 +13,7 @@
         <mxCell id="eFiqkfWfOuMBbfG-rL7w-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="eFiqkfWfOuMBbfG-rL7w-2" source="eFiqkfWfOuMBbfG-rL7w-6" target="eFiqkfWfOuMBbfG-rL7w-7" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="eFiqkfWfOuMBbfG-rL7w-6" value="Log In" style="rounded=1;whiteSpace=wrap;html=1;" parent="eFiqkfWfOuMBbfG-rL7w-2" vertex="1">
+        <mxCell id="eFiqkfWfOuMBbfG-rL7w-6" value="Enter symptoms" style="rounded=1;whiteSpace=wrap;html=1;" parent="eFiqkfWfOuMBbfG-rL7w-2" vertex="1">
           <mxGeometry x="19.999999999999545" y="90" width="70" height="40" as="geometry" />
         </mxCell>
         <mxCell id="eFiqkfWfOuMBbfG-rL7w-7" value="Register for Triage" style="rounded=1;whiteSpace=wrap;html=1;" parent="eFiqkfWfOuMBbfG-rL7w-2" vertex="1">
