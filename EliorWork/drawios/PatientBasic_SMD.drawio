@@ -1,0 +1,35 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.3">
+  <diagram name="Page-1" id="NfButQZjhZ4wamLMoBEm">
+    <mxGraphModel dx="468" dy="-150" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="zlFfJobk3KSyEtTHEZul-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="lGDO1zubE_AWot6uxW1o-1" target="lGDO1zubE_AWot6uxW1o-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zlFfJobk3KSyEtTHEZul-2" value="patient views near hospitals" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="zlFfJobk3KSyEtTHEZul-1" vertex="1" connectable="0">
+          <mxGeometry x="0.2531" y="2" relative="1" as="geometry">
+            <mxPoint x="-24" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lGDO1zubE_AWot6uxW1o-1" value="HomePage" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="97" y="419" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lGDO1zubE_AWot6uxW1o-2" value="Hospital View" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="348" y="419" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="zlFfJobk3KSyEtTHEZul-4" value="Hospital Wait&amp;nbsp;&lt;div&gt;Times&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="129" y="516" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="zlFfJobk3KSyEtTHEZul-5" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="lGDO1zubE_AWot6uxW1o-2" target="zlFfJobk3KSyEtTHEZul-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zlFfJobk3KSyEtTHEZul-7" value="patient views hospital wait times" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="zlFfJobk3KSyEtTHEZul-5" vertex="1" connectable="0">
+          <mxGeometry x="-0.1426" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

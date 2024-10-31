@@ -67,7 +67,7 @@ class GeneralPractitioner {
         String emailInput = prompter.readLine("Enter your email: ");
         setEmailAddress(emailInput);
 
-        int employeeNumberInput = Integer.parseInt(prompter.readLine("Enter your personal health number in the format XXXX: "));
+        int employeeNumberInput = Integer.parseInt(prompter.readLine("Enter your employee number in the format XXXX: "));
         setEmployeeNumber(employeeNumberInput);
     }
 }

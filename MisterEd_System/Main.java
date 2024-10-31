@@ -51,7 +51,13 @@ public class Main {
                 int position = triageQueueGP.indexOf(patient) + 1;
                 System.out.println("Your postion in the queue is: #" + position);
                 System.out.printf("You have %d patient(s) ahead of you.\n", position-1);
-                System.out.printf("Your estimated remaining wait time is: %d mins\n", (position-1)*15);
+                if (position - 1 == 1) {
+                    System.out.println("Your estimated remaining wait time is: 1 day");
+                } else if (position - 1 == 0) {
+                    System.out.println("You have no patients ahead of you. You will be seen shortly!");
+                } else {
+                    System.out.printf("Your estimated remaining wait time is: %d days\n", (position - 1));
+                }
             } 
             
             else { // initial direction returns ED
@@ -80,13 +86,12 @@ public class Main {
                 acceptCall = prompter.readLine("Would you like to accept a call? Enter Yes or No:");
                 
                 if(acceptCall.toLowerCase().contains("yes")) { //If the nurse wants to accept a call then they are able to
-                    nurse.acceptCall();
+                    System.out.println("Pick the patient that you would like to call by entering their number");
+                    nurse.printHotlineQueue();
+                    String patientNumber = prompter.readLine("Pick number:");
+
+                    nurse.acceptCall(Integer.parseInt(patientNumber));
                     nurse.directPatient();
-                }else if (acceptCall.toLowerCase().contains("no")){
-                    String logout = prompter.readLine("Would you like to logout? Enter Yes or No:");
-                    if(logout.toLowerCase().contains("yes")){
-                        break;
-                    }
                 }
             }
 
