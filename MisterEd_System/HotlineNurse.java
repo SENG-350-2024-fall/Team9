@@ -53,7 +53,7 @@ class HotlineNurse {
     public void directPatient() {
         Console prompter = System.console();
         String nextStep = prompter.readLine("What is the next step for the patient: ");  // Read a line of text from the user
-        
+        System.out.println("Sending next steps to the patient.");
     }
 
     public void acceptCall(){

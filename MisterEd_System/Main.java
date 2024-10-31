@@ -58,14 +58,20 @@ public class Main {
             HotlineNurse nurse = new HotlineNurse();
 
             nurse.getPromptInput();
-            String acceptCall = "";
+            String acceptCall = "yes";
 
-            while(!acceptCall.toLowerCase().equals("no")){ 
+            while(acceptCall.toLowerCase().equals("yes")){ 
 
                 acceptCall = prompter.readLine("Would you like to accept a call? Enter Yes or No:");
                 
                 if(acceptCall.toLowerCase().contains("yes")) { //If the nurse wants to accept a call then they are able to
                     nurse.acceptCall();
+                    nurse.directPatient();
+                }else if (acceptCall.toLowerCase().contains("no")){
+                    String logout = prompter.readLine("Would you like to logout? Enter Yes or No:");
+                    if(logout.toLowerCase().contains("yes")){
+                        break;
+                    }
                 }
                 
             }
