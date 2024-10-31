@@ -3,6 +3,7 @@ import java.io.IOException;
 import java.time.LocalDate;
 import java.io.Console;
 import java.util.Random;
+import java.util.Objects;
 
 class Patient {
     public String name;
@@ -27,6 +28,7 @@ class Patient {
         this.emailAddress = emailAddress;
         this.birthDate = birthDate;
         this.personalHealthNumber = personalHealthNumber;
+        this.severity = severity;
     }
 
     public void getPromptInput () {
@@ -81,7 +83,7 @@ class Patient {
 
     public String toString() {
         return String.format(
-            "Patient Info> Name: %s, Phone Number: %s, Email: %s, Birth Date: %s, Personal Health Number: %d, Severity: %d",
+            "Patient Info> Name: %s, Phone Number: %s, Email: %s, Birth Date: %s, Personal Health Number: %d, Severity: %d\n",
             getName(), getPhoneNumber(), getEmailAddress(), getBirthDate(), getPersonalHealthNumber(), getSeverity()
         );
     }
@@ -112,21 +114,20 @@ class Patient {
 
     public void callNurseHotline() {
         provideCallSummary();
-        System.out.println("You are now on call with your Hotline Nurse, please try to speak clearly (:");
-        try{
-            Thread.sleep(10000);
-        } catch(InterruptedException e){
-            System.out.println("The sleep function was interrupted");
+        System.out.println("You are now on call with your Hotline Nurse, please try to speak clearly (:"); 
+        try {
+            synchronized (this) { wait(10000); }
+        } catch (Exception e) {
+           e.printStackTrace();
         }
-         
         System.out.println("Your Hotline Nurse call has completed."); 
         Random random = new Random();
         if(random.nextBoolean()) {
-            System.out.println("You have been directed to GP");
+            System.out.println("The Hotline Nurse directs you to GP");
         } 
 
         else {
-            System.out.println("You have been directed to ED");
+            System.out.println("The Hotline Nurse directs you to ED");
         }
         
         System.out.println("Please follow their direction and have a nice day!");
@@ -145,12 +146,28 @@ class Patient {
         }
     }
 
+    public void viewNearbyHospitals () {
+        HospitalLocalizer.main(null);
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        // Check if the object is being compared with itself
+        if (this == obj) return true;
+        // Check if the object is of the same class
+        if (obj == null || getClass() != obj.getClass()) return false;
+
+        Patient patient = (Patient) obj;
+
+        // Compare personalHealthNumber for equality
+        return Objects.equals(personalHealthNumber, patient.personalHealthNumber);
+    }
+
     public static void main(String[] args) {
         Patient patient = new Patient("John Paetkau", "123-456-7890", "email@example.com", LocalDate.of(1990, 1, 1), 6924, 4);
 
         // Print initial
-        System.out.println("Patient Information:");
-        System.out.println(patient.toString());
+        System.out.println("Patient Information:\n"+ patient.toString());
 
         // Update class
         patient.setPhoneNumber("098-765-4321");
@@ -159,7 +176,6 @@ class Patient {
         patient.setPersonalHealthNumber(6481);
 
         // Print updated class
-        System.out.println("\nUpdated Patient Information:");
-        System.out.println(patient.toString());
+        System.out.println("Updated Patient Information:\n"+ patient.toString());
     }
 }

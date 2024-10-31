@@ -1,5 +1,6 @@
 import java.io.Console;
 import java.time.LocalDate;
+import java.util.concurrent.TimeUnit;
 
 class HotlineNurse {
     public String name;
@@ -50,7 +51,21 @@ class HotlineNurse {
     }
 
     public void directPatient() {
+        Console prompter = System.console();
+        String nextStep = prompter.readLine("What is the next step for the patient: ");  // Read a line of text from the user
         
+    }
+
+    public void acceptCall(){
+        System.out.println("You are on call with a patient");
+        try{
+            TimeUnit.SECONDS.sleep(5);
+        } catch (InterruptedException e){
+            System.out.println("The call was interrupted");
+        }
+        
+        System.out.println("Call complete");
+
     }
 
     public void getPromptInput(){
