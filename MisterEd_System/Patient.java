@@ -112,8 +112,13 @@ class Patient {
 
     public void callNurseHotline() {
         provideCallSummary();
-        System.out.println("You are now on call with your Hotline Nurse, please try to speak clearly (:"); 
-        Thread.sleep(10000); 
+        System.out.println("You are now on call with your Hotline Nurse, please try to speak clearly (:");
+        try{
+            Thread.sleep(10000);
+        } catch(InterruptedException e){
+            System.out.println("The sleep function was interrupted");
+        }
+         
         System.out.println("Your Hotline Nurse call has completed."); 
         Random random = new Random();
         if(random.nextBoolean()) {

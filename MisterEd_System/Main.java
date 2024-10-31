@@ -27,6 +27,11 @@ public class Main {
             else {  // initial direction returns ED
                 System.out.println("You will need a visit to an emergency department, please proceed"); // The system notifies the patient
             } 
+        } else if (userClassNumber == 2){
+            //Create a nurse object
+            HotlineNurse nurse = new HotlineNurse();
+
+            nurse.getPromptInput();
         }
        
         /*

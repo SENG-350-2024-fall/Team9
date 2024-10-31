@@ -1,3 +1,4 @@
+import java.io.Console;
 import java.time.LocalDate;
 
 class HotlineNurse {
@@ -50,6 +51,17 @@ class HotlineNurse {
 
     public void directPatient() {
         
+    }
+
+    public void getPromptInput(){
+        System.out.println("You are a Nurse");
+        Console prompter = System.console();
+
+        String nameInput = prompter.readLine("Enter your name: ");  // Read a line of text from the user
+        setName(nameInput);
+
+        String phoneNumberInput = prompter.readLine("Enter your phone number: ");  // Read a phone number input from the user
+        setPhoneNumber(phoneNumberInput);
     }
 
     public static void main(String[] args) {
