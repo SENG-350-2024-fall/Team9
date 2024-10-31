@@ -1,22 +1,9 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.17">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.3">
   <diagram name="Page-1" id="58cdce13-f638-feb5-8d6f-7d28b1aa9fa0">
-    <mxGraphModel dx="954" dy="581" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+    <mxGraphModel dx="474" dy="581" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="udmGXA6qzwontc74sRsV-8" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" target="udmGXA6qzwontc74sRsV-7" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="360" y="100" />
-            </Array>
-            <mxPoint x="300" y="200" as="sourcePoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="udmGXA6qzwontc74sRsV-13" value="EDM views scheduling stats" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" parent="udmGXA6qzwontc74sRsV-8" vertex="1" connectable="0">
-          <mxGeometry x="0.1307" y="-15" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="udmGXA6qzwontc74sRsV-16" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" parent="1" source="382b91b5511bd0f7-9" target="GER6duk_hUemQV0kUoSJ-14" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
@@ -35,23 +22,6 @@
         </mxCell>
         <mxCell id="udmGXA6qzwontc74sRsV-2" value="Using WaitRoom&lt;span style=&quot;background-color: initial;&quot;&gt;CapacitySlider&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;align=center;shape=ellipse;perimeter=ellipsePerimeter;" parent="1" vertex="1">
           <mxGeometry x="230" y="510" width="160" height="140" as="geometry" />
-        </mxCell>
-        <mxCell id="udmGXA6qzwontc74sRsV-7" value="Using AutoSchedulerToggle" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;align=center;shape=ellipse;perimeter=ellipsePerimeter;" parent="1" vertex="1">
-          <mxGeometry x="600" y="30" width="130" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="udmGXA6qzwontc74sRsV-11" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="udmGXA6qzwontc74sRsV-7" edge="1">
-          <mxGeometry width="140" relative="1" as="geometry">
-            <mxPoint x="460" y="440" as="sourcePoint" />
-            <mxPoint x="300" y="200" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="510" y="200" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="udmGXA6qzwontc74sRsV-12" value="EDM toggled AutoSchedulerToggle" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" parent="udmGXA6qzwontc74sRsV-11" vertex="1" connectable="0">
-          <mxGeometry x="0.0447" y="-38" relative="1" as="geometry">
-            <mxPoint x="12" y="28" as="offset" />
-          </mxGeometry>
         </mxCell>
         <mxCell id="udmGXA6qzwontc74sRsV-14" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=0.943;exitY=0.699;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitPerimeter=0;" parent="1" source="GER6duk_hUemQV0kUoSJ-14" target="382b91b5511bd0f7-9" edge="1">
           <mxGeometry width="140" relative="1" as="geometry">
