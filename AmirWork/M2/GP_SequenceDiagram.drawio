@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.17">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.3">
   <diagram name="Page-1" id="2YBvvXClWsGukQMizWep">
-    <mxGraphModel dx="658" dy="412" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="706" dy="278" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -20,7 +20,7 @@
           <mxGeometry x="373" y="41" width="120" height="141" as="geometry" />
         </mxCell>
         <mxCell id="aM9ryv3xv72pqoxQDRHE-6" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="aM9ryv3xv72pqoxQDRHE-5" vertex="1">
-          <mxGeometry x="55" y="57" width="10" height="29" as="geometry" />
+          <mxGeometry x="55" y="57" width="10" height="68" as="geometry" />
         </mxCell>
         <mxCell id="Gdo_oM0bwtRsMLy9Od3A-2" value="appointmentsSetUpByMrED" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="Gdo_oM0bwtRsMLy9Od3A-1" target="aM9ryv3xv72pqoxQDRHE-2" edge="1">
           <mxGeometry x="-0.0291" y="1" relative="1" as="geometry">
@@ -62,66 +62,13 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="Gdo_oM0bwtRsMLy9Od3A-13" value=":PrescriptionsGUI" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
-          <mxGeometry x="546" y="41" width="100" height="287" as="geometry" />
-        </mxCell>
-        <mxCell id="Gdo_oM0bwtRsMLy9Od3A-14" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="Gdo_oM0bwtRsMLy9Od3A-13" vertex="1">
-          <mxGeometry x="45" y="57" width="10" height="56" as="geometry" />
-        </mxCell>
-        <mxCell id="nFOya2OpG1rb1wZ8DCrK-1" value="" style="edgeStyle=elbowEdgeStyle;curved=0;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=vertical;fontSize=12;startSize=8;endSize=8;" parent="1" source="aM9ryv3xv72pqoxQDRHE-6" target="Gdo_oM0bwtRsMLy9Od3A-14" edge="1">
+        <mxCell id="nFOya2OpG1rb1wZ8DCrK-3" value="appointmentComplete" style="edgeStyle=elbowEdgeStyle;curved=0;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=vertical;fontSize=12;startSize=8;endSize=8;" parent="1" source="aM9ryv3xv72pqoxQDRHE-6" target="aM9ryv3xv72pqoxQDRHE-2" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="516" y="113" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="nFOya2OpG1rb1wZ8DCrK-2" value="GPseesDiagnosesPatient" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" parent="nFOya2OpG1rb1wZ8DCrK-1" vertex="1" connectable="0">
-          <mxGeometry x="0.3897" y="1" relative="1" as="geometry">
-            <mxPoint x="-35" y="1" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="nFOya2OpG1rb1wZ8DCrK-3" style="edgeStyle=elbowEdgeStyle;curved=0;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=vertical;fontSize=12;startSize=8;endSize=8;" parent="1" source="Gdo_oM0bwtRsMLy9Od3A-14" target="aM9ryv3xv72pqoxQDRHE-2" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="592" y="162.8" as="sourcePoint" />
+            <mxPoint x="420" y="150" as="sourcePoint" />
             <mxPoint x="242" y="162.8" as="targetPoint" />
             <Array as="points">
               <mxPoint x="417" y="148" />
             </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="nFOya2OpG1rb1wZ8DCrK-4" value="patientDoesNotNeedPrescriptionsGPendsAppointment" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" parent="nFOya2OpG1rb1wZ8DCrK-3" vertex="1" connectable="0">
-          <mxGeometry x="-0.1395" relative="1" as="geometry">
-            <mxPoint x="-16" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="nFOya2OpG1rb1wZ8DCrK-5" value=":PrescriptionSender" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
-          <mxGeometry x="670" y="39" width="113" height="300" as="geometry" />
-        </mxCell>
-        <mxCell id="nFOya2OpG1rb1wZ8DCrK-6" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="nFOya2OpG1rb1wZ8DCrK-5" vertex="1">
-          <mxGeometry x="51.5" y="57" width="10" height="92" as="geometry" />
-        </mxCell>
-        <mxCell id="nFOya2OpG1rb1wZ8DCrK-7" value="" style="edgeStyle=elbowEdgeStyle;curved=0;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=vertical;fontSize=12;startSize=8;endSize=8;" parent="1" source="Gdo_oM0bwtRsMLy9Od3A-14" target="nFOya2OpG1rb1wZ8DCrK-6" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="656" y="113" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="nFOya2OpG1rb1wZ8DCrK-8" value="GPfillsPrescription" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" parent="nFOya2OpG1rb1wZ8DCrK-7" vertex="1" connectable="0">
-          <mxGeometry x="-0.1518" y="-1" relative="1" as="geometry">
-            <mxPoint x="4" y="-2" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="qLsoPe__b-ESW1TOB0B3-1" style="edgeStyle=elbowEdgeStyle;curved=0;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=vertical;fontSize=12;startSize=8;endSize=8;" parent="1" source="nFOya2OpG1rb1wZ8DCrK-6" target="aM9ryv3xv72pqoxQDRHE-2" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="486" y="165" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="yLsSPrwYrWI-TgyghVi2-1" value="prescriptionSentByMrEDandGPendsAppointment" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" parent="qLsoPe__b-ESW1TOB0B3-1" vertex="1" connectable="0">
-          <mxGeometry x="-0.1619" y="-1" relative="1" as="geometry">
-            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
       </root>
