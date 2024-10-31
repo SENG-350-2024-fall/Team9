@@ -16,7 +16,6 @@ public class Main {
         
         List<Patient> triageQueue = new ArrayList<>();
         
-
         triageQueue.add(new Patient("John Paetkau", "123-456-7890", "jonnny@example.com", LocalDate.of(1990, 1, 1), 1111, 8));
         triageQueue.add(new Patient("Anna Mulcaster", "123-456-7890", "annnie@example.com", LocalDate.of(1990, 1, 1), 2212, 7));
         triageQueue.add(new Patient("Nathan Streetwood", "123-456-7890", "nate@example.com", LocalDate.of(1990, 1, 1), 2231, 6));
@@ -35,7 +34,6 @@ public class Main {
             // the system directs the patient based on their info
             if (patient.getSeverity() < 3) { // initial direction returns HN 
                 System.out.println("You will need a hotline nurse, please proceed"); // The system notifies the patient
-
                 patient.callNurseHotline();
             } 
 
@@ -43,14 +41,16 @@ public class Main {
                 System.out.println("You will need a General practitioner, please proceed"); // The system notifies the patient
             } 
             
-            else {  // initial direction returns ED
+            else { // initial direction returns ED
                 System.out.println("You will need a visit to an emergency department, please proceed"); // The system notifies the patient
                 triageQueue.add(patient);
                 triageQueue.sort(Comparator.comparingInt(Patient::getSeverity).reversed());
                 int position = triageQueue.indexOf(patient) + 1;
                 System.out.println("Your postion in the queue is: #" + position);
-                System.out.printf("You have %d patient(s) ahead of you.", position-1);
+                System.out.printf("You have %d patient(s) ahead of you.\n", position-1);
+                System.out.printf("Your estimated remaining wait time is: %d mins\n", (position-1)*15);
             } 
+
         } else if (userClassNumber == 2){
             //Create a nurse object
             HotlineNurse nurse = new HotlineNurse();
@@ -73,8 +73,6 @@ public class Main {
                 }
                 
             }
-
-
 
         } else if (userClassNumber == 3){
             //Create a General Practitioner Object
