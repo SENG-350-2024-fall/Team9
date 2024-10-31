@@ -14,12 +14,19 @@ public class Main {
         System.out.println("Please enter your user class number (1=Patient, 2=HN, 3 = GP, 4 = EDM): ");
         int userClassNumber = Integer.parseInt(prompter.readLine());
         
-        List<Patient> triageQueue = new ArrayList<>();
+        List<Patient> triageQueueED = new ArrayList<>();
         
-        triageQueue.add(new Patient("John Paetkau", "123-456-7890", "jonnny@example.com", LocalDate.of(1990, 1, 1), 1111, 8));
-        triageQueue.add(new Patient("Anna Mulcaster", "123-456-7890", "annnie@example.com", LocalDate.of(1990, 1, 1), 2212, 7));
-        triageQueue.add(new Patient("Nathan Streetwood", "123-456-7890", "nate@example.com", LocalDate.of(1990, 1, 1), 2231, 6));
-        triageQueue.add(new Patient("Rosa Drives", "123-456-7890", "rosie@example.com", LocalDate.of(1913, 1, 1), 8876, 6));
+        triageQueueED.add(new Patient("John Paetkau", "123-456-7890", "jonnny@example.com", LocalDate.of(1990, 1, 1), 1111, 8));
+        triageQueueED.add(new Patient("Anna Mulcaster", "123-456-7890", "annnie@example.com", LocalDate.of(1990, 1, 1), 2212, 7));
+        triageQueueED.add(new Patient("Nathan Streetwood", "123-456-7890", "nate@example.com", LocalDate.of(1990, 1, 1), 2231, 6));
+        triageQueueED.add(new Patient("Rosa Drives", "123-456-7890", "rosie@example.com", LocalDate.of(1913, 1, 1), 8876, 6));
+
+        List<Patient> triageQueueGP = new ArrayList<>();
+        
+        triageQueueGP.add(new Patient("John Paetkau", "123-456-7890", "jonnny@example.com", LocalDate.of(1990, 1, 1), 1111, 5));
+        triageQueueGP.add(new Patient("Anna Mulcaster", "123-456-7890", "annnie@example.com", LocalDate.of(1990, 1, 1), 2212, 4));
+        triageQueueGP.add(new Patient("Nathan Streetwood", "123-456-7890", "nate@example.com", LocalDate.of(1990, 1, 1), 2231, 3));
+        triageQueueGP.add(new Patient("Rosa Drives", "123-456-7890", "rosie@example.com", LocalDate.of(1913, 1, 1), 8876, 3));
 
         if (userClassNumber == 1) {
             // Creates a patient object
@@ -39,13 +46,19 @@ public class Main {
 
             else if (patient.getSeverity() < 6) { // initial direction returns GP
                 System.out.println("You will need a General practitioner, please proceed"); // The system notifies the patient
+                triageQueueGP.add(patient);
+                triageQueueGP.sort(Comparator.comparingInt(Patient::getSeverity).reversed());
+                int position = triageQueueGP.indexOf(patient) + 1;
+                System.out.println("Your postion in the queue is: #" + position);
+                System.out.printf("You have %d patient(s) ahead of you.\n", position-1);
+                System.out.printf("Your estimated remaining wait time is: %d mins\n", (position-1)*15);
             } 
             
             else { // initial direction returns ED
                 System.out.println("You will need a visit to an emergency department, please proceed"); // The system notifies the patient
-                triageQueue.add(patient);
-                triageQueue.sort(Comparator.comparingInt(Patient::getSeverity).reversed());
-                int position = triageQueue.indexOf(patient) + 1;
+                triageQueueED.add(patient);
+                triageQueueED.sort(Comparator.comparingInt(Patient::getSeverity).reversed());
+                int position = triageQueueED.indexOf(patient) + 1;
                 System.out.println("Your postion in the queue is: #" + position);
                 System.out.printf("You have %d patient(s) ahead of you.\n", position-1);
                 System.out.printf("Your estimated remaining wait time is: %d mins\n", (position-1)*15);
@@ -83,7 +96,7 @@ public class Main {
             String viewQueue = prompter.readLine("Would you like to view patients in queue? Enter Yes or No: ");
             if(viewQueue.toLowerCase().contains("yes")) {
                 System.out.println("Current Queue:");
-                for (Patient p : triageQueue) {
+                for (Patient p : triageQueueGP) {
                     System.out.println(p);
                 }
             }
