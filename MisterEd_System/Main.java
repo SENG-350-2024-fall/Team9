@@ -2,14 +2,18 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.io.Console;
 import java.util.PriorityQueue;
-
 import java.util.Comparator;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Welcome to Mister ED!");
+        Heartbeat heartbeat = new Heartbeat(20000);
+        (new Thread(heartbeat)).start();
+
+        SanityCheck sanityCheck = new SanityCheck("https://ipinfo.io/json", 30000);
+        (new Thread(sanityCheck)).start();
+
         Console prompter = System.console();
         System.out.println("Please enter your user class number (1=Patient, 2=HN, 3 = GP, 4 = EDM): ");
         int userClassNumber = Integer.parseInt(prompter.readLine());
@@ -109,7 +113,10 @@ public class Main {
                 }
             }
         }
-       
+
+        heartbeat.stopHeartbeat();
+        sanityCheck.stopSanityCheck();
+        
         /*
         Oliver - ConnecttoHotlinenurse
         Justin - GeneralPractitioner
