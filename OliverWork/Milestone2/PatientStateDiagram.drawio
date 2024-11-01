@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.3">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.3">
   <diagram name="Page-1" id="DYlrvpux4-JASZ0brNI_">
-    <mxGraphModel dx="1194" dy="581" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1836" dy="724" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -44,13 +44,14 @@
         <mxCell id="xyPofnfpF94zoi8fh-3h-13" value="Registered for Triage" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="630" y="340" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="xyPofnfpF94zoi8fh-3h-14" value="Enter Symptoms" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="xyPofnfpF94zoi8fh-3h-2" target="xyPofnfpF94zoi8fh-3h-12" edge="1">
-          <mxGeometry width="80" relative="1" as="geometry">
+        <mxCell id="xyPofnfpF94zoi8fh-3h-14" value="Enter Severity 1-10" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="xyPofnfpF94zoi8fh-3h-2" target="xyPofnfpF94zoi8fh-3h-12" edge="1">
+          <mxGeometry x="0.0001" width="80" relative="1" as="geometry">
             <mxPoint x="459.9973319220215" y="217.35088935932606" as="sourcePoint" />
             <mxPoint x="564.1026680779785" y="217.35088935932617" as="targetPoint" />
             <Array as="points">
               <mxPoint x="512.05" y="200" />
             </Array>
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="xyPofnfpF94zoi8fh-3h-15" value="Viewing Triage Response" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
