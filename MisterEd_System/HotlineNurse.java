@@ -1,11 +1,7 @@
-import java.io.Console;
+import java.io.*; 
 import java.time.LocalDate;
 import java.util.concurrent.TimeUnit;
-
-import java.io.File;  // Import the File class
-import java.io.FileNotFoundException;  // Import this class to handle errors
 import java.util.Scanner; //Import the scanner class to read the text files
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -93,16 +89,13 @@ class HotlineNurse {
             System.out.println(data);
 
             if(!reader.hasNextLine()){
-                System.out.println("There are no patients waiting to call the nurse");
+                System.out.println("There are no patients waiting to call the nurse. Please try again later.");
+                System.exit(0);
             }
-
-            int i = 1;
 
             while(reader.hasNextLine()){
                 data = reader.nextLine();
-                System.out.println("Patient " + i+ " " + data);
-
-                i ++;
+                System.out.println("Patient " + data);
             }
             reader.close();
         } catch(FileNotFoundException e){
@@ -124,21 +117,18 @@ class HotlineNurse {
                 System.out.println("There are no patients waiting to call the nurse");
             }
 
-            int i = 1;
             while(reader.hasNextLine()){ //Loop over all the patients in the call queue
                 data = reader.nextLine();
 
                 String phn = this.getPatientPHN(data);
                 String callSummary = this.getPatientCallSummary(data);
 
-                if(i == patient){
+                if(data.contains(phn)){
                     reader.close();
                     return data;
                 }
                 
-                System.out.println("Patient " + i + " " + phn + ": " + callSummary);
-
-                i ++;
+                System.out.println("Patient " + phn + " Summary: " + callSummary);
             }
 
 
@@ -157,7 +147,7 @@ class HotlineNurse {
         
         String patient = this.getHotlineQueue(patientNumber);
 
-        System.out.println("You are on call with a patient " + patient);
+        System.out.println("You are on call with patient " + patient);
         try{
             TimeUnit.SECONDS.sleep(5);
         } catch (InterruptedException e){
@@ -166,7 +156,39 @@ class HotlineNurse {
         }
         
         System.out.println("Call complete");
+        RewriteFileSkippingLine(patientNumber);
+    }
 
+    public void RewriteFileSkippingLine(int skipLine) {
+        String inputFilePath = "call_summaries.txt";  // Path to the input file
+        String outputFilePath = "call_summaries_rewrite.txt"; // Path to the output file
+
+        try (BufferedReader reader = new BufferedReader(new FileReader(inputFilePath));
+             BufferedWriter writer = new BufferedWriter(new FileWriter(outputFilePath))) {
+
+            String line;
+            while ((line = reader.readLine()) != null) {
+                // Skip the line if it contains skipLine
+                if (line.contains(Integer.toString(skipLine))) {
+                    continue;
+                }
+                // Write the line to the output file
+                writer.write(line);
+                writer.newLine();
+            }
+
+        } catch (IOException e) {
+            System.out.println("Sorry, patient file not found error. Please try again later.");
+            e.printStackTrace();
+            System.exit(0);
+        }
+
+        // Optional: Replace the original file with the updated file
+        File originalFile = new File(inputFilePath);
+        File newFile = new File(outputFilePath);
+        if (originalFile.delete()) {
+            newFile.renameTo(originalFile);
+        }
     }
 
     public void getPromptInput(){
