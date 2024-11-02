@@ -14,6 +14,9 @@ public class Main {
         SanityCheck sanityCheck = new SanityCheck("https://ipinfo.io/json", 30000);
         (new Thread(sanityCheck)).start();
 
+        Backup backup = new Backup("call_summaries.txt", "call_summaries_backup.txt");
+        (new Thread(backup)).start();
+
         Console prompter = System.console();
         System.out.println("Please enter your user class number (1=Patient, 2=HN, 3 = GP, 4 = EDM): ");
         int userClassNumber = Integer.parseInt(prompter.readLine());
@@ -92,7 +95,7 @@ public class Main {
                 if(acceptCall.toLowerCase().contains("yes")) { //If the nurse wants to accept a call then they are able to
                     System.out.println("Pick the patient that you would like to call by entering their number");
                     nurse.printHotlineQueue();
-                    String patientNumber = prompter.readLine("Pick number:");
+                    String patientNumber = prompter.readLine("Pick number:\n");
 
                     nurse.acceptCall(Integer.parseInt(patientNumber));
                     nurse.directPatient();
@@ -114,6 +117,7 @@ public class Main {
             }
         }
 
+        backup.stopBackup();
         heartbeat.stopHeartbeat();
         sanityCheck.stopSanityCheck();
         

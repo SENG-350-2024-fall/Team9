@@ -1,3 +1,6 @@
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 public class Heartbeat implements Runnable {
     private long interval; // interval of milliseconds
     private boolean running = true; // Flag to control the thread
@@ -10,7 +13,8 @@ public class Heartbeat implements Runnable {
     public void run() {
         while (running) {
             try {
-                System.out.print("Mr. ED is running, please proceed with previous instruction: ");
+                String dateTime = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm")); 
+                System.out.println(dateTime + ": Mr. ED is running, please proceed with previous instruction: ");
                 Thread.sleep(interval); // Sleep(milliseconds)
             } catch (InterruptedException e) {
                 System.out.println("An issue occurred in Mr. ED: " + e.getMessage());

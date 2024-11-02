@@ -61,8 +61,7 @@ class HotlineNurse {
     }
 
     public void directPatient() {
-        Console prompter = System.console();
-        String nextStep = prompter.readLine("What is the next step for the patient: ");  // Read a line of text from the user
+        System.console().readLine("What is the next step for the patient: ");  // Read a line of text from the user
         System.out.println("Sending next steps to the patient.");
     }
 
@@ -107,8 +106,9 @@ class HotlineNurse {
             }
             reader.close();
         } catch(FileNotFoundException e){
-            System.out.println("File not found error");
+            System.out.println("Sorry, patient file not found error. Please try again later.");
             e.printStackTrace();
+            System.exit(0);
         }
         
     }
@@ -145,9 +145,9 @@ class HotlineNurse {
             reader.close();
             
         } catch (FileNotFoundException e){
-            System.out.println("File not found error");
+            System.out.println("Sorry, patient file not found error. Please try again later.");
             e.printStackTrace();
-            
+            System.exit(0);
         }
 
         return ":(";
