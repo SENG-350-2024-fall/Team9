@@ -44,42 +44,14 @@ public class Main {
 
             // Prompt for patient to add their info  
             patient.getPromptInput();
-            
-            // the system directs the patient based on their info
-            if (patient.getSeverity() < 3) { // initial direction returns HN 
-                System.out.println("You will need a hotline nurse, please proceed"); // The system notifies the patient
-                patient.callNurseHotline();
-            } 
 
-            else if (patient.getSeverity() < 6) { // initial direction returns GP
-                System.out.println("You will need a General practitioner, please proceed"); // The system notifies the patient
-                triageQueueGP.add(patient);
-                triageQueueGP.sort(Comparator.comparingInt(Patient::getSeverity).reversed());
-                int position = triageQueueGP.indexOf(patient) + 1;
-                System.out.println("Your postion in the queue is: #" + position);
-                System.out.printf("You have %d patient(s) ahead of you.\n", position-1);
-                if (position - 1 == 1) {
-                    System.out.println("Your estimated remaining wait time is: 1 day");
-                } else if (position - 1 == 0) {
-                    System.out.println("You have no patients ahead of you. You will be seen shortly!");
-                } else {
-                    System.out.printf("Your estimated remaining wait time is: %d days\n", (position - 1));
-                }
-            } 
-            
-            else { // initial direction returns ED
-                System.out.println("You will need a visit to an emergency department, please proceed"); // The system notifies the patient
-                triageQueueED.add(patient);
-                triageQueueED.sort(Comparator.comparingInt(Patient::getSeverity).reversed());
-                int position = triageQueueED.indexOf(patient) + 1;
-                System.out.println("Your postion in the queue is: #" + position);
-                System.out.printf("You have %d patient(s) ahead of you.\n", position-1);
-                System.out.printf("Your estimated remaining wait time is: %d mins\n", (position-1)*15);
-                if(prompter.readLine("Do you want to leave the queue? Enter Yes or No:").toLowerCase().contains("yes")) {
-                    triageQueueED.remove(patient); 
-                    System.out.println("You have been removed from the queue.");
-                }
-            }
+            ResponsibilityChain.TriageHandler hotlineNurse = new ResponsibilityChain.HotlineNurseHandler();
+            ResponsibilityChain.TriageHandler gpHandler = new ResponsibilityChain.GPHandler(triageQueueGP);
+            ResponsibilityChain.TriageHandler edHandler = new ResponsibilityChain.EDHandler(triageQueueED);
+
+            hotlineNurse.setNextHandler(gpHandler);
+            gpHandler.setNextHandler(edHandler);
+            hotlineNurse.handleRequest(patient);
 
         } else if (userClassNumber == 2){
             //Create a nurse object
