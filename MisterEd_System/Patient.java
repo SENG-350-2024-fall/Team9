@@ -6,7 +6,11 @@ import java.util.Random;
 import java.util.Comparator;
 import java.util.Objects;
 
-class Patient implements Observer {
+interface Prototype {
+    Prototype clone();
+}
+
+class Patient implements Observer, Prototype {
     public String name;
     private String phoneNumber;
     private String emailAddress;
@@ -30,6 +34,11 @@ class Patient implements Observer {
         this.birthDate = birthDate;
         this.personalHealthNumber = personalHealthNumber;
         this.severity = severity;
+    }
+
+    @Override
+    public Prototype clone() {
+        return new Patient("", phoneNumber, emailAddress, null, 0000, severity);
     }
 
     @Override
@@ -149,18 +158,18 @@ class Patient implements Observer {
         hotlineNurse.performDuties();
 
         System.out.println("please try to speak clearly (:"); 
-        try {
+        try { 
             synchronized (this) { wait(10000); }
         } catch (Exception e) {
            e.printStackTrace();
         }
+
         System.out.println("Your Hotline Nurse call has completed."); 
+        
         Random random = new Random();
         if(random.nextBoolean()) {
             System.out.println("The Hotline Nurse directs you to GP");
-        } 
-
-        else {
+        } else {
             System.out.println("The Hotline Nurse directs you to ED");
         }
         

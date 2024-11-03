@@ -5,7 +5,6 @@ import java.util.Scanner; //Import the scanner class to read the text files
 import java.util.ArrayList;
 import java.util.List;
 
-// Nurse.java (Interface)
 interface Nurse {
     void performDuties();
 }
@@ -210,6 +209,9 @@ class HotlineNurse implements Nurse {
 
         String phoneNumberInput = prompter.readLine("Enter your phone number: ");  // Read a phone number input from the user
         setPhoneNumber(phoneNumberInput);
+        
+        int employeeNumberInput = Integer.parseInt(prompter.readLine("Enter your employee number in the format XXXX: "));
+        setEmployeeNumber(employeeNumberInput);
     }
 
     public static void main(String[] args) {
