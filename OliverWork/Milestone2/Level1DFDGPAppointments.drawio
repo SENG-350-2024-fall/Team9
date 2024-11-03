@@ -40,10 +40,10 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="RXX17aKGSC6OlVybVhoN-9" value="&lt;u&gt;5.3&lt;/u&gt;&lt;div&gt;Diagnose Patient&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
-          <mxGeometry x="360" y="320" width="80" height="80" as="geometry" />
+        <mxCell id="RXX17aKGSC6OlVybVhoN-9" value="&lt;u&gt;5.3&lt;/u&gt;&lt;div&gt;Approve/&lt;span style=&quot;background-color: initial;&quot;&gt;Override&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Appointment&lt;/span&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="340" y="280" width="120" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="RXX17aKGSC6OlVybVhoN-10" value="Diagnoses" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" parent="1" source="RXX17aKGSC6OlVybVhoN-3" target="RXX17aKGSC6OlVybVhoN-9" edge="1">
+        <mxCell id="RXX17aKGSC6OlVybVhoN-10" value="Approvals/Overrides" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" parent="1" source="RXX17aKGSC6OlVybVhoN-3" target="RXX17aKGSC6OlVybVhoN-9" edge="1">
           <mxGeometry width="80" relative="1" as="geometry">
             <mxPoint x="550" y="250" as="sourcePoint" />
             <mxPoint x="630" y="250" as="targetPoint" />
@@ -52,13 +52,18 @@
         <mxCell id="RXX17aKGSC6OlVybVhoN-11" value="Patient" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="130" y="210" width="80" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="RXX17aKGSC6OlVybVhoN-12" value="Diagnoses" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" source="RXX17aKGSC6OlVybVhoN-9" target="RXX17aKGSC6OlVybVhoN-11" edge="1">
+        <mxCell id="RXX17aKGSC6OlVybVhoN-12" value="" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="RXX17aKGSC6OlVybVhoN-9" target="RXX17aKGSC6OlVybVhoN-11" edge="1">
           <mxGeometry width="80" relative="1" as="geometry">
             <mxPoint x="250" y="330" as="sourcePoint" />
             <mxPoint x="330" y="330" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="RXX17aKGSC6OlVybVhoN-13" value="Add to Appointment" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" source="RXX17aKGSC6OlVybVhoN-1" target="RXX17aKGSC6OlVybVhoN-11" edge="1">
+        <mxCell id="FxqJOd0t4ipzE0LaNOd2-2" value="Appointment Completion" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="RXX17aKGSC6OlVybVhoN-12">
+          <mxGeometry x="0.2459" y="-4" relative="1" as="geometry">
+            <mxPoint x="16" y="16" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RXX17aKGSC6OlVybVhoN-13" value="Add to Appointment" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="RXX17aKGSC6OlVybVhoN-1" target="RXX17aKGSC6OlVybVhoN-11" edge="1">
           <mxGeometry width="80" relative="1" as="geometry">
             <mxPoint x="260" y="180" as="sourcePoint" />
             <mxPoint x="340" y="180" as="targetPoint" />
