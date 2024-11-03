@@ -161,7 +161,6 @@ public class Main {
             /*
             edManager.adjustEDWaitlist();
             edManager.viewEDStatistics();
-            edManager.autoScheduleStaffShifts();
             edManager.reorganizeAppointments();
             edManager.toggleWaitRoomCapacity();
             */

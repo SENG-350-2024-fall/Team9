@@ -69,11 +69,6 @@ public class ED_Manager {
         System.out.println("Viewing ED statistics...");
     }
 
-    public void autoScheduleStaffShifts() {
-        // Implementation for auto-scheduling staff shifts
-        System.out.println("Auto-scheduling staff shifts...");
-    }
-
     public void reorganizeAppointments() {
         // Implementation for reorganizing appointments
         System.out.println("Reorganizing appointments...");
@@ -111,7 +106,6 @@ public class ED_Manager {
         // Use methods
         edManager.adjustEDWaitlist();
         edManager.viewEDStatistics();
-        edManager.autoScheduleStaffShifts();
         edManager.reorganizeAppointments();
         edManager.toggleWaitRoomCapacity();
         
