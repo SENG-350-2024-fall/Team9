@@ -98,8 +98,8 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="CbKAAR9xL1HYXpp5iDJo-17" value="Patient&lt;div&gt;Summary&lt;/div&gt;" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" source="CbKAAR9xL1HYXpp5iDJo-2" target="CbKAAR9xL1HYXpp5iDJo-1" edge="1">
-          <mxGeometry x="-0.4684" y="4" width="80" relative="1" as="geometry">
+        <mxCell id="CbKAAR9xL1HYXpp5iDJo-17" value="Call&lt;div&gt;Summary&lt;/div&gt;" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" source="CbKAAR9xL1HYXpp5iDJo-2" target="CbKAAR9xL1HYXpp5iDJo-1" edge="1">
+          <mxGeometry x="-0.4747" y="4" width="80" relative="1" as="geometry">
             <mxPoint x="290" y="300" as="sourcePoint" />
             <mxPoint x="370" y="300" as="targetPoint" />
             <Array as="points" />
