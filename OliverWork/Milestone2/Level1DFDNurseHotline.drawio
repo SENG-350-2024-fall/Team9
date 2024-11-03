@@ -77,7 +77,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="hgNfzg_kcoW2ZR8ERpB9-16" value="Virtual Patient&amp;nbsp;&lt;div&gt;Triage&lt;/div&gt;" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=none;" parent="1" vertex="1">
+        <mxCell id="hgNfzg_kcoW2ZR8ERpB9-16" value="Virtual&amp;nbsp;&lt;div&gt;Triage&lt;/div&gt;" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="60" y="140" width="80" height="40" as="geometry" />
         </mxCell>
       </root>
