@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.3">
   <diagram name="Page-1" id="sxiHabMewd0oX9gJ2LRB">
-    <mxGraphModel dx="646" dy="336" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="345" dy="179" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -37,18 +37,28 @@
             <mxPoint x="-2" y="-5" as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="0kFKw8IG2FMoHEPVpHrC-9" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="oJBBDkfFIxPI2WfVs7z5-10" target="oJBBDkfFIxPI2WfVs7z5-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="oJBBDkfFIxPI2WfVs7z5-10" value="On Call &amp;amp; Transcribing" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="370" y="350" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="oJBBDkfFIxPI2WfVs7z5-15" value="" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="oJBBDkfFIxPI2WfVs7z5-8" target="oJBBDkfFIxPI2WfVs7z5-10" edge="1">
+        <mxCell id="oJBBDkfFIxPI2WfVs7z5-15" value="" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;elbow=vertical;" parent="1" source="oJBBDkfFIxPI2WfVs7z5-8" target="oJBBDkfFIxPI2WfVs7z5-10" edge="1">
           <mxGeometry width="80" relative="1" as="geometry">
             <mxPoint x="460" y="480" as="sourcePoint" />
             <mxPoint x="540" y="480" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="490" y="440" />
+            </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="0kFKw8IG2FMoHEPVpHrC-3" value="Turns On&amp;nbsp;&lt;div&gt;Auto Log&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="oJBBDkfFIxPI2WfVs7z5-15">
           <mxGeometry x="0.175" y="-1" relative="1" as="geometry">
-            <mxPoint x="14" as="offset" />
+            <mxPoint x="-4" y="-6" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="oJBBDkfFIxPI2WfVs7z5-17" value="Transcription Sending" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
@@ -116,6 +126,9 @@
           <mxGeometry x="-0.1582" y="1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="0kFKw8IG2FMoHEPVpHrC-10" value="Turns Off&amp;nbsp;&lt;div&gt;Auto Log&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="490.0023697067995" y="360.00195410480217" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
