@@ -84,24 +84,6 @@ public class ED_Manager {
         System.out.println("Toggling wait room capacity...");
     }
 
-    // Main method for testing
-    public static void main(String[] args) {
-        ED_Manager edManager = new ED_Manager("John Paetkau", 12345, "email@example.com", "123-456-7890");
-
-        // Print initial information
-        System.out.print(edManager);
-
-        // Use methods
-        
-        edManager.adjustEDWaitlist();
-        edManager.viewEDStatistics();
-        edManager.autoScheduleStaffShifts();
-        edManager.reorganizeAppointments();
-        edManager.toggleWaitRoomCapacity();
-        
-        
-    }
-
     public void getPromptInput(){
         System.out.println("You are a Emergency Department Manager");
         Console prompter = System.console();
@@ -117,5 +99,22 @@ public class ED_Manager {
 
         int employeeNumberInput = Integer.parseInt(prompter.readLine("Enter your employee number in the format XXXX: "));
         setEmployeeNumber(employeeNumberInput);
+    }
+
+    // Main method for testing
+    public static void main(String[] args) {
+        ED_Manager edManager = new ED_Manager("John Paetkau", 1245, "email@example.com", "123-456-7890");
+
+        // Print initial information
+        System.out.print(edManager);
+
+        // Use methods
+        edManager.adjustEDWaitlist();
+        edManager.viewEDStatistics();
+        edManager.autoScheduleStaffShifts();
+        edManager.reorganizeAppointments();
+        edManager.toggleWaitRoomCapacity();
+        
+        
     }
 }
