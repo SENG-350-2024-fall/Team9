@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.3">
   <diagram name="Page-1" id="TvflJKf0kD2NScJ3OZ6a">
-    <mxGraphModel dx="595" dy="623" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="625" dy="654" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -122,27 +122,34 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="CbKAAR9xL1HYXpp5iDJo-21" value="Patient&lt;div&gt;Information&lt;/div&gt;" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" target="CbKAAR9xL1HYXpp5iDJo-2" edge="1">
+        <mxCell id="CbKAAR9xL1HYXpp5iDJo-21" value="" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" parent="1" source="CbKAAR9xL1HYXpp5iDJo-5" target="CbKAAR9xL1HYXpp5iDJo-2" edge="1">
           <mxGeometry x="0.1285" y="-14" width="80" relative="1" as="geometry">
             <mxPoint x="276.0337795211731" y="297.3656768776739" as="sourcePoint" />
             <mxPoint x="180" y="270" as="targetPoint" />
             <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="210" y="350" />
+            </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="CbKAAR9xL1HYXpp5iDJo-22" value="Patient&lt;div&gt;Information&lt;/div&gt;" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" target="CbKAAR9xL1HYXpp5iDJo-1" edge="1">
-          <mxGeometry x="-0.0832" y="-4" width="80" relative="1" as="geometry">
-            <mxPoint x="273.22175967675685" y="257.72187880499814" as="sourcePoint" />
-            <mxPoint x="320" y="190" as="targetPoint" />
-            <mxPoint as="offset" />
+        <mxCell id="YeALRRdhSBRuB4E_Wg77-3" value="Patient Info" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CbKAAR9xL1HYXpp5iDJo-21">
+          <mxGeometry x="0.05" relative="1" as="geometry">
+            <mxPoint x="12" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="CbKAAR9xL1HYXpp5iDJo-23" value="&lt;u&gt;4.0&lt;/u&gt;&lt;div&gt;GP Appointments&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="500" y="410" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="CbKAAR9xL1HYXpp5iDJo-24" value="Patient&lt;div&gt;Symptoms&lt;/div&gt;" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" source="CbKAAR9xL1HYXpp5iDJo-2" target="CbKAAR9xL1HYXpp5iDJo-23" edge="1">
-          <mxGeometry width="80" relative="1" as="geometry">
+        <mxCell id="CbKAAR9xL1HYXpp5iDJo-24" value="" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" source="CbKAAR9xL1HYXpp5iDJo-2" target="CbKAAR9xL1HYXpp5iDJo-23" edge="1">
+          <mxGeometry x="-0.118" y="3" width="80" relative="1" as="geometry">
             <mxPoint x="470" y="370" as="sourcePoint" />
             <mxPoint x="550" y="370" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YeALRRdhSBRuB4E_Wg77-2" value="Patient&lt;div&gt;Severity&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CbKAAR9xL1HYXpp5iDJo-24">
+          <mxGeometry x="-0.2853" y="-1" relative="1" as="geometry">
+            <mxPoint x="3" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="CbKAAR9xL1HYXpp5iDJo-26" value="Accept&lt;div&gt;Appointments&lt;/div&gt;" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" source="CbKAAR9xL1HYXpp5iDJo-15" target="CbKAAR9xL1HYXpp5iDJo-23" edge="1">
