@@ -4,8 +4,8 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="41pfow4yXBDvhuGEHtAJ-1" value="Viewing Appointment" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
-          <mxGeometry x="250" y="120" width="80" height="80" as="geometry" />
+        <mxCell id="41pfow4yXBDvhuGEHtAJ-1" value="Viewing Appointments" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="240" y="110" width="90" height="90" as="geometry" />
         </mxCell>
         <mxCell id="41pfow4yXBDvhuGEHtAJ-2" value="Sending Patient to ER" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="130" y="260" width="80" height="80" as="geometry" />
@@ -30,11 +30,16 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="41pfow4yXBDvhuGEHtAJ-5" value="GP Aproves&lt;div&gt;Appointment&lt;/div&gt;" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" source="41pfow4yXBDvhuGEHtAJ-1" target="41pfow4yXBDvhuGEHtAJ-6" edge="1">
-          <mxGeometry width="80" relative="1" as="geometry">
+        <mxCell id="41pfow4yXBDvhuGEHtAJ-5" value="" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" source="41pfow4yXBDvhuGEHtAJ-1" target="41pfow4yXBDvhuGEHtAJ-6" edge="1">
+          <mxGeometry x="-0.288" y="7" width="80" relative="1" as="geometry">
             <mxPoint x="360" y="160" as="sourcePoint" />
             <mxPoint x="440" y="160" as="targetPoint" />
             <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3FWi6CW-oHw4jZ8Beorg-2" value="GP Aproves&lt;div&gt;Appointment&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="41pfow4yXBDvhuGEHtAJ-5">
+          <mxGeometry x="-0.4304" y="2" relative="1" as="geometry">
+            <mxPoint x="10" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="41pfow4yXBDvhuGEHtAJ-6" value="In Appointment" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
