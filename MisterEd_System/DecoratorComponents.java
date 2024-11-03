@@ -36,8 +36,8 @@ public class DecoratorComponents {
         }
     }
 
-    public static class RespitoryNurseDecorator extends NurseDecorator {
-        public RespitoryNurseDecorator(Nurse decoratedNurse) {
+    public static class RespiratoryNurseDecorator extends NurseDecorator {
+        public RespiratoryNurseDecorator(Nurse decoratedNurse) {
             super(decoratedNurse);
         }
 

@@ -133,7 +133,7 @@ class Patient implements Observer {
         Nurse hotlineNurse = new HotlineNurse();
 
         if(System.console().readLine("Do you have breathing issues?: ").toLowerCase().contains("yes")) {
-            hotlineNurse = new DecoratorComponents.RespitoryNurseDecorator(hotlineNurse);
+            hotlineNurse = new DecoratorComponents.RespiratoryNurseDecorator(hotlineNurse);
         }
 
         System.out.println("You are now on call with your Hotline Nurse:");
