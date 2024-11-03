@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.3">
   <diagram name="Page-1" id="58cdce13-f638-feb5-8d6f-7d28b1aa9fa0">
-    <mxGraphModel dx="1659" dy="655" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+    <mxGraphModel dx="1030" dy="328" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -11,19 +11,24 @@
         </mxCell>
         <mxCell id="udmGXA6qzwontc74sRsV-17" value="changes completed" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" parent="udmGXA6qzwontc74sRsV-16" vertex="1" connectable="0">
           <mxGeometry x="0.1378" y="21" relative="1" as="geometry">
-            <mxPoint x="8" y="-24" as="offset" />
+            <mxPoint x="14" y="-21" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="382b91b5511bd0f7-9" value="Using WaitRoomManagerGUI" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;align=center;shape=ellipse;perimeter=ellipsePerimeter;" parent="1" vertex="1">
-          <mxGeometry x="510" y="165" width="160" height="140" as="geometry" />
+          <mxGeometry x="525" y="170" width="160" height="140" as="geometry" />
         </mxCell>
         <mxCell id="udmGXA6qzwontc74sRsV-2" value="Using WaitRoom&lt;span style=&quot;background-color: initial;&quot;&gt;CapacitySlider&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;align=center;shape=ellipse;perimeter=ellipsePerimeter;" parent="1" vertex="1">
           <mxGeometry x="-142" y="149" width="160" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="udmGXA6qzwontc74sRsV-14" value="" style="orthogonalLoop=1;jettySize=auto;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;exitX=0.943;exitY=0.699;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitPerimeter=0;" parent="1" source="GER6duk_hUemQV0kUoSJ-14" target="382b91b5511bd0f7-9" edge="1">
+        <mxCell id="udmGXA6qzwontc74sRsV-14" value="" style="orthogonalLoop=1;jettySize=auto;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;exitX=0.943;exitY=0.699;exitDx=0;exitDy=0;entryX=0.004;entryY=0.53;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" parent="1" source="GER6duk_hUemQV0kUoSJ-14" target="382b91b5511bd0f7-9" edge="1">
           <mxGeometry width="140" relative="1" as="geometry">
             <mxPoint x="360" y="260" as="sourcePoint" />
             <mxPoint x="600" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gHChsq1TqteNVNANLhJo-8" value="waitlist becomes poorly prioritized" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="udmGXA6qzwontc74sRsV-14">
+          <mxGeometry x="-0.1488" relative="1" as="geometry">
+            <mxPoint x="14" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="udmGXA6qzwontc74sRsV-19" value="" style="orthogonalLoop=1;jettySize=auto;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" parent="1" source="GER6duk_hUemQV0kUoSJ-14" target="udmGXA6qzwontc74sRsV-2" edge="1">
