@@ -5,7 +5,12 @@ import java.util.Scanner; //Import the scanner class to read the text files
 import java.util.ArrayList;
 import java.util.List;
 
-class HotlineNurse {
+// Nurse.java (Interface)
+interface Nurse {
+    void performDuties();
+}
+
+class HotlineNurse implements Nurse {
     public String name;
     private String phoneNumber;
     protected int employeeNumber;
@@ -23,6 +28,11 @@ class HotlineNurse {
         this.phoneNumber = phoneNumber;
         this.employeeNumber = employeeNumber;
         this.callQ = new ArrayList<>();
+    }
+
+    @Override
+    public void performDuties() {
+        System.out.println("Performing basic hotline nurse duties.");
     }
 
     public void setName(String name) {

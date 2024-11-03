@@ -8,18 +8,14 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        Heartbeat heartbeat = new Heartbeat(20000);
+        Heartbeat heartbeat = new Heartbeat(50000);
         (new Thread(heartbeat)).start();
 
-        SanityCheck sanityCheck = new SanityCheck("https://ipinfo.io/json", 30000);
+        SanityCheck sanityCheck = new SanityCheck("https://ipinfo.io/json", 50000);
         (new Thread(sanityCheck)).start();
 
         Backup backup = new Backup("call_summaries.txt", "call_summaries_backup.txt");
         (new Thread(backup)).start();
-
-        Console prompter = System.console();
-        System.out.println("Please enter your user class number (1=Patient, 2=HN, 3 = GP, 4 = EDM): ");
-        int userClassNumber = Integer.parseInt(prompter.readLine());
         
         List<Patient> triageQueueED = new ArrayList<>();
         
@@ -30,10 +26,19 @@ public class Main {
 
         List<Patient> triageQueueGP = new ArrayList<>();
         
-        triageQueueGP.add(new Patient("John Paetkau", "123-456-7890", "jonnny@example.com", LocalDate.of(1990, 1, 1), 1111, 5));
-        triageQueueGP.add(new Patient("Anna Mulcaster", "123-456-7890", "annnie@example.com", LocalDate.of(1990, 1, 1), 2212, 4));
-        triageQueueGP.add(new Patient("Nathan Streetwood", "123-456-7890", "nate@example.com", LocalDate.of(1990, 1, 1), 2231, 3));
-        triageQueueGP.add(new Patient("Rosa Drives", "123-456-7890", "rosie@example.com", LocalDate.of(1913, 1, 1), 8876, 3));
+        triageQueueGP.add(new Patient("Jeff Paetkau", "123-456-7890", "jeffrey@example.com", LocalDate.of(1990, 3, 1), 4523, 5));
+        triageQueueGP.add(new Patient("Abby Mulcaster", "123-456-7890", "abigail@example.com", LocalDate.of(1990, 1, 3), 8976, 4));
+        triageQueueGP.add(new Patient("Nolan Streetwood", "123-456-7890", "nolan@example.com", LocalDate.of(1993, 1, 1), 2331, 3));
+        triageQueueGP.add(new Patient("Ruby Drives", "123-456-7890", "ruby@example.com", LocalDate.of(1933, 1, 1), 8876, 3));
+
+        MrEDNotifier mrEDNotifier = new MrEDNotifier();
+        mrEDNotifier.attachAll(triageQueueED);
+        mrEDNotifier.attachAll(triageQueueGP);
+        mrEDNotifier.setState("Mr. ED notifying all patients.");
+
+        Console prompter = System.console();
+        System.out.println("Please enter your user class number (1=Patient, 2=HN, 3 = GP, 4 = EDM): ");
+        int userClassNumber = Integer.parseInt(prompter.readLine());
 
         if (userClassNumber == 1) {
             // Creates a patient object
@@ -45,19 +50,19 @@ public class Main {
             // Prompt for patient to add their info  
             patient.getPromptInput();
 
-            ResponsibilityChain.TriageHandler hotlineNurse = new ResponsibilityChain.HotlineNurseHandler();
+            ResponsibilityChain.TriageHandler hnHandler = new ResponsibilityChain.HotlineNurseHandler();
             ResponsibilityChain.TriageHandler gpHandler = new ResponsibilityChain.GPHandler(triageQueueGP);
             ResponsibilityChain.TriageHandler edHandler = new ResponsibilityChain.EDHandler(triageQueueED);
 
-            hotlineNurse.setNextHandler(gpHandler);
+            hnHandler.setNextHandler(gpHandler);
             gpHandler.setNextHandler(edHandler);
-            hotlineNurse.handleRequest(patient);
+            hnHandler.handleRequest(patient);
 
         } else if (userClassNumber == 2){
             //Create a nurse object
-            HotlineNurse nurse = new HotlineNurse();
+            HotlineNurse hotlineNurse = new HotlineNurse();
 
-            nurse.getPromptInput();
+            hotlineNurse.getPromptInput();
             String acceptCall = "yes";
 
             while(acceptCall.toLowerCase().equals("yes")){ 
@@ -66,11 +71,11 @@ public class Main {
                 
                 if(acceptCall.toLowerCase().contains("yes")) { //If the nurse wants to accept a call then they are able to
                     System.out.println("Pick the patient that you would like to call by entering their number");
-                    nurse.printHotlineQueue();
+                    hotlineNurse.printHotlineQueue();
                     String patientNumber = prompter.readLine("Pick number:\n");
 
-                    nurse.acceptCall(Integer.parseInt(patientNumber));
-                    nurse.directPatient();
+                    hotlineNurse.acceptCall(Integer.parseInt(patientNumber));
+                    hotlineNurse.directPatient();
                 }
             }
 
@@ -92,11 +97,5 @@ public class Main {
         backup.stopBackup();
         heartbeat.stopHeartbeat();
         sanityCheck.stopSanityCheck();
-        
-        /*
-        Oliver - ConnecttoHotlinenurse
-        Justin - GeneralPractitioner
-        Elior - ED
-        */
     }
 }

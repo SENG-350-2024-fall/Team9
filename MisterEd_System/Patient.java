@@ -1,12 +1,12 @@
 import java.io.FileWriter;
 import java.io.IOException;
-import java.time.LocalDate;
+import java.time.*;
 import java.io.Console;
 import java.util.Random;
 import java.util.Comparator;
 import java.util.Objects;
 
-class Patient {
+class Patient implements Observer {
     public String name;
     private String phoneNumber;
     private String emailAddress;
@@ -30,6 +30,11 @@ class Patient {
         this.birthDate = birthDate;
         this.personalHealthNumber = personalHealthNumber;
         this.severity = severity;
+    }
+
+    @Override
+    public void update(String state) {
+        System.out.println("Patient: " + name + " received update: " + state);
     }
 
     public void getPromptInput () {
@@ -105,6 +110,15 @@ class Patient {
         return birthDate;
     }
 
+    public int getAge() {
+        if (birthDate == null) {
+            throw new IllegalStateException("Birth date is not set.");
+        }
+
+        LocalDate currentDate = LocalDate.now();
+        return Period.between(birthDate, currentDate).getYears();
+    }
+
     public int getPersonalHealthNumber() {
         return personalHealthNumber;
     }
@@ -115,7 +129,26 @@ class Patient {
 
     public void callNurseHotline() {
         provideCallSummary();
-        System.out.println("You are now on call with your Hotline Nurse, please try to speak clearly (:"); 
+        System.out.println("Please answer the following question(s) for Mr. ED to better address your needs."); 
+        Nurse hotlineNurse = new HotlineNurse();
+
+        if(System.console().readLine("Do you have breathing issues?: ").toLowerCase().contains("yes")) {
+            hotlineNurse = new DecoratorComponents.RespitoryNurseDecorator(hotlineNurse);
+        }
+
+        System.out.println("You are now on call with your Hotline Nurse:");
+        int patientAge = getAge();
+        if(patientAge < 10) {
+            hotlineNurse = new DecoratorComponents.PediatricNurseDecorator(hotlineNurse);
+        } 
+
+        if(patientAge > 60) {
+            hotlineNurse = new DecoratorComponents.GeriatricNurseDecorator(hotlineNurse);
+        } 
+
+        hotlineNurse.performDuties();
+
+        System.out.println("please try to speak clearly (:"); 
         try {
             synchronized (this) { wait(10000); }
         } catch (Exception e) {
