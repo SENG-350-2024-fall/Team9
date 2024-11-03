@@ -1,13 +1,13 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.3">
   <diagram name="Page-1" id="21PdakD2TWvM-ZCHl48L">
-    <mxGraphModel dx="625" dy="654" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="595" dy="623" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="7Vxlq_o3tsE_g2DgEoEf-1" value="&lt;u&gt;2.1&lt;/u&gt;&lt;div&gt;Receive Patient Severity&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="385" y="100" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="7Vxlq_o3tsE_g2DgEoEf-2" value="" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" source="7Vxlq_o3tsE_g2DgEoEf-4" target="7Vxlq_o3tsE_g2DgEoEf-1" edge="1">
+        <mxCell id="7Vxlq_o3tsE_g2DgEoEf-2" value="" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="7Vxlq_o3tsE_g2DgEoEf-4" target="7Vxlq_o3tsE_g2DgEoEf-1" edge="1">
           <mxGeometry width="80" relative="1" as="geometry">
             <mxPoint x="290" y="110" as="sourcePoint" />
             <mxPoint x="470" y="230" as="targetPoint" />
