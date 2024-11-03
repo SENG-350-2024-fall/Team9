@@ -1,32 +1,25 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.8.0">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.3">
   <diagram name="Page-1" id="sxiHabMewd0oX9gJ2LRB">
-    <mxGraphModel dx="918" dy="362" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="899" dy="468" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="oJBBDkfFIxPI2WfVs7z5-1" value="System is Idle" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
-          <mxGeometry x="340" y="220" width="80" height="80" as="geometry" />
+          <mxGeometry x="360" y="260" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="oJBBDkfFIxPI2WfVs7z5-3" value="Nurse Logs In" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" source="oJBBDkfFIxPI2WfVs7z5-1" target="oJBBDkfFIxPI2WfVs7z5-5" edge="1">
+        <mxCell id="oJBBDkfFIxPI2WfVs7z5-3" value="" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" parent="1" source="oJBBDkfFIxPI2WfVs7z5-1" target="oJBBDkfFIxPI2WfVs7z5-5" edge="1">
           <mxGeometry width="80" relative="1" as="geometry">
             <mxPoint x="250" y="230" as="sourcePoint" />
             <mxPoint x="350" y="310" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="490" y="310" />
-            </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="oJBBDkfFIxPI2WfVs7z5-4" value="Nurse Log Out" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" source="oJBBDkfFIxPI2WfVs7z5-5" target="oJBBDkfFIxPI2WfVs7z5-1" edge="1">
-          <mxGeometry width="80" relative="1" as="geometry">
-            <mxPoint x="340.16427174129194" y="336.3785701582992" as="sourcePoint" />
-            <mxPoint x="220" y="390" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="480" y="340" />
-            </Array>
+        <mxCell id="0kFKw8IG2FMoHEPVpHrC-1" value="Nurse Opens App" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="oJBBDkfFIxPI2WfVs7z5-3">
+          <mxGeometry x="-0.0498" relative="1" as="geometry">
+            <mxPoint y="-1" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="oJBBDkfFIxPI2WfVs7z5-5" value="Viewing Waitlist" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
-          <mxGeometry x="560" y="300" width="80" height="80" as="geometry" />
+        <mxCell id="oJBBDkfFIxPI2WfVs7z5-5" value="Viewing Waitlist/Summaries&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="560" y="240" width="120" height="120" as="geometry" />
         </mxCell>
         <mxCell id="oJBBDkfFIxPI2WfVs7z5-8" value="On Call and Not Transcribing" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="520" y="430" width="80" height="80" as="geometry" />
@@ -41,29 +34,6 @@
         </mxCell>
         <mxCell id="oJBBDkfFIxPI2WfVs7z5-10" value="On Call and Transcribing" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="360" y="350" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="oJBBDkfFIxPI2WfVs7z5-12" value="Viewing Call Summary" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
-          <mxGeometry x="600" y="160" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="oJBBDkfFIxPI2WfVs7z5-13" value="Nurse Clicks&lt;div&gt;View Summary&lt;/div&gt;" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" source="oJBBDkfFIxPI2WfVs7z5-5" target="oJBBDkfFIxPI2WfVs7z5-12" edge="1">
-          <mxGeometry x="-0.4576" y="1" width="80" relative="1" as="geometry">
-            <mxPoint x="490" y="250" as="sourcePoint" />
-            <mxPoint x="570" y="250" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="590" y="270" />
-            </Array>
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="oJBBDkfFIxPI2WfVs7z5-14" value="Nurse&lt;div&gt;Exits&lt;/div&gt;" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" source="oJBBDkfFIxPI2WfVs7z5-12" target="oJBBDkfFIxPI2WfVs7z5-5" edge="1">
-          <mxGeometry x="0.2966" y="14" width="80" relative="1" as="geometry">
-            <mxPoint x="670" y="290" as="sourcePoint" />
-            <mxPoint x="750" y="290" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="660" y="280" />
-            </Array>
-            <mxPoint as="offset" />
-          </mxGeometry>
         </mxCell>
         <mxCell id="oJBBDkfFIxPI2WfVs7z5-15" value="Turns On Auto Log" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" source="oJBBDkfFIxPI2WfVs7z5-8" target="oJBBDkfFIxPI2WfVs7z5-10" edge="1">
           <mxGeometry width="80" relative="1" as="geometry">
@@ -85,7 +55,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="oJBBDkfFIxPI2WfVs7z5-17" value="Transcription Sending" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
-          <mxGeometry x="650" y="530" width="80" height="80" as="geometry" />
+          <mxGeometry x="720" y="510" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="oJBBDkfFIxPI2WfVs7z5-18" value="Call Ends" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" source="oJBBDkfFIxPI2WfVs7z5-10" target="oJBBDkfFIxPI2WfVs7z5-25" edge="1">
           <mxGeometry x="0.0426" y="-5" width="80" relative="1" as="geometry">
@@ -99,14 +69,14 @@
             <mxPoint x="420" y="390" as="sourcePoint" />
             <mxPoint x="760" y="570" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="740" y="480" />
-              <mxPoint x="720" y="420" />
+              <mxPoint x="750" y="480" />
+              <mxPoint x="740" y="410" />
             </Array>
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="oJBBDkfFIxPI2WfVs7z5-22" value="Patient Being Directed" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
-          <mxGeometry x="640" y="430" width="80" height="80" as="geometry" />
+          <mxGeometry x="650" y="430" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="oJBBDkfFIxPI2WfVs7z5-23" value="Call Ends" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" source="oJBBDkfFIxPI2WfVs7z5-8" target="oJBBDkfFIxPI2WfVs7z5-22" edge="1">
           <mxGeometry x="0.0394" y="-21" width="80" relative="1" as="geometry">
@@ -124,9 +94,9 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="oJBBDkfFIxPI2WfVs7z5-25" value="Patient Being Directed" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
-          <mxGeometry x="430" y="510" width="80" height="80" as="geometry" />
+          <mxGeometry x="410" y="510" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="oJBBDkfFIxPI2WfVs7z5-26" value="Patient Finshed&lt;div&gt;Direction&lt;/div&gt;" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" source="oJBBDkfFIxPI2WfVs7z5-25" target="oJBBDkfFIxPI2WfVs7z5-17" edge="1">
+        <mxCell id="oJBBDkfFIxPI2WfVs7z5-26" value="" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" source="oJBBDkfFIxPI2WfVs7z5-25" target="oJBBDkfFIxPI2WfVs7z5-17" edge="1">
           <mxGeometry x="-0.1718" y="8" width="80" relative="1" as="geometry">
             <mxPoint x="763" y="534" as="sourcePoint" />
             <mxPoint x="641" y="375" as="targetPoint" />
@@ -134,10 +104,9 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="oJBBDkfFIxPI2WfVs7z5-29" value="" style="html=1;verticalAlign=bottom;startArrow=circle;startFill=1;endArrow=open;startSize=6;endSize=8;curved=0;rounded=0;" parent="1" edge="1">
-          <mxGeometry width="80" relative="1" as="geometry">
-            <mxPoint x="260" y="259.5" as="sourcePoint" />
-            <mxPoint x="340" y="259.5" as="targetPoint" />
+        <mxCell id="0kFKw8IG2FMoHEPVpHrC-2" value="Patient Finshed&lt;div&gt;Direction&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="oJBBDkfFIxPI2WfVs7z5-26">
+          <mxGeometry x="-0.1582" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
       </root>
