@@ -1,10 +1,20 @@
+import java.io.Console;
+
 public class ED_Manager {
     public String name;               // Public Name attribute
     private int employeeNumber;        // Private employee number
     private String emailAddress;       // Private email address
     private String phoneNumber;        // Private phone number
 
-    // Constructor
+    
+
+    public ED_Manager() {
+        this.name = "";
+        this.employeeNumber = 0;
+        this.emailAddress = "";
+        this.phoneNumber = "";
+    }
+
     public ED_Manager(String name, int employeeNumber, String emailAddress, String phoneNumber) {
         this.name = name;
         this.employeeNumber = employeeNumber;
@@ -26,6 +36,10 @@ public class ED_Manager {
             "ED Manager Info> Name: %s, Employee Number: %s, Email: %s, Phone Number: %s\n",
             name, getEmployeeNumber(), getEmailAddress(), getPhoneNumber()
         );
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getEmailAddress() {
@@ -78,10 +92,30 @@ public class ED_Manager {
         System.out.print(edManager);
 
         // Use methods
+        
         edManager.adjustEDWaitlist();
         edManager.viewEDStatistics();
         edManager.autoScheduleStaffShifts();
         edManager.reorganizeAppointments();
         edManager.toggleWaitRoomCapacity();
+        
+        
+    }
+
+    public void getPromptInput(){
+        System.out.println("You are a Emergency Department Manager");
+        Console prompter = System.console();
+
+        String nameInput = prompter.readLine("Enter your name: ");
+        setName(nameInput);
+
+        String phoneNumberInput = prompter.readLine("Enter your phone number: ");
+        setPhoneNumber(phoneNumberInput);
+        
+        String emailInput = prompter.readLine("Enter your email: ");
+        setEmailAddress(emailInput);
+
+        int employeeNumberInput = Integer.parseInt(prompter.readLine("Enter your employee number in the format XXXX: "));
+        setEmployeeNumber(employeeNumberInput);
     }
 }

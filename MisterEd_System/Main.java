@@ -92,13 +92,63 @@ public class Main {
                     System.out.println(p);
                 }
             }
+            String adjustQueue = prompter.readLine("Would you like to move anyone to the front of the queue? Enter Yes or No: ");
+            if (adjustQueue.toLowerCase().contains("yes")) {
+                System.out.println("Current Queue:");
+                for (Patient p : triageQueueGP) {
+                    System.out.println(p);
+                }
+                
+                // Ask the user for the personal health number of the patient to move
+                String patientToMove = prompter.readLine("Enter the personal health number of the patient to move to the front: ");
+                
+                // Find the patient in the queue
+                Patient patient = null;
+                try {
+                    int phNumberToMove = Integer.parseInt(patientToMove); // Convert input to int
+                    for (Patient p : triageQueueGP) {
+                        if (p.getPersonalHealthNumber() == phNumberToMove) {
+                            patient = p;
+                            break;
+                        }
+                    }
+                } catch (NumberFormatException e) {
+                    System.out.println("Invalid personal health number entered. Please enter a valid number.");
+                }
+                
+                if (patient != null) {
+                    // Remove the patient from their current position
+                    triageQueueGP.remove(patient);
+                    // Add the patient to the front of the queue
+                    triageQueueGP.add(0, patient);
+                    System.out.println("Patient with health number " + patient.getPersonalHealthNumber() + " has been moved to the front of the queue.");
+                } else {
+                    System.out.println("Patient not found in the queue.");
+                }
+            } else {
+                System.out.println("No changes made to the queue.");
+            }
+
         } else if (userClassNumber == 4){ 
-            ED_Manager edManager = new ED_Manager("Jake Paetkau", 12345, "email@example.com", "123-456-7890");
+            ED_Manager edManager = new ED_Manager();
+
+            edManager.getPromptInput();
+
+            String viewQueue = prompter.readLine("Would you like to view patients in queue? Enter Yes or No: ");
+            if(viewQueue.toLowerCase().contains("yes")) {
+                System.out.println("Current Queue:");
+                for (Patient p : triageQueueED) {
+                    System.out.println(p);
+                }
+            }
+
+            /*
             edManager.adjustEDWaitlist();
             edManager.viewEDStatistics();
             edManager.autoScheduleStaffShifts();
             edManager.reorganizeAppointments();
             edManager.toggleWaitRoomCapacity();
+            */
         }
 
         backup.stopBackup();
