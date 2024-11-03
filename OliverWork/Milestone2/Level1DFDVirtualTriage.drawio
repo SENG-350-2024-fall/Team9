@@ -1,49 +1,59 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36" version="24.7.17">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.3">
   <diagram name="Page-1" id="21PdakD2TWvM-ZCHl48L">
-    <mxGraphModel dx="794" dy="420" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="625" dy="654" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="7Vxlq_o3tsE_g2DgEoEf-1" value="&lt;u&gt;2.1&lt;/u&gt;&lt;div&gt;Receive Patient Symptoms&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="380" y="120" width="80" height="80" as="geometry" />
+        <mxCell id="7Vxlq_o3tsE_g2DgEoEf-1" value="&lt;u&gt;2.1&lt;/u&gt;&lt;div&gt;Receive Patient Severity&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="385" y="100" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="7Vxlq_o3tsE_g2DgEoEf-2" value="Symptoms" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" source="7Vxlq_o3tsE_g2DgEoEf-4" target="7Vxlq_o3tsE_g2DgEoEf-1">
+        <mxCell id="7Vxlq_o3tsE_g2DgEoEf-2" value="" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" source="7Vxlq_o3tsE_g2DgEoEf-4" target="7Vxlq_o3tsE_g2DgEoEf-1" edge="1">
           <mxGeometry width="80" relative="1" as="geometry">
             <mxPoint x="290" y="110" as="sourcePoint" />
             <mxPoint x="470" y="230" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="7Vxlq_o3tsE_g2DgEoEf-3" value="&lt;u&gt;2.2&lt;/u&gt;&lt;div&gt;Process Patient Symptoms&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+        <mxCell id="hbL7awPKY7k190AgLI3c-1" value="Severity" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="7Vxlq_o3tsE_g2DgEoEf-2">
+          <mxGeometry x="-0.1095" y="5" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7Vxlq_o3tsE_g2DgEoEf-3" value="&lt;u&gt;2.2&lt;/u&gt;&lt;div&gt;Process Patient Severity&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="380" y="250" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="7Vxlq_o3tsE_g2DgEoEf-4" value="Patient" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="7Vxlq_o3tsE_g2DgEoEf-4" value="Patient" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="80" y="260" width="90" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="7Vxlq_o3tsE_g2DgEoEf-5" value="&lt;u&gt;2.3&lt;/u&gt;&lt;div&gt;Store Patient Symptoms&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+        <mxCell id="7Vxlq_o3tsE_g2DgEoEf-5" value="&lt;u&gt;2.3&lt;/u&gt;&lt;div&gt;Store Patient Symptoms&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="380" y="370" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="7Vxlq_o3tsE_g2DgEoEf-6" value="Symptoms Database" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="7Vxlq_o3tsE_g2DgEoEf-6" value="Symptoms Database" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="600" y="400" width="90" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="7Vxlq_o3tsE_g2DgEoEf-7" value="Store" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" source="7Vxlq_o3tsE_g2DgEoEf-5" target="7Vxlq_o3tsE_g2DgEoEf-6">
+        <mxCell id="7Vxlq_o3tsE_g2DgEoEf-7" value="Store" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" source="7Vxlq_o3tsE_g2DgEoEf-5" target="7Vxlq_o3tsE_g2DgEoEf-6" edge="1">
           <mxGeometry width="80" relative="1" as="geometry">
             <mxPoint x="480" y="380" as="sourcePoint" />
             <mxPoint x="560" y="380" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="7Vxlq_o3tsE_g2DgEoEf-8" value="Reccomended Steps" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" source="7Vxlq_o3tsE_g2DgEoEf-3" target="7Vxlq_o3tsE_g2DgEoEf-4">
+        <mxCell id="7Vxlq_o3tsE_g2DgEoEf-8" value="" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" source="7Vxlq_o3tsE_g2DgEoEf-3" target="7Vxlq_o3tsE_g2DgEoEf-4" edge="1">
           <mxGeometry width="80" relative="1" as="geometry">
             <mxPoint x="260" y="280" as="sourcePoint" />
             <mxPoint x="340" y="280" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="7Vxlq_o3tsE_g2DgEoEf-9" value="Patient Symptoms&amp;nbsp;" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" source="7Vxlq_o3tsE_g2DgEoEf-1" target="7Vxlq_o3tsE_g2DgEoEf-3">
+        <mxCell id="hbL7awPKY7k190AgLI3c-2" value="Reccomended Steps" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="7Vxlq_o3tsE_g2DgEoEf-8">
+          <mxGeometry x="0.0191" y="2" relative="1" as="geometry">
+            <mxPoint x="7" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7Vxlq_o3tsE_g2DgEoEf-9" value="Patient Sevirty" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" source="7Vxlq_o3tsE_g2DgEoEf-1" target="7Vxlq_o3tsE_g2DgEoEf-3" edge="1">
           <mxGeometry width="80" relative="1" as="geometry">
             <mxPoint x="250" y="170" as="sourcePoint" />
             <mxPoint x="330" y="170" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="7Vxlq_o3tsE_g2DgEoEf-10" value="Patient Symptoms" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" source="7Vxlq_o3tsE_g2DgEoEf-1" target="7Vxlq_o3tsE_g2DgEoEf-5">
+        <mxCell id="7Vxlq_o3tsE_g2DgEoEf-10" value="Patient Symptoms" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" source="7Vxlq_o3tsE_g2DgEoEf-1" target="7Vxlq_o3tsE_g2DgEoEf-5" edge="1">
           <mxGeometry width="80" relative="1" as="geometry">
             <mxPoint x="490" y="270" as="sourcePoint" />
             <mxPoint x="570" y="270" as="targetPoint" />
