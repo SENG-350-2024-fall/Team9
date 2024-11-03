@@ -3,13 +3,28 @@ import java.nio.file.*;
 import java.time.LocalTime;
 
 public class Backup implements Runnable {
+    private static Backup instance; // Singleton instance
+    private static final Object lock = new Object(); // Lock for thread safety
     private final String sourceFilePath;
     private final String backupFilePath;
     private boolean running = true; // Flag to control the thread
 
-    public Backup(String sourceFilePath, String backupFilePath) {
+    // Private constructor to prevent instantiation from outside
+    private Backup(String sourceFilePath, String backupFilePath) {
         this.sourceFilePath = sourceFilePath;
         this.backupFilePath = backupFilePath;
+    }
+
+    // Public method to get the Singleton instance
+    public static Backup getInstance(String sourceFilePath, String backupFilePath) {
+        if (instance == null) {
+            synchronized (lock) {
+                if (instance == null) {
+                    instance = new Backup(sourceFilePath, backupFilePath);
+                }
+            }
+        }
+        return instance;
     }
 
     @Override
@@ -51,9 +66,9 @@ public class Backup implements Runnable {
         // Example usage
         String sourceFilePath = "call_summaries.txt";
         String backupFilePath = "call_summaries_backup.txt";
-        Backup backup = new Backup(sourceFilePath, backupFilePath);
+        Backup backup = Backup.getInstance(sourceFilePath, backupFilePath);
         (new Thread(backup)).start();
-        System.console().readLine("Press any key to stop the the backup thread: \n");
+        System.console().readLine("Press any key to stop the backup thread: \n");
         backup.stopBackup();
     }
 }

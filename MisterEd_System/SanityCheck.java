@@ -1,16 +1,30 @@
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.io.Console;
 
 public class SanityCheck implements Runnable {
+    private static SanityCheck instance; // Singleton instance
+    private static final Object lock = new Object(); // Lock for thread safety
     private long interval; // interval of milliseconds
     private boolean running = true; // Flag to control the thread
     private String urlString;
 
-    public SanityCheck(String urlString, long interval) {
+    // Private constructor to prevent instantiation from outside
+    private SanityCheck(String urlString, long interval) {
         this.urlString = urlString;
         this.interval = interval;
+    }
+
+    // Public method to get the Singleton instance
+    public static SanityCheck getInstance(String urlString, long interval) {
+        if (instance == null) {
+            synchronized (lock) {
+                if (instance == null) {
+                    instance = new SanityCheck(urlString, interval);
+                }
+            }
+        }
+        return instance;
     }
 
     @Override
@@ -31,6 +45,7 @@ public class SanityCheck implements Runnable {
                 }
             } catch (IOException e) {
                 System.out.println("Failed to ping " + urlString + ": " + e.getMessage());
+                running = false;
                 System.exit(0);
             }
 
@@ -49,12 +64,11 @@ public class SanityCheck implements Runnable {
     }
 
     public static void main(String[] args) { 
-        SanityCheck sanityCheck = new SanityCheck("https://ipinfo.io/json", 2500);
+        SanityCheck sanityCheck = SanityCheck.getInstance("https://ipinfo.io/json", 2500);
         (new Thread(sanityCheck)).start();
-        // thread.start();
 
         System.out.println("Sanity checking initiated. You can do other things during the checking ...");
-        System.console().readLine("Press any key to stop the the sanity check thread: \n");
+        System.console().readLine("Press any key to stop the sanity check thread: \n");
         sanityCheck.stopSanityCheck();
     }   
 }

@@ -204,7 +204,7 @@ class Patient implements Observer {
         Patient patient = new Patient("John Paetkau", "123-456-7890", "email@example.com", LocalDate.of(1990, 1, 1), 6924, 4);
 
         // Print initial
-        System.out.println("Patient Information:\n"+ patient.toString());
+        System.out.print("Patient Information:\n"+ patient);
 
         // Update class
         patient.setPhoneNumber("098-765-4321");
@@ -213,6 +213,6 @@ class Patient implements Observer {
         patient.setPersonalHealthNumber(6481);
 
         // Print updated class
-        System.out.println("Updated Patient Information:\n"+ patient.toString());
+        System.out.print("Updated Patient Information:\n"+ patient.toString());
     }
 }

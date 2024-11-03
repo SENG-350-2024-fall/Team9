@@ -21,6 +21,13 @@ public class ED_Manager {
         this.employeeNumber = employeeNumber;
     }
 
+    public String toString() {
+        return String.format(
+            "ED Manager Info> Name: %s, Employee Number: %s, Email: %s, Phone Number: %s\n",
+            name, getEmployeeNumber(), getEmailAddress(), getPhoneNumber()
+        );
+    }
+
     public String getEmailAddress() {
         return emailAddress;
     }
@@ -68,11 +75,7 @@ public class ED_Manager {
         ED_Manager edManager = new ED_Manager("John Paetkau", 12345, "email@example.com", "123-456-7890");
 
         // Print initial information
-        System.out.println("ED Manager Information:");
-        System.out.println("Name: " + edManager.name);
-        System.out.println("Employee Number: " + edManager.getEmployeeNumber());
-        System.out.println("Email Address: " + edManager.getEmailAddress());
-        System.out.println("Phone Number: " + edManager.getPhoneNumber());
+        System.out.print(edManager);
 
         // Use methods
         edManager.adjustEDWaitlist();

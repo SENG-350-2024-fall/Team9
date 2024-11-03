@@ -8,13 +8,13 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        Heartbeat heartbeat = new Heartbeat(50000);
+        Heartbeat heartbeat = Heartbeat.getInstance(40000);
         (new Thread(heartbeat)).start();
 
-        SanityCheck sanityCheck = new SanityCheck("https://ipinfo.io/json", 50000);
+        SanityCheck sanityCheck = SanityCheck.getInstance("https://ipinfo.io/json", 40000);
         (new Thread(sanityCheck)).start();
 
-        Backup backup = new Backup("call_summaries.txt", "call_summaries_backup.txt");
+        Backup backup = Backup.getInstance("call_summaries.txt", "call_summaries_backup.txt");
         (new Thread(backup)).start();
         
         List<Patient> triageQueueED = new ArrayList<>();
@@ -92,6 +92,13 @@ public class Main {
                     System.out.println(p);
                 }
             }
+        } else if (userClassNumber == 4){ 
+            ED_Manager edManager = new ED_Manager("Jake Paetkau", 12345, "email@example.com", "123-456-7890");
+            edManager.adjustEDWaitlist();
+            edManager.viewEDStatistics();
+            edManager.autoScheduleStaffShifts();
+            edManager.reorganizeAppointments();
+            edManager.toggleWaitRoomCapacity();
         }
 
         backup.stopBackup();
