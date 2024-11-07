@@ -83,7 +83,7 @@ public class Main {
 
             while(acceptCall.toLowerCase().equals("yes")){ 
 
-                acceptCall = prompter.readLine("Would you like to accept a call? Enter Yes or No:");
+                acceptCall = prompter.readLine("Would you like to accept a call? Enter Yes or No: ");
                 
                 if(acceptCall.toLowerCase().contains("yes")) { //If the nurse wants to accept a call then they are able to
                     System.out.println("Pick the patient that you would like to call by entering their number");
