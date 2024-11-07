@@ -86,7 +86,7 @@ public class Main {
                 acceptCall = prompter.readLine("Would you like to accept a call? Enter Yes or No:");
                 
                 if(acceptCall.toLowerCase().contains("yes")) { //If the nurse wants to accept a call then they are able to
-                    System.out.println("Pick the patient that you would like to call by entering their number");
+                    System.out.println("\nPick the patient that you would like to call by entering their personal health number");
                     hotlineNurse.printHotlineQueue();
                     String patientNumber = prompter.readLine("Pick number:\n");
 
@@ -94,6 +94,8 @@ public class Main {
                     hotlineNurse.directPatient();
                 }
             }
+
+            System.out.println("Please wait. Logging you out.");
 
         } else if (userClassNumber == 3){
             //Create a General Practitioner Object

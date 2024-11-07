@@ -102,9 +102,13 @@ class HotlineNurse implements Nurse {
                 System.exit(0);
             }
 
+            int i = 1;
+
             while(reader.hasNextLine()){
                 data = reader.nextLine();
-                System.out.println("Patient " + data);
+                System.out.println("Patient "+ i + " " + data);
+
+                i ++;
             }
             reader.close();
         } catch(FileNotFoundException e){
