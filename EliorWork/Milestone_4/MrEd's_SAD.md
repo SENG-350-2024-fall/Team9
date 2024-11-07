@@ -1,7 +1,7 @@
-# Mr.Ed's Software Architecture Documentation <br>
+# Mr.Ed's Software Architecture Documentation
 # SENG-350-2024-fall
 # Software Architecture Document (SAD)
-# Team 9 <br>
+# Team 9
 
 ## Sections <br>
 ## Documentation Roadmap and Overview <br>
