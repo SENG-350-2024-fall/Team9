@@ -16,7 +16,7 @@ public class Backup implements Runnable {
     }
 
     // Public method to get the Singleton instance
-    public static Backup getInstance(String sourceFilePath, String backupFilePath) {
+    public static Backup getSingletonInstance(String sourceFilePath, String backupFilePath) {
         if (instance == null) {
             synchronized (lock) {
                 if (instance == null) {
@@ -66,7 +66,7 @@ public class Backup implements Runnable {
         // Example usage
         String sourceFilePath = "call_summaries.txt";
         String backupFilePath = "call_summaries_backup.txt";
-        Backup backup = Backup.getInstance(sourceFilePath, backupFilePath);
+        Backup backup = Backup.getSingletonInstance(sourceFilePath, backupFilePath);
         (new Thread(backup)).start();
         System.console().readLine("Press any key to stop the backup thread: \n");
         backup.stopBackup();

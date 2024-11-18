@@ -16,7 +16,7 @@ public class SanityCheck implements Runnable {
     }
 
     // Public method to get the Singleton instance
-    public static SanityCheck getInstance(String urlString, long interval) {
+    public static SanityCheck getSingletonInstance(String urlString, long interval) {
         if (instance == null) {
             synchronized (lock) {
                 if (instance == null) {
@@ -64,7 +64,7 @@ public class SanityCheck implements Runnable {
     }
 
     public static void main(String[] args) { 
-        SanityCheck sanityCheck = SanityCheck.getInstance("https://ipinfo.io/json", 2500);
+        SanityCheck sanityCheck = SanityCheck.getSingletonInstance("https://ipinfo.io/json", 2500);
         (new Thread(sanityCheck)).start();
 
         System.out.println("Sanity checking initiated. You can do other things during the checking ...");

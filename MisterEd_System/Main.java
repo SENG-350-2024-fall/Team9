@@ -8,13 +8,13 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        Heartbeat heartbeat = Heartbeat.getInstance(40000);
+        Heartbeat heartbeat = Heartbeat.getSingletonInstance(40000);
         (new Thread(heartbeat)).start();
 
-        SanityCheck sanityCheck = SanityCheck.getInstance("https://ipinfo.io/json", 40000);
+        SanityCheck sanityCheck = SanityCheck.getSingletonInstance("https://ipinfo.io/json", 40000);
         (new Thread(sanityCheck)).start();
 
-        Backup backup = Backup.getInstance("call_summaries.txt", "call_summaries_backup.txt");
+        Backup backup = Backup.getSingletonInstance("call_summaries.txt", "call_summaries_backup.txt");
         (new Thread(backup)).start();
         
         List<Patient> triageQueueED = new ArrayList<>();

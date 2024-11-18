@@ -13,7 +13,7 @@ public class Heartbeat implements Runnable {
     }
 
     // Public method to get the Singleton instance
-    public static Heartbeat getInstance(long interval) {
+    public static Heartbeat getSingletonInstance(long interval) {
         if (instance == null) {
             synchronized (lock) {
                 if (instance == null) {
