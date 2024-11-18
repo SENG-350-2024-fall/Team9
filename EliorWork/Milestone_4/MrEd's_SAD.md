@@ -58,7 +58,7 @@ Provides definitions for terms like "triage queue" and "severity" and acronyms s
 - Describes system elements and their properties, including:
   - Actors: Patients, hotline nurses, GPs, and EDMs.
   - Components: Triage engine, waitlist manager, and notification system.
-- Includes interface descriptions for system interactions and observable behaviors of each element.
+- Includes interface descriptions for system interactions and observable behaviours of each element.
 
 3. Variability Guide:
 - Highlights configurable parts of the system, such as:
