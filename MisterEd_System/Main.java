@@ -88,15 +88,12 @@ public class Main {
                 if(acceptCall.toLowerCase().contains("yes")) { //If the nurse wants to accept a call then they are able to
                     System.out.println("\nPick the patient that you would like to call by entering their personal health number");
                     hotlineNurse.printHotlineQueue();
-                    String patientNumber = prompter.readLine("Pick number:\n");
-
-                    hotlineNurse.acceptCall(Integer.parseInt(patientNumber));
+                    String patientNumber = prompter.readLine("Enter the personal health number to enter the call:\n");
+                    boolean autoLogSetOn = hotlineNurse.acceptCall(Integer.parseInt(patientNumber));
                     hotlineNurse.directPatient();
+                    hotlineNurse.sendPatientCallTranscript(autoLogSetOn);
                 }
             }
-
-            System.out.println("Please wait. Logging you out.");
-
         } else if (userClassNumber == 3){
             //Create a General Practitioner Object
             GeneralPractitioner generalPractitioner = new GeneralPractitioner();
@@ -169,6 +166,8 @@ public class Main {
         } else {
             System.out.println("Invalid user class number, please retry.");
         }
+
+        System.out.println("Please wait. Closing application.");
 
         backup.stopBackup();
         heartbeat.stopHeartbeat();

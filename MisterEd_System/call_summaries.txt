@@ -1,6 +1,1 @@
-Personal Health Number : Call Summary
-2001:I am baby.
-998:I was in the war.
-9887:I am infant.
-965:I am old.
-980:I was on the Titanic.
+Personal Health Number: Call Summary

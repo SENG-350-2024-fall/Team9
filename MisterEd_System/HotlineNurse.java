@@ -70,6 +70,28 @@ class HotlineNurse implements Nurse {
         System.out.println("Sending next steps to the patient.");
     }
 
+    public boolean autoLogPatientCall() {
+        String autoLogCall = System.console().readLine("Do you and the patient agree to autolog this call? Enter Yes or No: "); // Read a line of text from the user
+        if(autoLogCall.toLowerCase().contains("yes")) {
+            System.out.println("Auto log is on.");
+            return true;
+        }
+        System.out.println("Auto log is off.");
+        return false;
+    }
+
+    public void sendPatientCallTranscript(boolean autoLogSetOn) {
+        if(autoLogSetOn) {
+            System.out.println("\nPatient call transcript destination options:");
+            System.out.println("1: Royal Jubilee Hospital ED");
+            System.out.println("2: Saanich Peninsula Hospital ED");
+            System.out.println("3: Cowichan District Hospital ED");
+            System.out.println("4: Victoria General Hospital ED");
+            System.console().readLine("Enter the number of the hospital to send the autologged patient call transcript to: "); // Read a line of text from the user
+            System.out.println("Sending autologged patient call transcript to desired hospital and deptartment.");
+        }
+    }
+
     private String getPatientPHN(String data){
         
         int i = 0;
@@ -156,10 +178,10 @@ class HotlineNurse implements Nurse {
         return ":(";
     }
 
-    public void acceptCall(int patientNumber){
+    public boolean acceptCall(int patientNumber){
         
         String patient = this.getHotlineQueue(patientNumber);
-
+        boolean autoLogSetOn = autoLogPatientCall();
         System.out.println("You are on call with patient " + patient);
         try{
             TimeUnit.SECONDS.sleep(5);
@@ -170,6 +192,7 @@ class HotlineNurse implements Nurse {
         
         System.out.println("Call complete");
         RewriteFileSkippingLine(patientNumber);
+        return autoLogSetOn;
     }
 
     public void RewriteFileSkippingLine(int skipLine) {
