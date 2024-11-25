@@ -34,7 +34,7 @@ public class Main {
         MrEDNotifier mrEDNotifier = new MrEDNotifier();
         mrEDNotifier.attachAll(triageQueueED);
         mrEDNotifier.attachAll(triageQueueGP);
-        mrEDNotifier.setState("Mr. ED notifying all patients.");
+        mrEDNotifier.setState("A new Mr. ED app update is available.");
 
         Patient familyPrototype = new Patient("Prototype", "250-656-1120", "family@example.com", null, 0000, 7);
         Patient familyDaughter = (Patient)familyPrototype.clone();
