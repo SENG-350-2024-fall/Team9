@@ -87,28 +87,20 @@ class HotlineNurse implements Nurse {
             System.out.println("2: Saanich Peninsula Hospital ED");
             System.out.println("3: Cowichan District Hospital ED");
             System.out.println("4: Victoria General Hospital ED");
-            System.console().readLine("Enter the number of the hospital to send the autologged patient call transcript to: "); // Read a line of text from the user
+            int option = -1;
+            while (option < 1 || option > 4) {
+                String input = System.console().readLine("Enter the number of the hospital to send the autologged patient call transcript to: ");
+                try {
+                    option = Integer.parseInt(input);
+                    if (option < 1 || option > 4) {
+                        System.out.println("Invalid choice. Please enter a number between 1 and 4.");
+                    }
+                } catch (NumberFormatException e) {
+                    System.out.println("Invalid input. Please enter a valid number.");
+                }
+            } 
             System.out.println("Sending autologged patient call transcript to desired hospital and deptartment.");
         }
-    }
-
-    private String getPatientPHN(String data){
-        
-        int i = 0;
-        while( data.charAt(i) != ':'){
-            i ++;
-        }
-
-        return data.substring(0, i);
-    }
-
-    private String getPatientCallSummary(String data){
-        int i = 0;
-        while(data.charAt(i) != ':'){
-            i ++;
-        }
-
-        return data.substring(i + 1);
     }
 
     public void printHotlineQueue(){
@@ -142,34 +134,16 @@ class HotlineNurse implements Nurse {
     }
 
     public String getHotlineQueue(int patient){
-        try{
-            File callQueue = new File("call_summaries.txt");
-
-            Scanner reader = new Scanner(callQueue);
-            String data = reader.nextLine(); //Get the first line of the text file with the columns
-
-            if(!reader.hasNextLine()){
-                System.out.println("There are no patients waiting to call the nurse");
-            }
-
-            while(reader.hasNextLine()){ //Loop over all the patients in the call queue
-                data = reader.nextLine();
-
-                String phn = this.getPatientPHN(data);
-                String callSummary = this.getPatientCallSummary(data);
-
-                if(data.contains(phn)){
+        String callQueueFilePath = "call_summaries.txt";  // Path to the input file
+        try (BufferedReader reader = new BufferedReader(new FileReader(callQueueFilePath))) {
+            String line;
+            while ((line = reader.readLine()) != null) { //Loop over all the patients in the call queue
+                if (line.contains(Integer.toString(patient))) {
                     reader.close();
-                    return data;
+                    return line;
                 }
-                
-                System.out.println("Patient " + phn + " Summary: " + callSummary);
             }
-
-
-            reader.close();
-            
-        } catch (FileNotFoundException e){
+        } catch (IOException e){
             System.out.println("Sorry, patient file not found error. Please try again later.");
             e.printStackTrace();
             System.exit(0);
@@ -182,7 +156,7 @@ class HotlineNurse implements Nurse {
         
         String patient = this.getHotlineQueue(patientNumber);
         boolean autoLogSetOn = autoLogPatientCall();
-        System.out.println("You are on call with patient " + patient);
+        System.out.println("You are on call with Patient " + patient);
         try{
             TimeUnit.SECONDS.sleep(5);
         } catch (InterruptedException e){
