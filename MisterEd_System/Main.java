@@ -36,10 +36,10 @@ public class Main {
         //triageQueueGP.add(new Patient("Nolan Streetwood", "123-456-8878", "nolan@example.com", LocalDate.of(1993, 1, 1), 2331, 3));
         //triageQueueGP.add(new Patient("Ruby Drives", "123-456-0098", "ruby@example.com", LocalDate.of(1933, 1, 1), 8876, 3));
 
-        //MrEDNotifier mrEDNotifier = new MrEDNotifier();
-        //mrEDNotifier.attachAll(triageQueueED);
-        //mrEDNotifier.attachAll(triageQueueGP);
-        //mrEDNotifier.setState("A new Mr. ED app update is available.");
+        MrEDNotifier mrEDNotifier = new MrEDNotifier();
+        mrEDNotifier.attachAll(triageQueueED);
+        mrEDNotifier.attachAll(triageQueueGP);
+        mrEDNotifier.setState("A new Mr. ED app update is available.");
 
         Patient familyPrototype = new Patient("Prototype", "250-656-1120", "family@example.com", null, 0000, 7);
         Patient familyDaughter = (Patient)familyPrototype.clone();
