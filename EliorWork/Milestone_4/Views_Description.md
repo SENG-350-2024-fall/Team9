@@ -11,6 +11,8 @@
 |    ED Manager    | Another long piece of text to demonstrate how the second column stretches to accommodate more content. |
 |    General Practitioner     | Another long piece of text to demonstrate how the second column stretches to accommodate more content. |
 |    Mr. ED Main     | Another long piece of text to demonstrate how the second column stretches to accommodate more content. |
+|    HospitalLocalizer     | Another long piece of text to demonstrate how the second column stretches to accommodate more content. |
+|    ResponsibilityChain.TriageHandler     | Another long piece of text to demonstrate how the second column stretches to accommodate more content. |
 
 
 
