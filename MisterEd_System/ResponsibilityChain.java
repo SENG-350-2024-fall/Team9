@@ -1,11 +1,12 @@
 import java.util.*;
 import java.time.LocalDate;
+import java.io.*;
 
 // Main class: ResponsibilityChain
 public class ResponsibilityChain {
     
     // Abstract Handler
-    abstract static class TriageHandler {
+    public abstract static class TriageHandler {
         protected TriageHandler nextHandler;
 
         public void setNextHandler(TriageHandler nextHandler) {
@@ -16,7 +17,7 @@ public class ResponsibilityChain {
     }
 
     // First Handler: Hotline Nurse
-    static class HotlineNurseHandler extends TriageHandler {
+    public static class HotlineNurseHandler extends TriageHandler {
         @Override
         public void handleRequest(Patient patient) {
             if (patient.getSeverity() < 3) {
@@ -29,7 +30,7 @@ public class ResponsibilityChain {
     }
 
     // Second Handler: General Practitioner
-    static class GPHandler extends TriageHandler {
+    public static class GPHandler extends TriageHandler {
         private List<Patient> triageQueueGP;
 
         public GPHandler(List<Patient> triageQueueGP) {
@@ -38,7 +39,7 @@ public class ResponsibilityChain {
 
         @Override
         public void handleRequest(Patient patient) {
-            if (patient.getSeverity() < 6) {
+            if (patient.getSeverity() < 6 && patient.getSeverity() > 2) {
                 System.out.println("You will need a General practitioner, please proceed.");
                 triageQueueGP.add(patient);
                 triageQueueGP.sort(Comparator.comparingInt(Patient::getSeverity).reversed());
@@ -60,27 +61,28 @@ public class ResponsibilityChain {
     }
 
     // Third Handler: Emergency Department
-    static class EDHandler extends TriageHandler {
-        private List<Patient> triageQueueED;
+    public static class EDHandler extends TriageHandler {
 
-        public EDHandler(List<Patient> triageQueueED) {
-            this.triageQueueED = triageQueueED;
+        private File csvED;
+
+        public EDHandler(File csvED) {
+        this.csvED = csvED;
         }
 
         @Override
         public void handleRequest(Patient patient) {
-            System.out.println("You will need a visit to an emergency department, please proceed.");
-            triageQueueED.add(patient);
-            triageQueueED.sort(Comparator.comparingInt(Patient::getSeverity).reversed());
-            int position = triageQueueED.indexOf(patient) + 1;
-            System.out.println("Your position in the queue is: #" + position);
-            System.out.printf("You have %d patient(s) ahead of you.\n", position - 1);
-            System.out.printf("Your estimated remaining wait time is: %d mins\n", (position - 1) * 15);
+            if (patient.getSeverity() > 6) {
+                System.out.println("You will need a visit to an emergency department, please proceed.");
+                int position = TriageQueue.add(patient, csvED);
+                System.out.println("Your position in the queue is: #" + position);
+                System.out.printf("You have %d patient(s) ahead of you.\n", position - 1);
+                System.out.printf("Your estimated remaining wait time is: %d mins\n", (position - 1) * 15);
 
-            System.out.print("Do you want to leave the queue? Enter Yes or No: ");
-            if (System.console().readLine().toLowerCase().contains("yes")) {
-                triageQueueED.remove(patient);
-                System.out.println("You have been removed from the queue.");
+                System.out.print("Do you want to leave the queue? Enter Yes or No: ");
+                if (System.console().readLine().toLowerCase().contains("yes")) {
+                    TriageQueue.remove(csvED);
+                    System.out.println("You have been removed from the queue.");
+                }
             }
         }
     }
@@ -102,10 +104,11 @@ public class ResponsibilityChain {
         triageQueueGP.add(new Patient("Nathan Streetwood", "123-456-7890", "nate@example.com", LocalDate.of(1990, 1, 1), 2231, 3));
         triageQueueGP.add(new Patient("Rosa Drives", "123-456-7890", "rosie@example.com", LocalDate.of(1913, 1, 1), 8876, 3));
 
+        File csvED = new File("triageQueueED.csv");
         // Set up handlers
         TriageHandler hotlineNurse = new HotlineNurseHandler();
         TriageHandler gpHandler = new GPHandler(triageQueueGP);
-        TriageHandler edHandler = new EDHandler(triageQueueED);
+        TriageHandler edHandler = new EDHandler(csvED);
 
         // Chain the handlers
         hotlineNurse.setNextHandler(gpHandler);
