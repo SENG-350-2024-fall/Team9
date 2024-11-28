@@ -5,9 +5,12 @@ import java.util.PriorityQueue;
 import java.util.Comparator;
 import java.util.ArrayList;
 import java.util.List;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner; 
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
         Heartbeat heartbeat = Heartbeat.getSingletonInstance(40000);
         (new Thread(heartbeat)).start();
 
@@ -17,24 +20,26 @@ public class Main {
         Backup backup = Backup.getSingletonInstance("call_summaries.txt", "call_summaries_backup.txt");
         (new Thread(backup)).start();
         
+        File csvED = new File("triageQueueED.csv");
         List<Patient> triageQueueED = new ArrayList<>();
-        
-        triageQueueED.add(new Patient("John Paetkau", "123-456-3456", "jonnny@example.com", LocalDate.of(1990, 1, 1), 1111, 8));
-        triageQueueED.add(new Patient("Anna Mulcaster", "123-456-2234", "annnie@example.com", LocalDate.of(1990, 1, 1), 2212, 7));
-        triageQueueED.add(new Patient("Nathan Streetwood", "123-456-3322", "nate@example.com", LocalDate.of(1990, 1, 1), 2231, 6));
-        triageQueueED.add(new Patient("Rosa Drives", "123-456-6758", "rosie@example.com", LocalDate.of(1913, 1, 1), 8876, 6));
 
+        
+        //triageQueueED.add(new Patient("John Paetkau", "123-456-3456", "jonnny@example.com", LocalDate.of(1990, 1, 1), 1111, 8));
+        //triageQueueED.add(new Patient("Anna Mulcaster", "123-456-2234", "annnie@example.com", LocalDate.of(1990, 1, 1), 2212, 7));
+        //triageQueueED.add(new Patient("Nathan Streetwood", "123-456-3322", "nate@example.com", LocalDate.of(1990, 1, 1), 2231, 6));
+        //triageQueueED.add(new Patient("Rosa Drives", "123-456-6758", "rosie@example.com", LocalDate.of(1913, 1, 1), 8876, 6));
+        
         List<Patient> triageQueueGP = new ArrayList<>();
         
-        triageQueueGP.add(new Patient("Jeff Paetkau", "123-456-7890", "jeffrey@example.com", LocalDate.of(1990, 3, 1), 4523, 5));
-        triageQueueGP.add(new Patient("Abby Mulcaster", "123-456-7590", "abigail@example.com", LocalDate.of(1990, 1, 3), 8976, 4));
-        triageQueueGP.add(new Patient("Nolan Streetwood", "123-456-8878", "nolan@example.com", LocalDate.of(1993, 1, 1), 2331, 3));
-        triageQueueGP.add(new Patient("Ruby Drives", "123-456-0098", "ruby@example.com", LocalDate.of(1933, 1, 1), 8876, 3));
+        //triageQueueGP.add(new Patient("Jeff Paetkau", "123-456-7890", "jeffrey@example.com", LocalDate.of(1990, 3, 1), 4523, 5));
+        //triageQueueGP.add(new Patient("Abby Mulcaster", "123-456-7590", "abigail@example.com", LocalDate.of(1990, 1, 3), 8976, 4));
+        //triageQueueGP.add(new Patient("Nolan Streetwood", "123-456-8878", "nolan@example.com", LocalDate.of(1993, 1, 1), 2331, 3));
+        //triageQueueGP.add(new Patient("Ruby Drives", "123-456-0098", "ruby@example.com", LocalDate.of(1933, 1, 1), 8876, 3));
 
-        MrEDNotifier mrEDNotifier = new MrEDNotifier();
-        mrEDNotifier.attachAll(triageQueueED);
-        mrEDNotifier.attachAll(triageQueueGP);
-        mrEDNotifier.setState("A new Mr. ED app update is available.");
+        //MrEDNotifier mrEDNotifier = new MrEDNotifier();
+        //mrEDNotifier.attachAll(triageQueueED);
+        //mrEDNotifier.attachAll(triageQueueGP);
+        //mrEDNotifier.setState("A new Mr. ED app update is available.");
 
         Patient familyPrototype = new Patient("Prototype", "250-656-1120", "family@example.com", null, 0000, 7);
         Patient familyDaughter = (Patient)familyPrototype.clone();
@@ -68,7 +73,7 @@ public class Main {
 
             ResponsibilityChain.TriageHandler hnHandler = new ResponsibilityChain.HotlineNurseHandler();
             ResponsibilityChain.TriageHandler gpHandler = new ResponsibilityChain.GPHandler(triageQueueGP);
-            ResponsibilityChain.TriageHandler edHandler = new ResponsibilityChain.EDHandler(triageQueueED);
+            ResponsibilityChain.TriageHandler edHandler = new ResponsibilityChain.EDHandler(csvED);
 
             hnHandler.setNextHandler(gpHandler);
             gpHandler.setNextHandler(edHandler);
@@ -103,9 +108,9 @@ public class Main {
             String viewQueue = prompter.readLine("Would you like to view patients in queue? Enter Yes or No: ");
             if(viewQueue.toLowerCase().contains("yes")) {
                 System.out.println("Current Queue:");
-                for (Patient p : triageQueueGP) {
+                for (Patient p : triageQueueED) {
                     System.out.println(p);
-                }
+                }  
             }
             String adjustQueue = prompter.readLine("Would you like to move anyone to the front of the queue? Enter Yes or No: ");
             if (adjustQueue.toLowerCase().contains("yes")) {
@@ -152,9 +157,7 @@ public class Main {
             String viewQueue = prompter.readLine("Would you like to view patients in queue? Enter Yes or No: ");
             if(viewQueue.toLowerCase().contains("yes")) {
                 System.out.println("Current Queue:");
-                for (Patient p : triageQueueED) {
-                    System.out.println(p);
-                }
+                TriageQueue.printTriageQueue(csvED);
             }
 
             /*

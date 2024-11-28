@@ -1,6 +1,6 @@
 import java.io.Console;
 
-class GeneralPractitioner {
+public class GeneralPractitioner {
     public String name;
     private String phoneNumber;
     private String emailAddress;

@@ -9,7 +9,7 @@ interface Nurse {
     void performDuties();
 }
 
-class HotlineNurse implements Nurse {
+public class HotlineNurse implements Nurse {
     public String name;
     private String phoneNumber;
     protected int employeeNumber;

@@ -1,0 +1,7 @@
+name,phoneNumber,emailAddress,birthDate,personalHealthNumber,severity
+Anna Mulcaster,123-456-2234,annnie@example.com,1990-01-01,1973-04-27,8
+test,1,1,0001-01-01,1111,8test
+final,1,1,0001-01-01,1,8
+1,1,1,0001-01-01,1,10
+dsad,1,1,0001-01-01,1,9
+testinput,1,1,0001-01-01,1,9

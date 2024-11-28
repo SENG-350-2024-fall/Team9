@@ -10,7 +10,7 @@ interface Prototype {
     Prototype clone();
 }
 
-class Patient implements Observer, Prototype {
+public class Patient implements Observer, Prototype {
     public String name;
     private String phoneNumber;
     private String emailAddress;
