@@ -10,8 +10,20 @@
         <mxCell id="eqkEVIQ0wt3xTbLBExX--2" value="Back End" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;width=85;height=28;" vertex="1" parent="1">
           <mxGeometry x="60" y="643" width="300" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="eqkEVIQ0wt3xTbLBExX--3" value="Data End" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;width=85;height=28;" vertex="1" parent="1">
+        <mxCell id="eqkEVIQ0wt3xTbLBExX--3" value="Data" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;width=85;height=28;" vertex="1" parent="1">
           <mxGeometry x="414" y="469" width="364" height="283" as="geometry" />
+        </mxCell>
+        <mxCell id="eqkEVIQ0wt3xTbLBExX--4" value="Patient" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="511" width="72" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="eqkEVIQ0wt3xTbLBExX--5" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;Emergency Room Manager&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="434" y="511" width="72" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="eqkEVIQ0wt3xTbLBExX--6" value="Hotline nurse" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="434" y="558" width="72" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="eqkEVIQ0wt3xTbLBExX--7" value="Doctor" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="560" width="72" height="32" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
