@@ -10,7 +10,7 @@ interface Subject {
 }
 
 // Concrete Subject Class
-class MrEDNotifier implements Subject {
+public class MrEDNotifier implements Subject {
     private List<Observer> observers = new ArrayList<>();
     private String state;
 
