@@ -24,18 +24,18 @@ public class Main {
         List<Patient> triageQueueED = new ArrayList<>();
 
         
-        //triageQueueED.add(new Patient("John Paetkau", "123-456-3456", "jonnny@example.com", LocalDate.of(1990, 1, 1), 1111, 8));
-        //triageQueueED.add(new Patient("Anna Mulcaster", "123-456-2234", "annnie@example.com", LocalDate.of(1990, 1, 1), 2212, 7));
-        //triageQueueED.add(new Patient("Nathan Streetwood", "123-456-3322", "nate@example.com", LocalDate.of(1990, 1, 1), 2231, 6));
-        //triageQueueED.add(new Patient("Rosa Drives", "123-456-6758", "rosie@example.com", LocalDate.of(1913, 1, 1), 8876, 6));
+        triageQueueED.add(new Patient("John Paetkau", "123-456-3456", "jonnny@example.com", LocalDate.of(1990, 1, 1), 1111, 8));
+        triageQueueED.add(new Patient("Anna Mulcaster", "123-456-2234", "annnie@example.com", LocalDate.of(1990, 1, 1), 2212, 7));
+        triageQueueED.add(new Patient("Nathan Streetwood", "123-456-3322", "nate@example.com", LocalDate.of(1990, 1, 1), 2231, 6));
+        triageQueueED.add(new Patient("Rosa Drives", "123-456-6758", "rosie@example.com", LocalDate.of(1913, 1, 1), 8876, 6));
         
         List<Patient> triageQueueGP = new ArrayList<>();
         File csvGP = new File("triageQueueGP.csv");
         
-        //triageQueueGP.add(new Patient("Jeff Paetkau", "123-456-7890", "jeffrey@example.com", LocalDate.of(1990, 3, 1), 4523, 5));
-        //triageQueueGP.add(new Patient("Abby Mulcaster", "123-456-7590", "abigail@example.com", LocalDate.of(1990, 1, 3), 8976, 4));
-        //triageQueueGP.add(new Patient("Nolan Streetwood", "123-456-8878", "nolan@example.com", LocalDate.of(1993, 1, 1), 2331, 3));
-        //triageQueueGP.add(new Patient("Ruby Drives", "123-456-0098", "ruby@example.com", LocalDate.of(1933, 1, 1), 8876, 3));
+        triageQueueGP.add(new Patient("Jeff Paetkau", "123-456-7890", "jeffrey@example.com", LocalDate.of(1990, 3, 1), 4523, 5));
+        triageQueueGP.add(new Patient("Abby Mulcaster", "123-456-7590", "abigail@example.com", LocalDate.of(1990, 1, 3), 8976, 4));
+        triageQueueGP.add(new Patient("Nolan Streetwood", "123-456-8878", "nolan@example.com", LocalDate.of(1993, 1, 1), 2331, 3));
+        triageQueueGP.add(new Patient("Ruby Drives", "123-456-0098", "ruby@example.com", LocalDate.of(1933, 1, 1), 8876, 3));
 
         MrEDNotifier mrEDNotifier = new MrEDNotifier();
         mrEDNotifier.attachAll(triageQueueED);
