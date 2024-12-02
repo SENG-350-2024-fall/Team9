@@ -10,9 +10,9 @@ import java.util.List;
 import java.util.Scanner;
 
 public class TriageQueue {
-    public static int add(Patient patient, File var0) {
+    public static int add(Patient patient, File file) {
         try {
-            FileWriter fileWriter = new FileWriter(var0, true);
+            FileWriter fileWriter = new FileWriter(file, true);
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
     
             String patientLine = patient.getName() + "," +
@@ -27,7 +27,7 @@ public class TriageQueue {
             
             bufferedWriter.close();
     
-            int position = getLineCount(var0);
+            int position = getLineCount(file);
     
             System.out.println("Patient added successfully.");
             
@@ -40,9 +40,9 @@ public class TriageQueue {
         }
     }
     
-    public static void printTriageQueue(File var0) {
+    public static void printTriageQueue(File file) {
         try {
-            Scanner var1 = new Scanner(var0);
+            Scanner var1 = new Scanner(file);
             if (var1.hasNextLine()) {
                 var1.nextLine();
             }
@@ -77,10 +77,10 @@ public class TriageQueue {
 
    }
 
-    public static int getLineCount(File var0) {
+    public static int getLineCount(File file) {
         int lineCount = 0;
         
-        try (Scanner scanner = new Scanner(var0)) {
+        try (Scanner scanner = new Scanner(file)) {
             while (scanner.hasNextLine()) {
                 scanner.nextLine();
                 lineCount++;
@@ -93,33 +93,39 @@ public class TriageQueue {
         return lineCount;
     }
 
-    public static void remove(File var0) {
+    public static void remove(File file, int rowToRemove) {
         try {
             List<String> lines = new ArrayList<>();
-            try (Scanner scanner = new Scanner(var0)) {
+            try (Scanner scanner = new Scanner(file)) {
                 while (scanner.hasNextLine()) {
                     lines.add(scanner.nextLine());
                 }
             }
-            if (lines.size() > 1) {
-                lines.remove(lines.size() - 1);
-                try (BufferedWriter writer = new BufferedWriter(new FileWriter(var0))) {
+
+            if (rowToRemove > 0 && rowToRemove < lines.size()) {
+                lines.remove(rowToRemove - 1);
+
+                try (BufferedWriter writer = new BufferedWriter(new FileWriter(file))) {
                     for (String line : lines) {
                         writer.write(line);
                         writer.newLine();
                     }
                 }
+                System.out.println("Row " + rowToRemove + " has been removed.");
+            } else {
+                System.out.println("Invalid row number. Row " + rowToRemove + " does not exist.");
             }
+            
         } catch (IOException e) {
             System.out.println("Error: Could not process the CSV file.");
             e.printStackTrace();
         }
     }
 
-    public static void swapRows(File var0, int row1, int row2) {
+    public static void swapRows(File file, int row1, int row2) {
         try {
             List<String> lines = new ArrayList<>();
-            try (Scanner scanner = new Scanner(var0)) {
+            try (Scanner scanner = new Scanner(file)) {
                 while (scanner.hasNextLine()) {
                     lines.add(scanner.nextLine());
                 }
@@ -129,9 +135,7 @@ public class TriageQueue {
             lines.set(row1, lines.get(row2));
             lines.set(row2, temp);
 
-            try (BufferedWriter writer = new BufferedWriter(new FileWriter(var0))) {
-                writer.write("Name,Phone,Email,BirthDate,PersonalHealthNumber,Severity"); // Assuming this is your header
-                writer.newLine();
+            try (BufferedWriter writer = new BufferedWriter(new FileWriter(file))) {
                 
                 for (String line : lines) {
                     writer.write(line);

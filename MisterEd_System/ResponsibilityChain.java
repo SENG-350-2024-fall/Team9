@@ -50,7 +50,7 @@ public class ResponsibilityChain {
 
                 System.out.print("Do you want to leave the queue? Enter Yes or No: ");
                 if (System.console().readLine().toLowerCase().contains("yes")) {
-                    TriageQueue.remove(csvGP);
+                    TriageQueue.remove(csvGP, position + 1);
                     System.out.println("You have been removed from the queue.");
                 }
             }
@@ -77,7 +77,7 @@ public class ResponsibilityChain {
 
                 System.out.print("Do you want to leave the queue? Enter Yes or No: ");
                 if (System.console().readLine().toLowerCase().contains("yes")) {
-                    TriageQueue.remove(csvED);
+                    TriageQueue.remove(csvED, position + 1);
                     System.out.println("You have been removed from the queue.");
                 }
             }

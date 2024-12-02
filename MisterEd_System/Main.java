@@ -111,52 +111,77 @@ public class Main {
                 System.out.println("Current Queue:");
                 TriageQueue.printTriageQueue(csvGP);
             }
-            String adjustQueue = prompter.readLine("Would you like to move anyone to the front of the queue? Enter Yes or No: ");
-            if (adjustQueue.toLowerCase().contains("yes")) {
+            String adjustQueueGP = prompter.readLine("Would you like to move anyone to the front of the queue? Enter Yes or No: ");
+            if (adjustQueueGP.toLowerCase().contains("yes")) {
                 System.out.println("Current Queue:");
                 TriageQueue.printTriageQueue(csvGP);
                 
-                String patientToMove = prompter.readLine("Enter the personal health number of the patient to move to the front: ");
-
-                // Find the patient in the CSV file
-                Patient patient = null;
-                int patientRow = -1; // This will hold the row index where the patient is located in the CSV
+                String patientToMoveGP = prompter.readLine("Enter the personal health number of the patient to move to the front: ");
+                int patientRow = -1;
                 try {
-                    int phNumberToMove = Integer.parseInt(patientToMove);
                     
-                    // Read the CSV file and find the row that corresponds to the patient's personal health number
                     Scanner scanner = new Scanner(csvGP);
-                    scanner.nextLine(); // Skip the header row
-                    int rowIndex = 1; // Start counting rows from 1 (header is skipped)
+                    scanner.nextLine();
+                    int rowIndex = 1;
                     
                     while (scanner.hasNextLine()) {
                         String line = scanner.nextLine();
                         String[] data = line.split(",");
                         
-                        if (data.length == 6) { // Ensure the data is valid (6 fields)
-                            String phNumber = data[4]; // Assuming Personal Health Number is at index 4 in CSV
+                            String phNumber = data[4];
                             
-                            if (phNumber.equals(patientToMove)) {
+                            if (phNumber.equals(patientToMoveGP)) {
                                 patientRow = rowIndex;
-                                break; // Found the patient
+                                break;
                             }
-                        }
                         rowIndex++;
                     }
                     scanner.close();
                 } catch (NumberFormatException e) {
                     System.out.println("Invalid personal health number entered. Please enter a valid number.");
                 }
-
-                // If the patient was found, swap the row
                 if (patientRow != -1) {
-                    // Call the swapRows function to move the patient to the front (row 1)
                     TriageQueue.swapRows(csvGP, 1, patientRow);
-                    System.out.println("Patient with health number " + patientToMove + " has been moved to the front of the queue.");
+                    System.out.println("Patient with health number " + patientToMoveGP + " has been moved to the front of the queue.");
                 } else {
                     System.out.println("Patient not found in the queue.");
                 }
-
+            }
+            String removePatientGP = prompter.readLine("Would you like to remove anyone from the queue? Enter Yes or No:");
+            if(removePatientGP.toLowerCase().contains("yes")) {
+                System.out.println("Current Queue:");
+                TriageQueue.printTriageQueue(csvGP);
+                String patientToRemoveGP = prompter.readLine("Enter the personal health number of the patient you would like to reomve: ");
+                int patientRow = -1;
+                try {
+                    
+                    Scanner scanner = new Scanner(csvGP);
+                    scanner.nextLine();
+                    int rowIndex = 1;
+                    
+                    while (scanner.hasNextLine()) {
+                        String line = scanner.nextLine();
+                        String[] data = line.split(",");
+                        
+                            String phNumber = data[4];
+                            
+                            if (phNumber.equals(patientToRemoveGP)) {
+                                patientRow = rowIndex;
+                                break;
+                            }
+                        rowIndex++;
+                    }
+                    scanner.close();
+                } catch (NumberFormatException e) {
+                    System.out.println("Invalid personal health number entered. Please enter a valid number.");
+                }
+                if (patientRow != -1) {
+                    TriageQueue.remove(csvGP, patientRow + 1);
+                    System.out.println("Patient with health number " + patientToRemoveGP + " has been removed from the queue.");
+                } else {
+                    System.out.println("Patient not found in the queue.");
+                }
+            }
         } else if (userClassNumber == 4){ 
             ED_Manager edManager = new ED_Manager();
 
@@ -168,12 +193,76 @@ public class Main {
                 TriageQueue.printTriageQueue(csvED);
             }
 
-            /*
-            edManager.adjustEDWaitlist();
-            edManager.viewEDStatistics();
-            edManager.reorganizeAppointments();
-            edManager.toggleWaitRoomCapacity();
-            */
+            String adjustQueueED = prompter.readLine("Would you like to move anyone to the front of the queue? Enter Yes or No: ");
+            if (adjustQueueED.toLowerCase().contains("yes")) {
+                System.out.println("Current Queue:");
+                TriageQueue.printTriageQueue(csvED);
+                
+                String patientToMoveED = prompter.readLine("Enter the personal health number of the patient to move to the front: ");
+                int patientRow = -1;
+                try {
+                    
+                    Scanner scanner = new Scanner(csvED);
+                    scanner.nextLine();
+                    int rowIndex = 1;
+                    
+                    while (scanner.hasNextLine()) {
+                        String line = scanner.nextLine();
+                        String[] data = line.split(",");
+                        
+                            String phNumber = data[4];
+                            
+                            if (phNumber.equals(patientToMoveED)) {
+                                patientRow = rowIndex;
+                                break;
+                            }
+                        rowIndex++;
+                    }
+                    scanner.close();
+                } catch (NumberFormatException e) {
+                    System.out.println("Invalid personal health number entered. Please enter a valid number.");
+                }
+                if (patientRow != -1) {
+                    TriageQueue.swapRows(csvED, 1, patientRow);
+                    System.out.println("Patient with health number " + patientToMoveED + " has been moved to the front of the queue.");
+                } else {
+                    System.out.println("Patient not found in the queue.");
+                }
+            }
+            String removePatientED = prompter.readLine("Would you like to remove anyone from the queue? Enter Yes or No:");
+            if(removePatientED.toLowerCase().contains("yes")) {
+                System.out.println("Current Queue:");
+                TriageQueue.printTriageQueue(csvED);
+                String patientToRemoveED = prompter.readLine("Enter the personal health number of the patient you would like to remove: ");
+                int patientRow = -1;
+                try {
+                    
+                    Scanner scanner = new Scanner(csvED);
+                    scanner.nextLine();
+                    int rowIndex = 1;
+                    
+                    while (scanner.hasNextLine()) {
+                        String line = scanner.nextLine();
+                        String[] data = line.split(",");
+                        String phNumber = data[4];
+                        
+                        if (phNumber.equals(patientToRemoveED)) {
+                            patientRow = rowIndex;
+                            break;
+                        }
+                        rowIndex++;
+                    }
+                    scanner.close();
+                } catch (NumberFormatException e) {
+                    System.out.println("Invalid personal health number entered. Please enter a valid number.");
+                }
+                if (patientRow != -1) {
+                    TriageQueue.remove(csvED, patientRow + 1);
+                    System.out.println("Patient with health number " + patientToRemoveED + " has been removed from the queue.");
+                } else {
+                    System.out.println("Patient not found in the queue.");
+                }
+            }
         } else {
             System.out.println("Invalid user class number, please retry.");
         }
@@ -184,5 +273,4 @@ public class Main {
         heartbeat.stopHeartbeat();
         sanityCheck.stopSanityCheck();
     }
-}
 }
