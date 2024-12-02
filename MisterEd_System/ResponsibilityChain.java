@@ -31,8 +31,7 @@ public class ResponsibilityChain {
 
     // Second Handler: General Practitioner
     public static class GPHandler extends TriageHandler {
-        private List<Patient> triageQueueGP;
-
+ 
         private File csvGP;
 
         public GPHandler(File csvGP) {
@@ -50,7 +49,8 @@ public class ResponsibilityChain {
 
                 System.out.print("Do you want to leave the queue? Enter Yes or No: ");
                 if (System.console().readLine().toLowerCase().contains("yes")) {
-                    TriageQueue.remove(csvGP, position + 1);
+                    System.out.println(position);
+                    TriageQueue.remove(csvGP, position);
                     System.out.println("You have been removed from the queue.");
                 }
             }
@@ -77,7 +77,7 @@ public class ResponsibilityChain {
 
                 System.out.print("Do you want to leave the queue? Enter Yes or No: ");
                 if (System.console().readLine().toLowerCase().contains("yes")) {
-                    TriageQueue.remove(csvED, position + 1);
+                    TriageQueue.remove(csvED, position);
                     System.out.println("You have been removed from the queue.");
                 }
             }

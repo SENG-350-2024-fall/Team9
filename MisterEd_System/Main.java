@@ -78,7 +78,7 @@ public class Main {
 
             hnHandler.setNextHandler(gpHandler);
             gpHandler.setNextHandler(edHandler);
-            hnHandler.handleRequest(patient);
+            edHandler.handleRequest(patient);
 
         } else if (userClassNumber == 2){
             //Create a nurse object

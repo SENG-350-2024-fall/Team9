@@ -102,7 +102,7 @@ public class TriageQueue {
                 }
             }
 
-            if (rowToRemove > 0 && rowToRemove < lines.size()) {
+            if (rowToRemove > 0 && rowToRemove < lines.size() + 1) {
                 lines.remove(rowToRemove - 1);
 
                 try (BufferedWriter writer = new BufferedWriter(new FileWriter(file))) {
