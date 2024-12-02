@@ -33,29 +33,26 @@ public class ResponsibilityChain {
     public static class GPHandler extends TriageHandler {
         private List<Patient> triageQueueGP;
 
-        public GPHandler(List<Patient> triageQueueGP) {
-            this.triageQueueGP = triageQueueGP;
+        private File csvGP;
+
+        public GPHandler(File csvGP) {
+        this.csvGP = csvGP;
         }
 
         @Override
         public void handleRequest(Patient patient) {
-            if (patient.getSeverity() < 6 && patient.getSeverity() > 2) {
+            if (patient.getSeverity() < 7 && patient.getSeverity() > 2) {
                 System.out.println("You will need a General practitioner, please proceed.");
-                triageQueueGP.add(patient);
-                triageQueueGP.sort(Comparator.comparingInt(Patient::getSeverity).reversed());
-                int position = triageQueueGP.indexOf(patient) + 1;
+                int position = TriageQueue.add(patient, csvGP);
                 System.out.println("Your position in the queue is: #" + position);
                 System.out.printf("You have %d patient(s) ahead of you.\n", position - 1);
+                System.out.printf("Your estimated remaining wait time is: %d mins\n", (position - 1) * 15);
 
-                if (position - 1 == 1) {
-                    System.out.println("Your estimated remaining wait time is: 1 day");
-                } else if (position - 1 == 0) {
-                    System.out.println("You have no patients ahead of you. You will be seen shortly!");
-                } else {
-                    System.out.printf("Your estimated remaining wait time is: %d days\n", (position - 1));
+                System.out.print("Do you want to leave the queue? Enter Yes or No: ");
+                if (System.console().readLine().toLowerCase().contains("yes")) {
+                    TriageQueue.remove(csvGP);
+                    System.out.println("You have been removed from the queue.");
                 }
-            } else if (nextHandler != null) {
-                nextHandler.handleRequest(patient);
             }
         }
     }
@@ -105,9 +102,10 @@ public class ResponsibilityChain {
         triageQueueGP.add(new Patient("Rosa Drives", "123-456-7890", "rosie@example.com", LocalDate.of(1913, 1, 1), 8876, 3));
 
         File csvED = new File("triageQueueED.csv");
+        File csvGP = new File("triageQueueGP.csv");
         // Set up handlers
         TriageHandler hotlineNurse = new HotlineNurseHandler();
-        TriageHandler gpHandler = new GPHandler(triageQueueGP);
+        TriageHandler gpHandler = new GPHandler(csvGP);
         TriageHandler edHandler = new EDHandler(csvED);
 
         // Chain the handlers

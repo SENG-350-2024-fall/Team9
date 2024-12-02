@@ -115,4 +115,34 @@ public class TriageQueue {
             e.printStackTrace();
         }
     }
+
+    public static void swapRows(File var0, int row1, int row2) {
+        try {
+            List<String> lines = new ArrayList<>();
+            try (Scanner scanner = new Scanner(var0)) {
+                while (scanner.hasNextLine()) {
+                    lines.add(scanner.nextLine());
+                }
+            }
+
+            String temp = lines.get(row1);
+            lines.set(row1, lines.get(row2));
+            lines.set(row2, temp);
+
+            try (BufferedWriter writer = new BufferedWriter(new FileWriter(var0))) {
+                writer.write("Name,Phone,Email,BirthDate,PersonalHealthNumber,Severity"); // Assuming this is your header
+                writer.newLine();
+                
+                for (String line : lines) {
+                    writer.write(line);
+                    writer.newLine();
+                }
+            }
+
+            System.out.println("Rows swapped successfully.");
+        } catch (IOException e) {
+            System.out.println("Error: Could not read/write to the CSV file.");
+            e.printStackTrace();
+        }
+    }
 }

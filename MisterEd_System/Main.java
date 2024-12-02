@@ -30,6 +30,7 @@ public class Main {
         //triageQueueED.add(new Patient("Rosa Drives", "123-456-6758", "rosie@example.com", LocalDate.of(1913, 1, 1), 8876, 6));
         
         List<Patient> triageQueueGP = new ArrayList<>();
+        File csvGP = new File("triageQueueGP.csv");
         
         //triageQueueGP.add(new Patient("Jeff Paetkau", "123-456-7890", "jeffrey@example.com", LocalDate.of(1990, 3, 1), 4523, 5));
         //triageQueueGP.add(new Patient("Abby Mulcaster", "123-456-7590", "abigail@example.com", LocalDate.of(1990, 1, 3), 8976, 4));
@@ -72,7 +73,7 @@ public class Main {
             patient.getPromptInput();
 
             ResponsibilityChain.TriageHandler hnHandler = new ResponsibilityChain.HotlineNurseHandler();
-            ResponsibilityChain.TriageHandler gpHandler = new ResponsibilityChain.GPHandler(triageQueueGP);
+            ResponsibilityChain.TriageHandler gpHandler = new ResponsibilityChain.GPHandler(csvGP);
             ResponsibilityChain.TriageHandler edHandler = new ResponsibilityChain.EDHandler(csvED);
 
             hnHandler.setNextHandler(gpHandler);
@@ -105,57 +106,64 @@ public class Main {
 
             generalPractitioner.getPromptInput();
             
-            String viewQueue = prompter.readLine("Would you like to view patients in queue? Enter Yes or No: ");
-            if(viewQueue.toLowerCase().contains("yes")) {
+            String viewQueueGP = prompter.readLine("Would you like to view patients in queue? Enter Yes or No: ");
+            if(viewQueueGP.toLowerCase().contains("yes")) {
                 System.out.println("Current Queue:");
-                for (Patient p : triageQueueED) {
-                    System.out.println(p);
-                }  
+                TriageQueue.printTriageQueue(csvGP);
             }
             String adjustQueue = prompter.readLine("Would you like to move anyone to the front of the queue? Enter Yes or No: ");
             if (adjustQueue.toLowerCase().contains("yes")) {
                 System.out.println("Current Queue:");
-                for (Patient p : triageQueueGP) {
-                    System.out.println(p);
-                }
+                TriageQueue.printTriageQueue(csvGP);
                 
-                // Ask the user for the personal health number of the patient to move
                 String patientToMove = prompter.readLine("Enter the personal health number of the patient to move to the front: ");
-                
-                // Find the patient in the queue
+
+                // Find the patient in the CSV file
                 Patient patient = null;
+                int patientRow = -1; // This will hold the row index where the patient is located in the CSV
                 try {
-                    int phNumberToMove = Integer.parseInt(patientToMove); // Convert input to int
-                    for (Patient p : triageQueueGP) {
-                        if (p.getPersonalHealthNumber() == phNumberToMove) {
-                            patient = p;
-                            break;
+                    int phNumberToMove = Integer.parseInt(patientToMove);
+                    
+                    // Read the CSV file and find the row that corresponds to the patient's personal health number
+                    Scanner scanner = new Scanner(csvGP);
+                    scanner.nextLine(); // Skip the header row
+                    int rowIndex = 1; // Start counting rows from 1 (header is skipped)
+                    
+                    while (scanner.hasNextLine()) {
+                        String line = scanner.nextLine();
+                        String[] data = line.split(",");
+                        
+                        if (data.length == 6) { // Ensure the data is valid (6 fields)
+                            String phNumber = data[4]; // Assuming Personal Health Number is at index 4 in CSV
+                            
+                            if (phNumber.equals(patientToMove)) {
+                                patientRow = rowIndex;
+                                break; // Found the patient
+                            }
                         }
+                        rowIndex++;
                     }
+                    scanner.close();
                 } catch (NumberFormatException e) {
                     System.out.println("Invalid personal health number entered. Please enter a valid number.");
                 }
-                
-                if (patient != null) {
-                    // Remove the patient from their current position
-                    triageQueueGP.remove(patient);
-                    // Add the patient to the front of the queue
-                    triageQueueGP.add(0, patient);
-                    System.out.println("Patient with health number " + patient.getPersonalHealthNumber() + " has been moved to the front of the queue.");
+
+                // If the patient was found, swap the row
+                if (patientRow != -1) {
+                    // Call the swapRows function to move the patient to the front (row 1)
+                    TriageQueue.swapRows(csvGP, 1, patientRow);
+                    System.out.println("Patient with health number " + patientToMove + " has been moved to the front of the queue.");
                 } else {
                     System.out.println("Patient not found in the queue.");
                 }
-            } else {
-                System.out.println("No changes made to the queue.");
-            }
 
         } else if (userClassNumber == 4){ 
             ED_Manager edManager = new ED_Manager();
 
             edManager.getPromptInput();
             
-            String viewQueue = prompter.readLine("Would you like to view patients in queue? Enter Yes or No: ");
-            if(viewQueue.toLowerCase().contains("yes")) {
+            String viewQueueED = prompter.readLine("Would you like to view patients in queue? Enter Yes or No: ");
+            if(viewQueueED.toLowerCase().contains("yes")) {
                 System.out.println("Current Queue:");
                 TriageQueue.printTriageQueue(csvED);
             }
@@ -176,4 +184,5 @@ public class Main {
         heartbeat.stopHeartbeat();
         sanityCheck.stopSanityCheck();
     }
+}
 }
