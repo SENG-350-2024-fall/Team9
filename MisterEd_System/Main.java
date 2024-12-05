@@ -76,9 +76,9 @@ public class Main {
             ResponsibilityChain.TriageHandler gpHandler = new ResponsibilityChain.GPHandler(csvGP);
             ResponsibilityChain.TriageHandler edHandler = new ResponsibilityChain.EDHandler(csvED);
 
+            hnHandlerHandler.handleRequest(patient);
             hnHandler.setNextHandler(gpHandler);
             gpHandler.setNextHandler(edHandler);
-            edHandler.handleRequest(patient);
 
         } else if (userClassNumber == 2){
             //Create a nurse object
