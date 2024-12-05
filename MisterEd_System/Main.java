@@ -72,15 +72,13 @@ public class Main {
             // Prompt for patient to add their info  
             patient.getPromptInput();
 
-            ResponsibilityChain.TriageHandler hnHandler = new ResponsibilityChain.HotlineNurseHandler();
-            ResponsibilityChain.TriageHandler gpHandler = new ResponsibilityChain.GPHandler(csvGP);
-            ResponsibilityChain.TriageHandler edHandler = new ResponsibilityChain.EDHandler(csvED);
+            ResponsibilityChain.TriageHandler edHandler = new ResponsibilityChain.EDHandler(csvED, null);
+            ResponsibilityChain.TriageHandler gpHandler = new ResponsibilityChain.GPHandler(csvGP, edHandler);
+            ResponsibilityChain.TriageHandler hnHandler = new ResponsibilityChain.HotlineNurseHandler(null, gpHandler);
 
             hnHandler.handleRequest(patient);
-            hnHandler.setNextHandler(gpHandler);
-            gpHandler.setNextHandler(edHandler);
 
-        } else if (userClassNumber == 2){
+        } else if (userClassNumber == 2) {
             //Create a nurse object
             HotlineNurse hotlineNurse = new HotlineNurse();
 

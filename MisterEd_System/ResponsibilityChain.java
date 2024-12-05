@@ -4,7 +4,6 @@ import java.io.*;
 
 // Main class: ResponsibilityChain
 public class ResponsibilityChain {
-    
     // Abstract Handler
     public abstract static class TriageHandler {
         protected TriageHandler nextHandler;
@@ -18,6 +17,15 @@ public class ResponsibilityChain {
 
     // First Handler: Hotline Nurse
     public static class HotlineNurseHandler extends TriageHandler {
+
+        private File csvHN;
+        private TriageHandler nextHandler;
+
+        public HotlineNurseHandler(File csvHN, TriageHandler nextHandler) {
+            this.csvHN = null;
+            this.nextHandler = nextHandler;
+        }
+
         @Override
         public void handleRequest(Patient patient) {
             if (patient.getSeverity() < 3) {
@@ -33,9 +41,11 @@ public class ResponsibilityChain {
     public static class GPHandler extends TriageHandler {
  
         private File csvGP;
+        private TriageHandler nextHandler;
 
-        public GPHandler(File csvGP) {
-        this.csvGP = csvGP;
+        public GPHandler(File csvGP, TriageHandler nextHandler) {
+            this.csvGP = csvGP;
+            this.nextHandler = nextHandler;
         }
 
         @Override
@@ -53,6 +63,8 @@ public class ResponsibilityChain {
                     TriageQueue.remove(csvGP, position);
                     System.out.println("You have been removed from the queue.");
                 }
+            } else if (nextHandler != null) {
+                nextHandler.handleRequest(patient);
             }
         }
     }
@@ -61,9 +73,11 @@ public class ResponsibilityChain {
     public static class EDHandler extends TriageHandler {
 
         private File csvED;
+        private TriageHandler nextHandler;
 
-        public EDHandler(File csvED) {
-        this.csvED = csvED;
+        public EDHandler(File csvED, TriageHandler nextHandler) {
+            this.csvED = csvED;
+            this.nextHandler = nextHandler;
         }
 
         @Override
@@ -80,6 +94,8 @@ public class ResponsibilityChain {
                     TriageQueue.remove(csvED, position);
                     System.out.println("You have been removed from the queue.");
                 }
+            } else if (nextHandler != null) {
+                nextHandler.handleRequest(patient);
             }
         }
     }
@@ -87,30 +103,12 @@ public class ResponsibilityChain {
     // Client Code
     public static void main(String[] args) {
         // Sample triage queues
-        List<Patient> triageQueueED = new ArrayList<>();
-        
-        triageQueueED.add(new Patient("Jeff Paetkau", "123-456-7891", "jeffy@example.com", LocalDate.of(1990, 2, 1), 1711, 8));
-        triageQueueED.add(new Patient("Anna Mulcaster", "123-456-7890", "annnie@example.com", LocalDate.of(1990, 1, 1), 2212, 7));
-        triageQueueED.add(new Patient("Nathan Streetwood", "123-456-7890", "nate@example.com", LocalDate.of(1990, 1, 1), 2231, 6));
-        triageQueueED.add(new Patient("Rosa Drives", "123-456-7890", "rosie@example.com", LocalDate.of(1913, 1, 1), 8876, 6));
-
-        List<Patient> triageQueueGP = new ArrayList<>();
-        
-        triageQueueGP.add(new Patient("Jack Paetkau", "123-456-7880", "jacky@example.com", LocalDate.of(1990, 3, 1), 1191, 5));
-        triageQueueGP.add(new Patient("Anna Mulcaster", "123-456-7890", "annnie@example.com", LocalDate.of(1990, 1, 1), 2212, 4));
-        triageQueueGP.add(new Patient("Nathan Streetwood", "123-456-7890", "nate@example.com", LocalDate.of(1990, 1, 1), 2231, 3));
-        triageQueueGP.add(new Patient("Rosa Drives", "123-456-7890", "rosie@example.com", LocalDate.of(1913, 1, 1), 8876, 3));
-
         File csvED = new File("triageQueueED.csv");
         File csvGP = new File("triageQueueGP.csv");
         // Set up handlers
-        TriageHandler hotlineNurse = new HotlineNurseHandler();
-        TriageHandler gpHandler = new GPHandler(csvGP);
-        TriageHandler edHandler = new EDHandler(csvED);
-
-        // Chain the handlers
-        hotlineNurse.setNextHandler(gpHandler);
-        gpHandler.setNextHandler(edHandler);
+        TriageHandler edHandler = new EDHandler(csvED, null);
+        TriageHandler gpHandler = new GPHandler(csvGP, edHandler);
+        TriageHandler hotlineNurse = new HotlineNurseHandler(null, gpHandler);
 
         // Example patient
         Patient patient = new Patient("John Paetkau", "123-456-7890", "jonnny@example.com", LocalDate.of(1990, 1, 1), 1111, 4);
