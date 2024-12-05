@@ -18,6 +18,7 @@ public class ResponsibilityChain {
     // First Handler: Hotline Nurse
     public static class HotlineNurseHandler extends TriageHandler {
 
+        @SuppressWarnings("unused")
         private File csvHN;
         private TriageHandler nextHandler;
 
