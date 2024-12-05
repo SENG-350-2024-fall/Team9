@@ -184,7 +184,11 @@ public class Main {
             ED_Manager edManager = new ED_Manager();
 
             edManager.getPromptInput();
-            
+            edManager.adjustEDWaitlist();
+            edManager.viewEDStatistics();
+            edManager.reorganizeAppointments();
+            edManager.toggleWaitRoomCapacity();
+
             String viewQueueED = prompter.readLine("Would you like to view patients in queue? Enter Yes or No: ");
             if(viewQueueED.toLowerCase().contains("yes")) {
                 System.out.println("Current Queue:");
