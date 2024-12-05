@@ -76,7 +76,7 @@ public class Main {
             ResponsibilityChain.TriageHandler gpHandler = new ResponsibilityChain.GPHandler(csvGP);
             ResponsibilityChain.TriageHandler edHandler = new ResponsibilityChain.EDHandler(csvED);
 
-            hnHandlerHandler.handleRequest(patient);
+            hnHandler.handleRequest(patient);
             hnHandler.setNextHandler(gpHandler);
             gpHandler.setNextHandler(edHandler);
 
@@ -229,7 +229,7 @@ public class Main {
                     System.out.println("Patient not found in the queue.");
                 }
             }
-            print("Remove a pateint to complete or ER-override an appointment."); 
+            System.out.println("Remove a pateint to complete or ER-override an appointment."); 
             String removePatientED = prompter.readLine("Would you like to remove anyone from the queue? Enter Yes or No:");
             if(removePatientED.toLowerCase().contains("yes")) {
                 System.out.println("Current Queue:");
